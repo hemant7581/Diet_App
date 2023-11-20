@@ -1,0 +1,46 @@
+{
+    "Recipe_data": [
+        {
+            "id": 1,
+            "img": "../../asset/Chicken_tikka.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id": 2,
+            "img": "../../asset/Avacado_toast.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id": 3,
+            "img": "../../asset/omlette_roll.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id": 4,
+            "img": "../../asset/Nutty.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id":5,
+            "img": "../../asset/oats.png",
+            "unsaved": "../../asset/unsaved.png",
+            "star": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id": 6,
+            "img": "../../asset/Pesto_pasta.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+        }
+    ]
+}
