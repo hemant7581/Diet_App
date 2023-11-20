@@ -82,6 +82,7 @@ export default {
         "green":"#E7FFE7",
         "purple":"#2C48AB",
         "Lightpurple":"#DFE5FA",
+        "FaceColor":"#F7F5BD",
 
       },
       gradientColorStops: {

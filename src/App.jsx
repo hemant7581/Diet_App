@@ -54,7 +54,9 @@ import SentCode from "./Components/Password/SentCode";
 import ProfilePicture from "./Components/ProPic/ProfilePicture";
 import Tracker from "./Components/Dashboard/Trackers/Tracker";
 import WaterTracker from "./Components/Trackers/main/StepsTracker";
+import SleepTracker from "./Components/Trackers/main/SleepTracker";
 import StepTracker from "./Components/Trackers/main/StepsTracker";
+import StepsTracker from "./Components/Trackers/main/StepsTracker";
 
 const App = () => {
   return (
@@ -62,9 +64,9 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" Component={LandingPage} />
-          <Route path="/MyAccount" Component={StepTracker} />
-          <Route path="/Store" Component={Tracker} />
-          <Route path="/OurService" Component={ChangePassword} />
+          <Route path="/MyAccount" Component={SleepTracker} />
+          <Route path="/Store" Component={StepsTracker} />
+          <Route path="/OurService" Component={StepsTracker} />
           <Route path="/StartYourJourney" Component={Videocall} />
           <Route path="/WhoWeAre" Component={ProPic} />
           <Route path="/MyAppointment" Component={Appointment_track} />
