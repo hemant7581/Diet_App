@@ -8,10 +8,10 @@ import Sidebar from '../ProPic/Sidebar'
 
  const PersonalDetails2 = () => {
 const [rotation,setRotation]= useState(0)
+const [showDetails, setShowDetails] = useState(true);
 const [isInputFocused, setIsInputFocused] = useState(false);
 const inputRef = useRef(null); //We use the useRef hook to create a reference to the input element (inputRef) ,
 //When the button is clicked (handleButtonClick), it sets isInputFocused to true and focuses on the input element using inputRef.current.focus().
-const [showDetails, setShowDetails] = useState(true);
 const [isEditing ,setIsEditing]= useState(false)
 const [weight, setWeight]=useState('55 kg')
 const [name, setName]=useState('Yor Forger')

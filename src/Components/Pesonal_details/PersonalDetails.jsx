@@ -1,10 +1,10 @@
-// import Edit from "../../asset/Edit.png"
 
 
 
 import { useCallback } from "react";
 import profile_picture from "../../asset/profile_picture.png"
-// import upward_arrow from "../../asset/upward_arrow.png"
+import Edit from "../../asset/Edit.png"
+import upward_arrow from "../../asset/upward_arrow.png"
 import Nav from "../Top_Nav/Nav";
 
 const ProPic = () => {
@@ -33,7 +33,7 @@ const ProPic = () => {
   }, []);
 
   return (
-    <div className="relative bg-whitesmoke w-full h-[1286px] overflow-hidden text-left text-xl text-text-black-color font-open-sans">
+    <div className="relative bg-whitesmoke w-full h-[1286px] overflow-hidden text-left text-xl text-text-black-color font-sans">
       <div className="absolute top-[0px] left-[0px] bg-beige w-[394px] h-[1286px]" />
       <img
         className="absolute top-[168px] left-[122px] rounded-3xl w-[150px] h-[150px] object-cover"

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // import Recipes from "./Components/Recipe/Recipes";
 // import Signup from "./Components/Account/Signup";
-// import PersonalDetails from  "./Components/Pesonal_details/PersonalDetails"
+import PersonalDetails from  "./Components/Pesonal_details/PersonalDetails"
 // import Store from "./Components/Store/Store";
 // import Workoutss from "./Components/Workouts/Workoutss";
 // import Workout_Done from "./Components/Workouts/Workout_done";
@@ -48,6 +48,7 @@ import OrderOverview from "./Components/MyOrder/OrderOverview";
 import OrderOverview2 from "./Components/MyOrder/OrderOverview2";
 // import OrderTracker from "./Components/MyOrder/OrderTracker";
 import PersonalDetails2 from "./Components/Pesonal_details/PersonalDetails2"
+import ActivateMealPlan from "./Components/MyMealPlan/ActivateMealPlan"
 import Password from "./Components/Password/Password"
 import ChangePassword from "./Components/Password/ChangePassword";
 import SentCode from "./Components/Password/SentCode";
@@ -57,6 +58,12 @@ import WaterTracker from "./Components/Trackers/main/StepsTracker";
 import SleepTracker from "./Components/Trackers/main/SleepTracker";
 import StepTracker from "./Components/Trackers/main/StepsTracker";
 import StepsTracker from "./Components/Trackers/main/StepsTracker";
+import MedicineTracker from "./Components/Trackers/main/MedicineTracker";
+import medicine from "./Components/Trackers/main/medicine";
+import stepsTracker2 from "./Components/Trackers/main/stepsTracker2";
+import MyMealPlan from "./Components/MyMealPlan/MyMealPlan";
+import UnitMeasurement from "./Components/UnitMeasurement/UnitMeasurement";
+
 
 const App = () => {
   return (
@@ -64,13 +71,14 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" Component={LandingPage} />
-          <Route path="/MyAccount" Component={SleepTracker} />
-          <Route path="/Store" Component={StepsTracker} />
-          <Route path="/OurService" Component={StepsTracker} />
+          <Route path="/MyAccount" Component={PersonalDetails2} />
+          <Route path="/Store" Component={UnitMeasurement} />
+          <Route path="/OurService" Component={MyMealPlan} />
           <Route path="/StartYourJourney" Component={Videocall} />
-          <Route path="/WhoWeAre" Component={ProPic} />
+          <Route path="/WhoWeAre" Component={medicine} />
           <Route path="/MyAppointment" Component={Appointment_track} />
           <Route path="/ChangePassword" Component={ChangePassword} />
+          <Route path="/stepTracker2" Component={stepsTracker2} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

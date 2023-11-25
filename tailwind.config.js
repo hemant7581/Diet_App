@@ -17,7 +17,14 @@ export default {
       },
       boxShadow:{
        "DashShadow":"-6.28846px 6.28846px 17.29327px 0px rgba(138, 75, 75, 0.13)",
-       "MedShadow": "-4px 4px 11px 0px rgba(138, 75, 75, 0.13)",
+       "md": "-4px 4px 11px 0px rgba(138, 75, 75, 0.13)",
+       "md2": "0 0 11px 0px rgba(138, 75, 75, 0.13)",
+       "xl": "-6px 6px 25px 0px rgba(138, 75, 75, 0.20)",
+      },
+      blur: {
+        '5': '5px',
+        '10': '10px',
+        '20': '20px',
       },
       fontFamily: {
         "open-sans": "'Open-Sans'",

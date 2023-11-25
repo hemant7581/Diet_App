@@ -1,16 +1,18 @@
-import React , { PureComponent } from 'react'
+import React , { PureComponent ,useState} from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Date from "../../../asset/date.png"
 import previous from "../../../asset/previous.png"
 import steps_chart from "../../../asset/steps_chart.png"
-
+import { Link } from 'react-router-dom';
 import Sidebar from '../../ProPic/Sidebar';
 import Nav from "../../Top_Nav/Nav"
 import steps from "../../../asset/steps.png"
 
 const StepsTracker = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
 // sleep chart data
-const data = [
+const [stepsData, setStepsData] = useState([
   {
   
   },
@@ -44,9 +46,22 @@ const data = [
   },
   {
   
-  },
-   
-];
+  }
+])
+
+const handleModalDone = () => {
+  // Validate the input value (assuming it should be a number between 0 and 24)
+  const hours = parseFloat(modalInputValue);
+  if (!isNaN(hours) && hours >= 0 && hours <= 24) {
+    // Update sleep data with the new value
+    const updatedStepsData = [...stepsData];
+    updatedSData.push({ name: 'New Day', pv: hours });
+    setStepsData(updatedStepsData);
+  }
+
+  // Close the modal
+  setModalOpen(false);
+};
 
 const yTicks = [0, 2, 4, 6, 8]; // Your custom Y-axis values
 
@@ -62,7 +77,7 @@ const yTicks = [0, 2, 4, 6, 8]; // Your custom Y-axis values
 
       {/* main */}
       <img src={previous} alt="" className='absolute top-[178px] left-[436px]'/>
-       <h1 className='absolute left-[512px] top-[170px] text-dark-green-color font-semibold text-17xl font-inherit'>Trackers</h1>
+       <h1 className='absolute left-[512px] top-[170px] text-dark-green-color font-semibold text-17xl font-inherit'>Steps Trackers</h1>
       <img src={Date} alt="date" height={40} width={40} className='absolute left-[1432px] top-[171px] w-[40px] h-[40px]' />
         <p className='absolute left-[512px] top-[224px] font-normal text-5xl text-grey-color leading-[28.8px] '>Tuesday, July 25, 2023</p>
 
@@ -124,7 +139,37 @@ const yTicks = [0, 2, 4, 6, 8]; // Your custom Y-axis values
 {/* Steps Line Chart */}
 {/* reset button */}
 
-<button className='absolute px-[73px] py-[28px] text-[#2C744D] font-sans font-semibold leading-7 rounded-[16px] border border-[#CFF7AA] right-[526px] text-5xl bg-gradient-to-r bg-gradient-[93deg] from-[#AFE47E] to [#D8FAB9] top-[1129px]'>Reset</button>
+<button   onClick={() => setModalOpen(true)} className='absolute px-[73px] py-[28px] text-[#2C744D] font-sans font-semibold leading-7 rounded-[16px] border border-[#CFF7AA] right-[526px] text-5xl bg-gradient-to-r bg-gradient-[93deg] from-[#AFE47E] to [#D8FAB9] top-[1129px]' >Reset</button>
+
+{modalOpen && (
+  <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center">
+    <section className="absolute w-[1030px] h-[341px] bg-white p-8 rounded-[18px] border-2 border-solid border-dark-green-color">
+      <p className="absolute left-[24px] top-[59px] text-dark-green-color font-semibold text-3xl ">Add number of Steps</p>
+      <p className="absolute left-[24px] top-[110px] text-dark-green-color text-lg ">(per day)</p>
+      <input
+        type="text"
+        placeholder="0"
+        className="w-[221px] h-[96px] left-[394px] top-[30px] absolute rounded border border-strokegreen-color shadow-md2 placeholder:text-center"
+      />
+        <p className="absolute left-[639px] top-[63px] text-dark-green-color text-lg ">Steps</p>
+      <button 
+        onClick={() => setModalOpen(false)}
+        className="absolute left-[960px] top-[16px] rounded-md bg-dark-green-color text-white px-4 border py-2  hover:bg-dark-green-color-darker"
+      >
+        X
+      </button>
+      {/* <button 
+        className="mt-4 bg-dark-green-color text-white px-4 border py-2 rounded hover:bg-dark-green-color-darker"
+      >
+        X
+      </button> */}
+
+      <button className='absolute px-[73px] py-[28px] text-[#2C744D] font-sans font-semibold leading-7 rounded-[16px] border border-[#CFF7AA] left-[411px]  text-5xl bg-gradient-to-r bg-gradient-[93deg] from-[#AFE47E] to [#D8FAB9] top-[226px]'>Reset</button>
+    </section>
+  </div>
+)}
+
+
 {/* reset button */}
       {/* main */}
     </div>
@@ -134,78 +179,3 @@ const yTicks = [0, 2, 4, 6, 8]; // Your custom Y-axis values
 export default StepsTracker
 
 
-
-// import React, { useState, useEffect } from 'react';
-// import Chart from 'chart.js/auto';
-
-// const StepTracker = () => {
-//   const [stepValues, setStepValues] = useState([0, 2, 4, 6, 8]);
-
-//   useEffect(() => {
-//     // Initialize the chart on component mount
-//     initChart();
-
-//     // Cleanup function to destroy the chart on component unmount
-//     return () => {
-//       if (chartRef.current) {
-//         chartRef.current.destroy();
-//       }
-//     };
-//   }, []);
-
-//   const chartRef = React.createRef();
-
-//   const initChart = () => {
-//     const ctx = chartRef.current.getContext('2d');
-//     const chart = new Chart(ctx, {
-//       type: 'line',
-//       data: {
-//         labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'],
-//         datasets: [{
-//           label: 'Steps',
-//           borderColor: 'blue',
-//           data: stepValues,
-//         }]
-//       },
-//       options: {
-//         scales: {
-//           x: {
-//             title: {
-//               display: true,
-//               text: 'Days'
-//             }
-//           },
-//           y: {
-//             title: {
-//               display: true,
-//               text: 'Steps'
-//             },
-//             beginAtZero: true,
-//             stepSize: 2,
-//           }
-//         }
-//       }
-//     });
-//   };
-
-//   const resetChart = () => {
-//     // Reset step values
-//     setStepValues([0, 0, 0, 0, 0]);
-
-//     // Destroy the existing chart and reinitialize
-//     if (chartRef.current) {
-//       chartRef.current.destroy();
-//     }
-//     initChart();
-//   };
-
-//   return (
-//     <div className="container mx-auto mt-8 p-4">
-//       <h1 className="text-2xl font-bold mb-4">Step Tracker</h1>
-//       <canvas ref={chartRef} width="400" height="200" className="mb-4"></canvas>
-//       <button onClick={resetChart} className="bg-blue-500 text-white py-2 px-4 rounded">Reset</button>
-//     </div>
-//   );
-// };
-
-// export default StepTracker;
