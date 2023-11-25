@@ -64,9 +64,9 @@ const UnitMeasurement=()=>{
 <p className="absolute left-[18px] top-[73px] text-[#333] font-sans text-5xl leading-10 font-normal">Calories (Kcal)</p>
 {/* leading 7 */}
 <p className="absolute left-[18px] top-[118px] text-[#333] font-sans text-5xl leading-[37px] font-normal">Kilo Joules (Kj)</p> 
-<input type="radio" name="radio" id="radio" className="absolute top-[76px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" checked={isChecked} required={true}  onClick={() => setIsChecked(!isChecked)} />
-<input type="radio" name="radio" id="radio" className="absolute top-[121px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" checked={isChecked} required={true}  onClick={() => setIsChecked(!isChecked)} />
-<hr/>
+<input type="radio" name="energy"  className="absolute top-[76px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]"  required={true}  onClick={() => setIsChecked(!isChecked)} />
+<input type="radio" name="energy"  className="absolute top-[121px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]"  required={true}  onClick={() => setIsChecked(!isChecked)} />
+<hr className="absolute top-[167px] left-3  w-[828px] stroke-gray"/>
         {/* first section */}
 
         {/* second section */}
@@ -74,9 +74,9 @@ const UnitMeasurement=()=>{
 <p className="absolute left-[18px] top-[228px] text-[#333] font-sans text-5xl leading-10 font-normal">Inch (in)</p>
 {/* leading 7 */}
 <p className="absolute left-[18px] top-[273px] text-[#333] font-sans text-5xl leading-[37px] font-normal">Centimeters (cm)</p> 
-<input type="radio" name="radio" id="radio" className="absolute top-[231px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" checked={isChecked} required={true}  onClick={() => setIsChecked(!isChecked)} />
-<input type="radio" name="radio" id="radio" className="absolute top-[276px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" checked={isChecked} required={true}  onClick={() => setIsChecked(!isChecked)} />
-<hr className="absolute top-[334px] mt-[29px]"/>
+<input type="radio" name="measure"  className="absolute top-[231px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]"  required={true}  onClick={() => setIsChecked(!isChecked)} />
+<input type="radio" name="measure"  className="absolute top-[276px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]"  required={true}  onClick={() => setIsChecked(!isChecked)} />
+<hr className="absolute top-[322px] left-3  w-[828px] stroke-gray"/>
         {/* second section */}
 
         {/* third section */}
@@ -84,8 +84,8 @@ const UnitMeasurement=()=>{
 <p className="absolute left-[18px] top-[383px] text-[#333] font-sans text-5xl leading-10 font-normal">Gram (g) ; Milliliters (ml) ; Liters (L)</p>
 {/* leading 7 */}
 <p className="absolute left-[18px] top-[428px] text-[#333] font-sans text-5xl leading-[37px] font-normal">Ounces (oz) ; Fluid Ounce (F oz)</p> 
-<input type="radio" name="radio" id="radio" className="absolute top-[386px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" checked={isChecked} required={true}  onClick={() => setIsChecked(!isChecked)} />
-<input type="radio" name="radio" id="radio" className="absolute top-[431px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" checked={isChecked} required={true}  onClick={() => setIsChecked(!isChecked)} />
+<input type="radio" name="serve"  className="absolute top-[386px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]" required={true}  onClick={() => setIsChecked(!isChecked)} />
+<input type="radio" name="serve"  className="absolute top-[431px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]"  required={true}  onClick={() => setIsChecked(!isChecked)} />
 
         {/* third section */}
      </section>
