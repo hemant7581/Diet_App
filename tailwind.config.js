@@ -13,13 +13,22 @@ export default {
         'text-blackcolor': 'rgba(29, 29, 31, 1)',
         'text-dark-greycolor': 'rgba(51, 51, 51, 1)',
         'green':'rgba(152, 201, 157, 0.62)',
+        'pink': 'rgba(242, 153, 239, 0.36)',
+
+        
         
       },
       boxShadow:{
        "DashShadow":"-6.28846px 6.28846px 17.29327px 0px rgba(138, 75, 75, 0.13)",
        "md": "-4px 4px 11px 0px rgba(138, 75, 75, 0.13)",
        "md2": "0 0 11px 0px rgba(138, 75, 75, 0.13)",
-       "xl": "-6px 6px 25px 0px rgba(138, 75, 75, 0.20)",
+       "md3": "0px 2px 5px 0px rgba(129, 129, 129, 0.24",
+       "md4": " 0px 2px 5px 0px rgba(129, 129, 129, 0.24)",
+       "xl": "-6px 6px 25px 0px rgba(138, 75, 75, 0.20)", 
+       "xl2": "0px 0px 10px 0px rgba(0, 0, 0, 0.15)", 
+       "xl3": "0px 0px 5px 0px rgba(0, 0, 0, 0.10)", 
+       
+       
       },
       blur: {
         '5': '5px',
@@ -90,11 +99,13 @@ export default {
         "purple":"#2C48AB",
         "Lightpurple":"#DFE5FA",
         "FaceColor":"#F7F5BD",
+        "pink":"#9877C8",
 
       },
       gradientColorStops: {
         "green-to-white": "180deg, #00FF00, #FFFFFF",
         "light-to-green" : "93deg, #AFE47E , #D8FAB9",
+        "pink-to-light" : "180deg, #FD9AF9, #FFFFFF",
       },
     },
   },

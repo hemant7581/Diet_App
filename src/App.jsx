@@ -63,6 +63,11 @@ import medicine from "./Components/Trackers/main/medicine";
 import stepsTracker2 from "./Components/Trackers/main/stepsTracker2";
 import MyMealPlan from "./Components/MyMealPlan/MyMealPlan";
 import UnitMeasurement from "./Components/UnitMeasurement/UnitMeasurement";
+import ProfileOverview from "./Components/ProPic/ProfileOverview";
+import Foodlog from "./Components/Foodlog/Foodlog";
+import Snacks from "./Components/Snacks/Snacks";
+import calorieProg from "./Components/Foodlog/calorieProg";
+import AnotherComponent from "./Components/CircularChart/AnotherComponent"
 
 
 const App = () => {
@@ -72,13 +77,15 @@ const App = () => {
         <Routes>
           <Route path="/" Component={LandingPage} />
           <Route path="/MyAccount" Component={PersonalDetails2} />
-          <Route path="/Store" Component={UnitMeasurement} />
+          <Route path="/Store" Component={Snacks} />
           <Route path="/OurService" Component={MyMealPlan} />
           <Route path="/StartYourJourney" Component={Videocall} />
-          <Route path="/WhoWeAre" Component={medicine} />
+          <Route path="/WhoWeAre" Component={AnotherComponent} />
           <Route path="/MyAppointment" Component={Appointment_track} />
           <Route path="/ChangePassword" Component={ChangePassword} />
           <Route path="/stepTracker2" Component={stepsTracker2} />
+          <Route path="/overview" Component={ProfileOverview} />
+          <Route path="/Foodlog" Component={Foodlog} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

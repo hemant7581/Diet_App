@@ -19,7 +19,7 @@ const UnitMeasurement=()=>{
      // }, [rotation, showDetails];
  };
     return(
-<div className="relative w-full overflow-hidden h-[1286px] font-sans">
+<div className="relative w-full overflow-hidden h-[1286px] font-sans ">
         {/* navbar */}
         <Nav />
       {/* navbar */}
