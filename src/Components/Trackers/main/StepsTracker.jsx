@@ -3,7 +3,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import Date from "../../../asset/date.png"
 import previous from "../../../asset/previous.png"
 import steps_chart from "../../../asset/steps_chart.png"
-import { Link } from 'react-router-dom';
 import Sidebar from '../../ProPic/Sidebar';
 import Nav from "../../Top_Nav/Nav"
 import steps from "../../../asset/steps.png"
@@ -55,7 +54,7 @@ const handleModalDone = () => {
   if (!isNaN(hours) && hours >= 0 && hours <= 24) {
     // Update sleep data with the new value
     const updatedStepsData = [...stepsData];
-    updatedSData.push({ name: 'New Day', pv: hours });
+    updatedStepsData.push({ name: 'New Day', pv: hours });
     setStepsData(updatedStepsData);
   }
 
@@ -113,7 +112,7 @@ const yTicks = [0, 2, 4, 6, 8]; // Your custom Y-axis values
         <LineChart
           width={476}
           height={278}
-          data={data}
+          data={stepsData}
           margin={{
             top: 5,
             right: 20,

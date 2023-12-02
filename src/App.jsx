@@ -54,7 +54,7 @@ import ChangePassword from "./Components/Password/ChangePassword";
 import SentCode from "./Components/Password/SentCode";
 import ProfilePicture from "./Components/ProPic/ProfilePicture";
 import Tracker from "./Components/Dashboard/Trackers/Tracker";
-import WaterTracker from "./Components/Trackers/main/StepsTracker";
+import WaterTracker from "./Components/Trackers/main/WaterTracker";
 import SleepTracker from "./Components/Trackers/main/SleepTracker";
 import StepTracker from "./Components/Trackers/main/StepsTracker";
 import StepsTracker from "./Components/Trackers/main/StepsTracker";
@@ -81,9 +81,9 @@ const App = () => {
           <Route path="/" Component={LandingPage} />
           <Route path="/MyAccount" Component={PersonalDetails2} />
           <Route path="/Store" Component={Snacks} />
-          <Route path="/OurService" Component={MyMealPlan} />
+          <Route path="/OurService" Component={WaterTracker} />
           <Route path="/StartYourJourney" Component={Videocall} />
-          <Route path="/WhoWeAre" Component={stepsTracker2} />
+          <Route path="/WhoWeAre" Component={WaterTracker} />
           <Route path="/MyAppointment" Component={Appointment_track} />
           <Route path="/ChangePassword" Component={ChangePassword} />
           <Route path="/stepTracker2" Component={stepsTracker2} />
