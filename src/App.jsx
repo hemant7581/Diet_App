@@ -24,7 +24,7 @@ import PersonalDetails from  "./Components/Pesonal_details/PersonalDetails"
 // import Workout_fullbody_Pause from "./Components/Workouts/Workout_fullbody_Pause";
 // import Dropdown from "./Components/Dropdowns/Dropdown";
 import Videocall from "./Components/Appointment/VideoCall";
-// import Store from "./Components/Store/Store";
+import Store from "./Components/Store/Store";
 // import MyFavourite from "./Components/MyFavourite/MyFavourite";
 import MedcineTracker from "./Components/MedcineTracker/MedcineTracker";
 // import ProPic from "./Components/ProPic/ProPic";
@@ -70,6 +70,14 @@ import Snacks from "./Components/Snacks/Snacks";
 import calorieProg from "./Components/Foodlog/calorieProg";
 import Dates from "./Components/MyMealPlan/Dates/Dates";
 import Meal from "./Components/MyMealPlan/Meal"
+import Ques from "./Components/Question/Ques"
+import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
+import Terms_of_service from "./Screens/Terms_of_service";
+// import WhoWeAre from "./Screens/WhoWeAre";
+import FAQ from "./Components/FAQ/FAQs"
+import MealPlans from "./Components/MealPlans/MealPlans"
+
+
 
 
 
@@ -80,16 +88,20 @@ const App = () => {
         <Routes>
           <Route path="/" Component={LandingPage} />
           <Route path="/MyAccount" Component={PersonalDetails2} />
-          <Route path="/Store" Component={Snacks} />
+          <Route path="/Store" Component={Store} />
           <Route path="/OurService" Component={WaterTracker} />
           <Route path="/StartYourJourney" Component={Videocall} />
-          <Route path="/WhoWeAre" Component={WaterTracker} />
+          <Route path="/WhoWeAre" Component={WhoWeAre} />
           <Route path="/MyAppointment" Component={Appointment_track} />
           <Route path="/ChangePassword" Component={ChangePassword} />
           <Route path="/stepTracker2" Component={stepsTracker2} />
           <Route path="/overview" Component={ProfileOverview} />
           <Route path="/Foodlog" Component={Foodlog} />
           <Route path="/MealPlan" Component={Meal} />
+          <Route path="/Store" Component={Store} />
+          <Route path="/TermsOfUse" Component={Terms_of_service} />
+          <Route path="/FAQ" Component={FAQ} />
+          <Route path="/MealPlans" Component={Ques} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

@@ -42,7 +42,7 @@ const Store = () => {
       </h1>
       <div className="absolute top-[356px] left-[calc(50%_-_488px)] w-[976px] h-[78px]">
         <input
-          className="placeholder:italic placeholder:pl-[100px] placeholder:text-lg bg-whitesmoke absolute top-[-1px] left-[calc(50%_-_489px)] rounded-3xs box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color"
+          className="placeholder:italic outline-none pl-[100px] placeholder:text-lg bg-whitesmoke absolute top-[-1px] left-[calc(50%_-_489px)] rounded-3xs box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color"
           name="Product_name"
           placeholder="Search Products"
           type="text"

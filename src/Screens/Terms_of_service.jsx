@@ -5,7 +5,7 @@ import Terms_main_section from ".././asset/Terms_main_section.png"
 const Terms_of_service = () => {
   return (
     <>
-      <div className="relative bg-beige w-full h-[5068px] overflow-hidden text-left text-5xl text-text-black-color font-open-sans">
+      <div className="relative bg-beige w-[1512px] h-[5068px] overflow-hidden text-left text-5xl text-text-black-color font-sans xl:w-full">
         <div className="absolute top-[0px] left-[756px] bg-whitesmoke w-[756px] h-[5068px]" />
       
          <Nav/>
@@ -104,7 +104,7 @@ const Terms_of_service = () => {
       <div className="absolute top-[2745px] left-[97px] text-inherit tracking-[0.06em] leading-[156.23%] inline-block w-[1318px] h-[113px]">
         <ul className="m-0 pl-8">
           <li className="mb-0">
-            <span className="font-semibold font-open-sans">StayFIT</span>
+            <span className="font-semibold font-sans">StayFIT</span>
             <span>
               {" "}
               provides general health and wellness information, but it should
@@ -134,10 +134,10 @@ const Terms_of_service = () => {
       </div>
       <div className="absolute top-[4100px] left-[92px] tracking-[0.06em] leading-[156.23%] text-[inherit] inline-block w-[1328px] h-[191px]">
         <p className="m-0">
-          <span className="font-open-sans">{`If you have any questions or concerns about these Terms of Use, please contact us at `}</span>
+          <span className="font-sans">{`If you have any questions or concerns about these Terms of Use, please contact us at `}</span>
         </p>
         <p className="m-0">
-          <span className="font-semibold font-open-sans">Email</span>
+          <span className="font-semibold font-sans">Email</span>
           <span>{`: `}</span>
           <a
             className="text-[inherit]"
@@ -153,13 +153,13 @@ const Terms_of_service = () => {
           <span>bc</span>
         </p>
         <p className="m-0">
-          <span className="font-semibold font-open-sans">Phone</span>
-          <span className="font-open-sans">: +91 11 22 33 9900</span>
+          <span className="font-semibold font-sans">Phone</span>
+          <span className="font-sans">: +91 11 22 33 9900</span>
         </p>
         <p className="m-0">
-          <span className="font-open-sans">Thank you for using</span>
-          <i className="font-bold font-open-sans"> StayFIT</i>
-          <span className="font-open-sans">
+          <span className="font-sans">Thank you for using</span>
+          <i className="font-bold font-sans"> StayFIT</i>
+          <span className="font-sans">
             . We hope you find our platform helpful and enjoy a positive
             experience on our site.
           </span>

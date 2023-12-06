@@ -1,6 +1,8 @@
-import Logo from "../../asset/Logo.png";
 // import vector-61 from "../../asset/vector-61.svg"
+import Logo from "../../asset/Logo.png";
 import Footer_img from "../../asset/Footer_img.png";
+import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 // import { useCallback } from "react";
 // import {useNavigate} from "react-router-dom"
@@ -18,9 +20,10 @@ const Footer = () => {
   //         // Please sync "FAQs" to the project
   //       }, []);
 
-  //       const onStoreText1Click = useCallback(() => {
-  //         // Please sync "STORE" to the project
-  //       }, []);
+  // const onStoreText1Click = useCallback(() => {
+  // Please sync "STORE" to the project
+  // Navigate("/Store.jsx")
+  // }, []);
 
   //       const onTermsOfUse1Click = useCallback(() => {
   //         navigate("/");
@@ -35,7 +38,7 @@ const Footer = () => {
   //       }, []);
   return (
     <>
-      <div className="relative top-[4668px] left-[0px] w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main">
+      <div className="absolute top-[4668px] left-[0px] w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main">
         <div className="absolute top-[0px] left-[0px] bg-whitesmoke shadow-[0px_-3px_11px_1px_rgba(231,_231,_231,_0.59)] w-[1512px] h-[400px]" />
         <div className="absolute top-[0px] left-[756px] bg-beige w-[756px] h-[400px]" />
         <div className="absolute top-[82px] left-[82px] w-[205px] h-[184px] text-center text-[37px] text-text-black-color font-roboto-flex">
@@ -60,49 +63,65 @@ const Footer = () => {
           <div className="absolute top-[0px] left-[0px] leading-[150%]">
             Home
           </div>
-          <div
-            className="absolute top-[74px] left-[0px] leading-[150%] cursor-pointer"
-            // onClick={onWhoWeAre1Click}
-          >
-            Who we are
-          </div>
+          <Link to="/WhoWeAre">
+            <div
+              className="absolute top-[74px] left-[0px] leading-[150%] cursor-pointer"
+              // onClick={onWhoWeAre1Click}
+            >
+              Who we are
+            </div>
+          </Link>
         </div>
         <div className="absolute top-[82px] left-[1071px] w-[106px] h-[178px]">
-          <div
-            className="absolute top-[148px] left-[0px] leading-[150%] cursor-pointer"
-            // onClick={onFAQsTextClick}
-          >
-            FAQs
-          </div>
-          <div className="absolute top-[74px] left-[0px] leading-[150%]">
-            My Account
-          </div>
-          <div
-            className="absolute top-[0px] left-[0px] leading-[150%] cursor-pointer"
-            // onClick={onStoreText1Click}
-          >
-            Store
-          </div>
+          <Link to="/FAQ">
+            <div
+              className="absolute top-[148px] left-[0px] leading-[150%] cursor-pointer"
+              // onClick={onFAQsTextClick}
+            >
+              FAQs
+            </div>
+          </Link>
+          <Link to="/MyAccount">
+            <div className="absolute top-[74px] left-[0px] leading-[150%]">
+              My Account
+            </div>
+          </Link>
+
+          <Link to="/Store">
+            <div
+              className="absolute top-[0px] left-[0px] leading-[150%] cursor-pointer"
+              // onClick={onStoreText1Click}
+            >
+              Store
+            </div>
+          </Link>
         </div>
         <div className="absolute top-[82px] left-[1245px] w-[120px] h-[178px]">
-          <div
-            className="absolute top-[0px] left-[0px] leading-[150%] cursor-pointer"
-            // onClick={onTermsOfUse1Click}
-          >
-            Terms of use
-          </div>
-          <div
-            className="absolute top-[74px] left-[0px] leading-[150%] cursor-pointer"
-            // onClick={onPrivacyPolicyTextClick}
-          >
-            Privacy Policy
-          </div>
-          <div
-            className="absolute top-[148px] left-[5px] leading-[150%] cursor-pointer"
-            // onClick={onContactUsText1Click}
-          >
-            Contact us
-          </div>
+          <Link to="/TermsOfUse">
+            <div
+              className="absolute top-[0px] left-[0px] leading-[150%] cursor-pointer"
+              // onClick={onTermsOfUse1Click}
+            >
+              Terms of use
+            </div>
+          </Link>
+
+          <Link to="/PrivacyPolicy">
+            <div
+              className="absolute top-[74px] left-[0px] leading-[150%] cursor-pointer"
+              // onClick={onPrivacyPolicyTextClick}
+            >
+              Privacy Policy
+            </div>
+          </Link>
+          <Link to="/ContactUs">
+            <div
+              className="absolute top-[148px] left-[5px] leading-[150%] cursor-pointer"
+              // onClick={onContactUsText1Click}
+            >
+              Contact us
+            </div>
+          </Link>
         </div>
       </div>
     </>
