@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-const CONSULTATION = () => {
+const ConsultationForm = () => {
   const onGroupContainerClick = useCallback(() => {
     // Please sync "LANDING" to the project
   }, []);
@@ -171,4 +171,4 @@ const CONSULTATION = () => {
   );
 };
 
-export default CONSULTATION;
+export default ConsultationForm;

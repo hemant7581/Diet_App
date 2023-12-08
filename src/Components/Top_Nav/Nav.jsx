@@ -1,7 +1,18 @@
-import { useCallback } from "react";
+import { useCallback ,useState} from "react";
 import Logo from "../../asset/Logo.png";
 import { Link } from "react-router-dom";
+import Line from '../../asset/Line.png';
+import White_diamond from '../../asset/White_diamond.png';
+import Outlined_diamond from '../../asset/Outlined_diamond.png';
+import circle from '../../asset/circle.png';
+import Right_arrow from '../../asset/Right_arrow.png';
 const Nav = () => {
+
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
   const onMyAccountTextClick = useCallback(() => {
     // Please sync "PROFILE Overview" to the project
   }, []);
@@ -15,7 +26,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="relative shadow-[0px_2px_26px_rgba(0,_0,_0,_0.09)] w-full h-32 font-sans ">
+    <div className="fixed top-0 shadow-[0px_2px_26px_rgba(0,_0,_0,_0.09)] w-[1512px] h-32 font-sans xl:w-full z-30 ">
       <div className="absolute  bg-whitesmoke w-[756px] h-32" />
       <div className="absolute left-[756px] bg-beige w-[760px] h-32" />
       <div className="absolute top-[17px] left-[56px] w-[132px] h-[94px] text-center text-[35.22px] text-black font-roboto-flex">
@@ -31,11 +42,40 @@ const Nav = () => {
           </li>
           <div className="absolute top-[0px] left-[130px] w-[146px] h-[37px]">
             {/* link OurService */}
-            <Link to="/OurService" className="text-inherit">
-            <li className="absolute top-[0%] left-[0%] leading-xl font-semibold">
+           
+            <li className="absolute top-[0%] left-[0%] leading-xl font-sans font-semibold cursor-pointer" onClick={toggleDropdown}>
               Our Services
             </li>
-            </Link>
+       
+            {showDropdown && (
+              <div className="absolute w-[226px] h-[396px] mt-14 -left-[45px] fant-sans bg-dark-green-color/100 text-white text-center rounded-[10px]">
+              {/* <div className="flex absolute left-[17px] top-[36px] w-[226px] ">
+            <img src={Line} alt="line" className="rounded-lg w-[64px]  " />
+            <img src={White_diamond} alt="White_diamond" className="w-[6px] h-[6px]"/>
+            <img src={Outlined_diamond} alt="outline_diamond" />
+            <img src={circle} alt="circle" className="rounded-full [6px] w-[6px]" />
+            <img src={circle} alt="circle" className="rounded-full [6px] w-[6px]" />
+            <img src={circle} alt="circle" className="rounded-full [h-6px] w-[6px]" />
+            <img src={Outlined_diamond} alt="outline_diamond w-[6px] h-[6px]"/>6            <img src={White_diamond} alt="White_diamond" />
+            <img src={Line} alt="line" className="rounded-lg w-[64px]" />
+          </div> */}
+                <Link to="/MealPlans">
+                  <div className="absolute top-[57px] left-[60px] cursor-pointer">Meal Plans</div>
+                </Link>
+                <Link to="/Recipes">
+                  <div className=" absolute top-[125px] left-[75px]  cursor-pointer">Recipes</div>
+                </Link>
+                <Link to="/Consultation">
+                  <div className="absolute top-[193px] left-[50px]  cursor-pointer">Consultation</div>
+                </Link>
+                <Link to="/Courses">
+                  <div className="absolute top-[261px] left-[70px]  cursor-pointer">Courses</div>
+                </Link>
+                <Link to="/Workouts">
+                  <div className="absolute top-[329px] left-[65px]  cursor-pointer">Workouts</div>
+                </Link>
+              </div>
+            )}
           </div>
           {/* Link who We Are */}
           <Link to= "/WhoWeAre" className="text-inherit">  

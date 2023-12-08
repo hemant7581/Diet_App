@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useState, useEffect } from 'react';
 import Logo from '../../asset/Logo.png';
 import Line from '../../asset/Line.png';
 import White_diamond from '../../asset/White_diamond.png';
@@ -6,25 +6,59 @@ import Outlined_diamond from '../../asset/Outlined_diamond.png';
 import circle from '../../asset/circle.png';
 import Right_arrow from '../../asset/Right_arrow.png';
 import QuestionData from './Question.json';
+import AnalyzingLoader from '../Loaders/Analyzing_loader';
+import { Link } from 'react-router-dom';
 
 const Ques = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(false); // Track loading state
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0); // Track the selected option index
   const [selectedOptions, setSelectedOptions] = useState([]); // Store selected options
   const progressBarWidth = `${(currentQuestionIndex / (QuestionData.Ques.length - 1)) * 344}px`;
 
   const isLastQuestion = currentQuestionIndex === QuestionData.Ques.length-1;
 
-  const handleNextClick = () => {
+  // const handleNextClick = () => {
+  //   if (currentQuestionIndex < QuestionData.Ques.length - 1 && selectedOptionIndex > -1) {
+  //     // Save the selected option in the array
+  //     const selectedOption = QuestionData.Ques[currentQuestionIndex].options[selectedOptionIndex];
+  //     setSelectedOptions([...selectedOptions, selectedOption]);
+
+  //     setCurrentQuestionIndex(currentQuestionIndex + 1);
+  //     setSelectedOptionIndex(-1); // Reset selected option for the next question
+  //   }
+  // };
+
+
+
+  const handleNextClick = async () => {
+    if (isLoading) {
+      return; // If already loading, do nothing
+    }
+
     if (currentQuestionIndex < QuestionData.Ques.length - 1 && selectedOptionIndex > -1) {
-      // Save the selected option in the array
       const selectedOption = QuestionData.Ques[currentQuestionIndex].options[selectedOptionIndex];
       setSelectedOptions([...selectedOptions, selectedOption]);
 
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedOptionIndex(-1); // Reset selected option for the next question
+      if (currentQuestionIndex === QuestionData.Ques.length - 2) {
+        // If on the second-to-last question, start loading and delay for 3 seconds
+        setIsLoading(true);
+        setTimeout(() => {
+          setIsLoading(false);
+          setCurrentQuestionIndex(currentQuestionIndex + 1);
+          setSelectedOptionIndex(-1);
+        }, 3000);
+      } else {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+        setSelectedOptionIndex(-1);
+      }
     }
   };
+
+  useEffect(() => {
+    // Reset loading state when moving to the next question
+    setIsLoading(false);
+  }, [currentQuestionIndex]);
 
   const currentQuestion = QuestionData.Ques[currentQuestionIndex];
 
@@ -88,9 +122,9 @@ const Ques = () => {
             </div>
           </div>
           <div className="relative left-[423px]">
-            <div className="absolute top-[480px] left-0 [font-family:'Montserrat',Helvetica] font-medium text-[#f8f8f8] text-[24px] text-center tracking-[0] leading-[normal]">
+       <Link to="/Result">     <div className="absolute top-[480px] left-0 [font-family:'Montserrat',Helvetica] font-medium text-[#f8f8f8] text-[24px] text-center tracking-[0] leading-[normal]">
               {isLastQuestion ? 'Finish' : 'Next'}
-            </div>
+            </div></Link>
             <img
               className={`cursor-pointer absolute w-[6px] h-[12px] top-[488px] left-[60px] ${
                 selectedOptionIndex > -1 ? 'cursor-pointer' : 'cursor-not-allowed'
@@ -102,6 +136,12 @@ const Ques = () => {
           </div>
         </div>
       </div>
+      {isLoading && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <AnalyzingLoader />
+          
+        </div>
+      )}
     </>
   );
 };

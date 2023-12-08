@@ -1,5 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Nav from "../Top_Nav/Nav";
+import logo from "../../asset/logo.png"
+// import Footer from "../Footer/Footer";
 
 const CONTACTUS = () => {
   const navigate = useNavigate();
@@ -37,61 +40,15 @@ const CONTACTUS = () => {
   }, [navigate]);
 
   return (
-    <div className="relative bg-beige w-full h-[4125px] overflow-hidden text-left text-5xl text-text-black-color font-open-sans">
+    <div className="relative bg-beige w-[1512px] h-[4125px] overflow-hidden text-left text-5xl text-text-black-color font-sans xl:w-full ">
       <div className="absolute top-[0px] left-[756px] bg-whitesmoke w-[756px] h-[4125px]" />
-      <div className="absolute top-[0px] left-[0px] shadow-[0px_2px_26px_rgba(0,_0,_0,_0.05)] w-[1512px] h-32 text-dark-green-color">
-        <div className="absolute top-[0px] left-[0px] bg-whitesmoke w-[756px] h-32" />
-        <div className="absolute top-[0px] left-[756px] bg-beige w-[756px] h-32" />
-        <div className="absolute top-[17px] left-[56px] w-[132px] h-[94px] text-center text-[35.22px] text-black font-roboto-flex">
-          <div className="absolute top-[0px] left-[0px] leading-[150.19%] inline-block w-[124.67px] h-[59.68px]">
-            <i>stay</i>
-            <i className="text-[52.83px] font-body-main">FIT</i>
-          </div>
-          <img
-            className="absolute top-[65.65px] left-[5.87px] w-[126.13px] h-[28.35px]"
-            alt=""
-            src="/vector-5.svg"
-          />
-          <img
-            className="absolute top-[55.47px] left-[108.26px] w-[11.68px] h-[20.58px]"
-            alt=""
-            src="/vector-6.svg"
-          />
-          <img
-            className="absolute top-[73.66px] left-[109.59px] w-[22.52px] h-[10.04px]"
-            alt=""
-            src="/vector-7.svg"
-          />
-        </div>
-        <div className="absolute top-[47px] left-[calc(50%_+_584px)] leading-[156.23%] font-semibold">
-          My Account
-        </div>
-        <div className="absolute top-[46px] left-[calc(50%_-_298px)] w-[595px] h-[37px]">
-          <div className="absolute top-[0px] left-[calc(50%_-_297.5px)] w-[595px] h-[37px]">
-            <div
-              className="absolute top-[0px] left-[calc(50%_+_235.5px)] leading-[156.23%] font-semibold cursor-pointer"
-              onClick={onStoreTextClick}
-            >
-              Store
-            </div>
-            <div className="absolute top-[0px] left-[calc(50%_-_297.5px)] leading-[156.23%] font-semibold">
-              Home
-            </div>
-            <div
-              className="absolute top-[0px] left-[calc(50%_+_38.5px)] leading-[156.23%] font-semibold cursor-pointer"
-              onClick={onWhoWeAreClick}
-            >
-              Who we are
-            </div>
-            <div className="absolute top-[0px] left-[130px] w-[146px] h-[37px]">
-              <div className="absolute top-[0%] left-[0%] leading-[156.23%] font-semibold">
-                Our Services
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-[170px] left-[calc(50%_-_191px)] text-29xl tracking-[0.3em] leading-[133%] font-semibold text-stroke-green-color">
+      {/* nav */}
+      <Nav/>
+      {/* nav */}
+
+      {/* main content */}
+  
+      <div className="absolute top-[170px] left-[calc(50%_-_191px)] text-29xl tracking-[0.3em] leading-[133%] z-10 font-semibold text-stroke-green-color">
         Contact Us
       </div>
       <div className="absolute top-[479px] left-[101px] tracking-[0.02em] leading-[156.23%] inline-block w-[611px]">
@@ -123,7 +80,7 @@ const CONTACTUS = () => {
       <div className="absolute top-[864px] left-[200px] w-[1155px] h-[326px] text-inherit text-[inherit]">
         <div className="absolute top-[0px] left-[728px] tracking-[0.02em] leading-[156.23%]">
           <p className="m-0">
-            <span className="font-semibold font-open-sans">
+            <span className="font-semibold font-sans">
               Business and Partnership Inquiries
             </span>
             <span>:</span>
@@ -151,7 +108,7 @@ const CONTACTUS = () => {
         </div>
         <div className="absolute top-[215px] left-[0px] tracking-[0.02em] leading-[156.23%]">
           <p className="m-0">
-            <span className="font-semibold font-open-sans">
+            <span className="font-semibold font-sans">
               General Inquiries:
             </span>
           </p>
@@ -178,7 +135,7 @@ const CONTACTUS = () => {
         </div>
         <div className="absolute top-[0px] left-[0px] tracking-[0.02em] leading-[156.23%] whitespace-pre-wrap">
           <p className="m-0">
-            <span className="font-semibold font-open-sans">
+            <span className="font-semibold font-sans">
               Customer Support:
             </span>
           </p>
@@ -207,8 +164,8 @@ const CONTACTUS = () => {
           <p className="m-0 font-semibold">Address:</p>
           <ul className="m-0 pl-8">
             <li className="mb-0">
-              <span className="font-semibold font-open-sans">Stay</span>
-              <i className="font-semibold font-open-sans">FIT</i>
+              <span className="font-semibold font-sans">Stay</span>
+              <i className="font-semibold font-sans">FIT</i>
               <span>
                 {" "}
                 123 Nutrition Street, Healthyville, State 12345,India
@@ -249,12 +206,12 @@ const CONTACTUS = () => {
       />
       <div className="absolute top-[3099px] left-[286px] tracking-[0.05em] leading-[156.23%] text-[inherit] text-center inline-block w-[940px] h-[193px]">
         <p className="m-0">
-          <span className="font-semibold font-open-sans">
+          <span className="font-semibold font-sans">
             We Value Your Privacy:
           </span>
         </p>
         <p className="m-0">
-          <span className="font-semibold font-open-sans">&nbsp;</span>
+          <span className="font-semibold font-sans">&nbsp;</span>
         </p>
         <p className="m-0">
           <span>{`Rest assured that any information you provide during your interactions with us will be handled with utmost confidentiality. For more information, please review our `}</span>
@@ -274,41 +231,24 @@ const CONTACTUS = () => {
       </div>
       <div className="absolute top-[3392px] left-[382px] tracking-[0.05em] leading-[156.23%] text-black text-center inline-block w-[748px] h-[73px]">
         <p className="m-0">
-          <span className="font-open-sans">{`Thank you for choosing `}</span>
-          <span className="font-semibold font-open-sans">Stay</span>
-          <i className="font-semibold font-open-sans">FIT.</i>
+          <span className="font-sans">{`Thank you for choosing `}</span>
+          <span className="font-semibold font-sans">Stay</span>
+          <i className="font-semibold font-sans">FIT.</i>
           <span>
             {" "}
             We look forward to being a part of your health and wellness journey!
           </span>
         </p>
       </div>
-      <div className="absolute top-[3725px] left-[-1px] w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main">
+       {/* main content */}
+
+      {/* footer */}
+      <footer className="absolute top-[3725px] left-[-1px] w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main">
         <div className="absolute top-[0px] left-[0px] bg-whitesmoke shadow-[0px_-3px_11px_1px_rgba(231,_231,_231,_0.59)] w-[1512px] h-[400px]" />
         <div className="absolute top-[0px] left-[756px] bg-beige w-[756px] h-[400px]" />
         <div className="absolute top-[82px] left-[82px] w-[205px] h-[184px] text-center text-[37.87px] text-black font-roboto-flex">
-          <div className="absolute top-[0px] left-[0px] w-[142px] h-[100px]">
-            <div className="absolute top-[0px] left-[0px] leading-[150.19%] inline-block w-[134.11px] h-[63.49px]">
-              <i>stay</i>
-              <i className="text-[56.8px] font-body-main">FIT</i>
-            </div>
-            <img
-              className="absolute top-[69.84px] left-[6.31px] w-[135.69px] h-[30.16px]"
-              alt=""
-              src="/vector-51.svg"
-            />
-            <img
-              className="absolute top-[59px] left-[116.46px] w-[12.56px] h-[21.91px]"
-              alt=""
-              src="/vector-61.svg"
-            />
-            <img
-              className="absolute top-[78.36px] left-[117.89px] w-[24.24px] h-[10.69px]"
-              alt=""
-              src="/vector-71.svg"
-            />
-          </div>
-          <div className="absolute top-[130px] left-[0px] text-[18px] leading-[150%] font-open-sans text-grey-color text-left">
+   <img src={logo} alt="" />
+          <div className="absolute top-[130px] left-[0px] text-[18px] leading-[150%] font-sans text-grey-color text-left">
             <p className="m-0">Copyright © StayFIT LLC.</p>
             <p className="m-0">All rights reserved.</p>
           </div>
@@ -368,12 +308,13 @@ const CONTACTUS = () => {
             Contact us
           </div>
         </div>
-      </div>
+      </footer>
       <img
         className="absolute top-[195px] left-[820px] w-[695.96px] h-[624.85px] overflow-hidden"
         alt=""
         src="/undraw-private-data-re-4eab-1.svg"
       />
+      {/* footer */}
     </div>
   );
 };

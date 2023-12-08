@@ -4,38 +4,9 @@ import Footer_img from "../../asset/Footer_img.png";
 import { Link } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
-// import { useCallback } from "react";
-// import {useNavigate} from "react-router-dom"
 
 const Footer = () => {
-  // define useNavigate
-  //     const navigate = useNavigate();
 
-  // // Navigate files through useNavigate Hooks
-  //     const onWhoWeAre1Click = useCallback(() => {
-  //         // Please sync "ABOUT US" to the project
-  //       }, []);
-
-  //       const onFAQsTextClick = useCallback(() => {
-  //         // Please sync "FAQs" to the project
-  //       }, []);
-
-  // const onStoreText1Click = useCallback(() => {
-  // Please sync "STORE" to the project
-  // Navigate("/Store.jsx")
-  // }, []);
-
-  //       const onTermsOfUse1Click = useCallback(() => {
-  //         navigate("/");
-  //       }, [navigate]);
-
-  //       const onPrivacyPolicyTextClick = useCallback(() => {
-  //         // Please sync "PRIVACY POLICY" to the project
-  //       }, []);
-
-  //       const onContactUsText1Click = useCallback(() => {
-  //         // Please sync "CONTACTUS" to the project
-  //       }, []);
   return (
     <>
       <div className="absolute top-[4668px] left-[0px] w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main">

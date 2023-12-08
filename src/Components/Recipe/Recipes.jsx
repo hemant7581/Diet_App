@@ -15,7 +15,7 @@ import Footer from "../Footer/Footer";
 import Nav from "../Top_Nav/Nav";
 const Recipes = () => {
   return (
-    <div className="relative bg-whitesmoke w-full h-[3228px] overflow-hidden text-left text-5xl text-green-700 leading-[37.49px] font-semibold  font-sans">
+    <div className="relative bg-whitesmoke w-[1512px] h-[3228px] overflow-hidden text-left text-5xl text-green-700 leading-[37.49px] font-semibold  font-sans xl:w-full">
       {/* navbar   */}
       <Nav />
       {/* navbar   */}
@@ -113,11 +113,18 @@ const Recipes = () => {
       {/* popular */}
 
       {/* most loved */}
-      <h1
+      {/* <h1
         className="m-0 text-center absolute top-[1366px] left-[calc(50%_-_218px)] text-27xl leading-[156.23%] font-semibold text-black"
         id="Most_loved"
       >
         Most Loved Recipes
+      </h1> */}
+
+<h1
+        className="m-0 absolute top-[1366px] left-[calc(50%_-_218px)] text-[46px] text-black leading-[156.23%] font-semibold font-inherit"
+        id="popular-recipe"
+      >
+      Most Loved Recipes
       </h1>
 
       {/* img */}
@@ -243,7 +250,7 @@ const Recipes = () => {
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
-          src="/vector-1561.svg"
+          src={saved}
         />
         <div className="absolute top-[295px] left-[28px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-base-red-color" />
         <p className="m-0 absolute top-[307px] left-[55px] tracking-[0.03em] leading-[120.23%] font-semibold text-base-red-color">

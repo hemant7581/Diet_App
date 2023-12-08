@@ -10,11 +10,18 @@ import img_3 from "../../asset/img_3.png";
 import star from "../../asset/star.png";
 import categoriesData from "./Categories.json";
 import sortData from "./Sort.json";
+import { Link } from "react-router-dom"
+
+
 const Store = () => {
   const [isCategoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [isSortDropdownOpen, setSortDropdownOpen] = useState(false);
   const [backgroundColor, setBackgroundColor] = useState("bg-whitesmoke");
-
+  const [likedProducts, setLikedProducts] = useState({
+    product1: false,
+    product2: false,
+    product3: false,
+  });
   // const onVectorIconClick = useCallback(() => {
   //   // Please sync "Favs" to the project
   // }, []);
@@ -34,15 +41,23 @@ const Store = () => {
     setBackgroundColor("bg-whitesmoke");
   };
 
+  const handleLikeToggle = (productId) => {
+    setLikedProducts((prevLikedProducts) => ({
+      ...prevLikedProducts,
+      [productId]: !prevLikedProducts[productId],
+    }));
+  };
+
   return (
-    <div className="relative bg-whitesmoke w-full h-auto md:h-[1244px] overflow-hidden text-left text-lg md:text-5xl font-sans text-gray">
+    <div className="relative bg-whitesmoke w-[1512px] h-auto md:h-[1244px] overflow-hidden text-left text-lg md:text-5xl font-sans text-gray xl:w-full">
       <Nav className="text-strokegreen-color" />
-      <h1 className="m-0 absolute top-[208px] left-[50%] transform -translate-x-1/2 text-3xl md:text-5xl tracking-wider font-semibold font-inherit text-stroke-green-color">
+      {/* <h1 className="m-0 absolute top-[208px] left-[50%] transform -translate-x-1/2 text-3xl md:text-5xl tracking-wider font-semibold font-inherit text-stroke-green-color">
         Store
-      </h1>
+      </h1> */}
+      <h1 className="text-center mt-[208px] text-29xl leading-[133%] font-sans text-strokegreen-color tracking-[25.44px]">Store</h1>
       <div className="absolute top-[356px] left-[calc(50%_-_488px)] w-[976px] h-[78px]">
         <input
-          className="placeholder:italic outline-none pl-[100px] placeholder:text-lg bg-whitesmoke absolute top-[-1px] left-[calc(50%_-_489px)] rounded-3xs box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color"
+          className="placeholder:italic text-black outline-none pl-[100px] placeholder:text-lg bg-whitesmoke absolute top-[-1px] left-[calc(50%_-_489px)] rounded-3xs box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color"
           name="Product_name"
           placeholder="Search Products"
           type="text"
@@ -55,9 +70,10 @@ const Store = () => {
         />
       </div>
       <img
-        className="absolute h-[2.37%] w-[2.08%] top-[30.57%] right-[9.08%] bottom-[67.06%] left-[88.84%] max-w-full overflow-hidden max-h-full object-cover cursor-pointer"
+        className="absolute h-[2.37%] w-[2.08%] top-[30.57%] right-[9.08%] bottom-[67.06%] left-[88.80%] max-w-full overflow-hidden max-h-full object-cover cursor-pointer"
         alt="Liked"
-        src={Liked}
+        src={likedProducts.product ? Liked : Unliked}
+        onClick={() => handleLikeToggle("product")}
         // onClick={onVectorIconClick}
       />
       <img
@@ -131,12 +147,12 @@ const Store = () => {
         <section
           className="absolute top-[0px] left-[0px] rounded-md bg-whitesmoke shadow-[0px_0px_10px_rgba(0,0,0,0.1)] w-[400px] h-[545px]"
           id="card2"
-        />
+        /><Link to="/ProdctOverView">
         <img
           className="absolute top-[0px] left-[0px] rounded-md w-[400px] h-[382px] object-cover"
           alt="img_1"
           src={img_1}
-        />
+        /></Link>
       </div>
       <div className="absolute top-[623px] left-[1012px] w-[400px] h-[545px]">
         <section
@@ -165,12 +181,13 @@ const Store = () => {
           />
         </div>
         <div className="absolute top-[406px] left-[calc(50%_-_182px)] w-[364px] h-[88px]">
+        <Link to="/ProdctOverView">
           <p
-            className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%]"
+            className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%] cursor-pointer"
             id="product_name"
           >
             Muscle Blaze - Snack Bars
-          </p>
+          </p></Link>
           <p
             className="m-0 absolute top-[51px] left-[calc(50%_-_182px)] leading-[156.23%] font-semibold"
             id="price"
@@ -180,13 +197,14 @@ const Store = () => {
           <img
             className="absolute h-[33.52%] w-[8.65%] top-[4.83%] right-[-0.21%] bottom-[61.65%] left-[91.55%] max-w-full overflow-hidden max-h-full object-cover"
             alt="Liked"
-            src={Liked}
+            src={likedProducts.product1 ? Liked : Unliked}
+          onClick={() => handleLikeToggle("product1")}
           />
         </div>
       </div>
       <div className="absolute top-[1029px] left-[calc(50%_-_182px)] w-[364px] h-[88px]">
         <p
-          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%]"
+          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%] cursor-pointer"
           id="product_titlt2"
         >
           Yogabar- Energy Bars
@@ -200,12 +218,13 @@ const Store = () => {
         <img
           className="absolute h-[34.09%] w-[8.79%] top-[4.55%] right-[-0.27%] bottom-[61.36%] left-[91.48%] max-w-full overflow-hidden max-h-full object-cover"
           alt="Unlike"
-          src={Unliked}
+          src={likedProducts.product2 ? Liked : Unliked}
+          onClick={() => handleLikeToggle("product2")}
         />
       </div>
       <div className="absolute top-[1029px] left-[calc(50%_+_274px)] w-[364px] h-[88px]">
         <p
-          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%]"
+          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%] cursor-pointer"
           id="product3"
         >
           Stay fit - Yoga Mat
@@ -219,7 +238,8 @@ const Store = () => {
         <img
           className="absolute h-[34.09%] w-[8.79%] top-[4.55%] right-[-0.27%] bottom-[61.36%] left-[91.48%] max-w-full overflow-hidden max-h-full object-cover"
           alt="Unlike"
-          src={Unliked}
+          src={likedProducts.product3 ? Liked : Unliked}
+          onClick={() => handleLikeToggle("product3")}
         />
       </div>
       <div className="absolute top-[1108px] left-[457px] w-5 h-[37px] text-xs">

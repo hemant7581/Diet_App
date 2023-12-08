@@ -136,14 +136,14 @@ const Signup = () => {
         </p>
       </div>
       {/* p tag */}
-      <a
+      <Link to="/Login"
         className="text-decoration-none absolute top-[889px] left-[1010px] text-base leading-[174.53%] font-semibold font-open-sans text-left cursor-pointer"
         id="Login"
         onClick={onAlreadyHaveAnClick}
       >
         <span className="text-gray">{`Already have an account? `}</span>
         <span className="text-dark-green-color">Log In</span>
-      </a>
+      </Link>
 {/* create acc prob */}
       <h1 className="absolute top-[50px] font-sans left-[936px] text-[40px] leading-[174.53%] font-semibold  text-gray text-center inline-block w-[396px]">
             Create your Account

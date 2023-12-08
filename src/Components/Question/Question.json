@@ -8,25 +8,31 @@
                 "Weight Gain",
                 "General Health Improvement",
                 "Manage Specific Health Condition"
-            ]
+            ],
+            "textarea": true,
+            "placeholder": "Enter your goals here..."
         },
         {
             "id": 2,
-            "Ques": "Do you have any dietry preferences of restrictions?",
+            "Ques": "Do you have any dietary preferences or restrictions?",
             "options": [
                 "Vegetarian",
                 "Vegan",
                 "Gluten-free",
                 "Other"
-            ]
+            ],
+            "textarea": true,
+            "placeholder": "Specify your preferences or restrictions..."
         },
         {
             "id": 3,
-            "Ques": "Do you have any food you dislike or are allergic to ?",
+            "Ques": "Do you have any food you dislike or are allergic to?",
             "options": [
                 "Yes",
                 "No"
-            ]
+            ],
+            "textarea": true,
+            "placeholder": "List any dislikes or allergies..."
         },
         {
             "id": 4,
@@ -34,7 +40,9 @@
             "options": [
                 "Yes",
                 "No"
-            ]
+            ],
+            "textarea": false,
+            "placeholder": "Describe any health conditions..."
         },
         {
             "id": 5,
@@ -44,31 +52,40 @@
                 3,
                 4,
                 5
-            ]
+            ],
+            "textarea": true,
+            "placeholder": "Enter the number of meals per day..."
         },
         {
             "id": 6,
-            "Ques": "How much time you'd like to spend on meal preparation?",
+            "Ques": "How much time would you like to spend on meal preparation?",
             "options": [
                 "Less than 30 mins",
                 "30-60 mins",
                 "more than 60 mins"
-            ]
+            ],
+            "textarea": true,
+            "placeholder": "Specify your time preference..."
         },
         {
             "id": 7,
-            "Ques": "How comfortable are you with cooking and mel preparation?",
+            "Ques": "How comfortable are you with cooking and meal preparation?",
             "options": [
                 "Beginner",
                 "Intermediate",
-                "Advance"
-            ]
+                "Advanced"
+            ],
+            "textarea": true,
+            "placeholder": "Describe your comfort level..."
         },
         {
             "id": 8,
-            "Ques": "Are there any specific cuisines or types of foods you enjoy or would like to include in your meal plan? Specify. (for eg; Indian, Continental, etc.)?"
-           
+            "Ques": "Are there any specific cuisines or types of foods you enjoy or would like to include in your meal plan? Specify. (for eg; Indian, Continental, etc.)?",
+            "options": [
+                "Enter specific cuisines or foods here..."
+            ],
+            "textarea": true,
+            "placeholder": "List your preferred cuisines or foods..."
         }
-       
     ]
 }
