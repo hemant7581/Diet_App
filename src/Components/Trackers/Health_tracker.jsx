@@ -39,12 +39,12 @@ const Health_tracker = () => {
           <img
             className="absolute top-[0px] left-[208px] w-[161px] h-[152px]"
             alt=""
-            src={walk}
+            src={medicine}
           />
           <img
             className="absolute top-[0px] left-[443px] w-[161px] h-[152px]"
             alt=""
-            src={medicine}
+            src={walk}
           />
           <img
             className="absolute top-[212px] left-[-27px] w-[161px] h-[152px]"

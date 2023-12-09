@@ -3,7 +3,6 @@ import Logo from "../../asset/Logo.png"
 import Lines from "../../asset/Lines.png"
 import Google_logo from "../../asset/Google_logo.png"
 import Subtract from "../../asset/Subtract.png"
-import { Link } from "react-router-dom";
 
 const Login = () => {
   const onGroupContainer3Click = useCallback(() => {
@@ -118,13 +117,13 @@ const Login = () => {
         />
         <div className="absolute top-[645.92px] left-[569.84px] rounded-[50%] bg-gainsboro w-[170.32px] h-[158.69px]" />
       </div>
-      <Link to="/signup"
+      <a
         className="[text-decoration:none] absolute top-[889px] left-[1013px] text-base leading-[174.53%] font-semibold font-sans text-left cursor-pointer"
         onClick={onDontHaveAnClick}
       >
         <span className="text-gray font-sans">{`Don’t have an account? `}</span>
         <span className="text-dark-green-color font-sans">Sign Up</span>
-      </Link>
+      </a>
     </form>
   );
 };

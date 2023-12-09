@@ -31,15 +31,16 @@ const Nav = () => {
       <div className="absolute left-[756px] bg-beige w-[760px] h-32" />
       <div className="absolute top-[17px] left-[56px] w-[132px] h-[94px] text-center text-[35.22px] text-black font-roboto-flex">
         <div className="absolute top-[0px] left-[0px] leading-[150.19%] inline-block w-[124.67px] h-[59.68px]"></div>
-        <img src={Logo} alt="Logo" />
+    <Link to="/ProPic"><img src={Logo} alt="Logo" /></Link>
       </div>
 
       {/* list starts  */}
       <div className="absolute top-[45px] left-[calc(50%_-_297px)] w-[595px] h-[37px] text-2xl text-green-700 ">
         <ul className="absolute top-[-0px] left-[calc(50%_-_297px)] list-none w-[595px] h-[37px]">
+          <Link to="/">
           <li className="absolute top-[0px] left-[calc(50%_-_297px)] leading-xl font-semibold">
             Home
-          </li>
+          </li></Link>
           <div className="absolute top-[0px] left-[130px] w-[146px] h-[37px]">
             {/* link OurService */}
            

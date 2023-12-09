@@ -151,7 +151,7 @@ const Courses = () => {
       <p
         className="m-0 absolute top-[1101px] left-[1357px] leading-[156.23%] font-semibold text-blue"
         id="Next"
-      >{`Next    >`}</p>
+      >{`Next   >`}</p>
       <img
         className="absolute top-[498px] left-[42px] w-[42px] h-[42px] object-cover cursor-pointer"
         alt="click_backward"

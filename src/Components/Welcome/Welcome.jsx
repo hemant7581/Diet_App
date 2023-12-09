@@ -58,14 +58,14 @@ const Welcome = () => {
           Welcome
         </p>
         <div className="absolute top-[416px] left-[calc(50%_-_706px)] leading-[120%] inline-block w-[458px]">
-          <p className="m-0">{`Your trusted resource for healthy eating, nutrition tips, and more. `}</p>
+          <p className="m-0 font-sans">{`Your trusted resource for healthy eating, nutrition tips, and more. `}</p>
           <p className="m-0">&nbsp;</p>
-          <p className="m-0 font-semibold ">
+          <p className="m-0 font-semibold font-sans ">
             Get a 7-day free meal plan. Try now!
           </p>
         </div>
         <div className="absolute top-[572px] mx-auto rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center py-7 px-[73px] border-strokegreen-color border-solid border-palegoldenrod-100">
-  <Link to="/StartYourJourney" className=" leading-[120%] font-semibold">
+  <Link to="/StartYourJourney" className=" leading-[120%] font-semibold font-sans">
     Start your Journey
   </Link>
 </div>

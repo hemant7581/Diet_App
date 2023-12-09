@@ -1,0 +1,44 @@
+{
+    "course":[
+        {
+            "id":1,
+            "img":"",
+            "Course_Name":"Healthy Meal Planning",
+            "Instructor":"Tony Chopper",
+            "Time_img":"../../asset/time.png",
+            "star":"../../asset/star.png",
+            "rating":5.0,
+            "Duration":"4 weeks"
+        },
+        {
+            "id":2,
+            "img":"",
+            "Course_Name":"Weigh loss Strategies",
+            "Instructor":"Robin Nico",
+            "Time_img":"../../asset/time.png",
+            "star":"../../asset/star.png",
+            "rating":5.0,
+            "Duration":"4 weeks"
+        },
+        {
+            "id":3,
+            "img":"",
+            "Course_Name":"Mindful Eating",
+            "Instructor":"Sanji Vismoke",
+            "Time_img":"../../asset/time.png",
+            "star":"../../asset/star.png",
+            "rating":5.0,
+            "Duration":"4 weeks"
+        },
+        {
+            "id":4,
+            "img":"",
+            "Course_Name":"Sports Nutrition",
+            "Instructor":"Zoro Roronoa",
+            "Time_img":"../../asset/time.png",
+            "star":"../../asset/star.png",
+            "rating":5.0,
+            "Duration":"3 weeks"
+        }
+    ]
+}

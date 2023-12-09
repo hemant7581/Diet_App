@@ -15,7 +15,7 @@ const TBW = () => {
   const [Gender, setGender] = useState("");
   const [TBW, setTBW] = useState("");
 
-  const calculateTBW = () => {
+  // const calculateTBW = () => {
     // if (Age && Weight) {
     //   // TBW calculation formula
     //   let tbw;

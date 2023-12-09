@@ -1,5 +1,6 @@
 // import { useCallback } from "react";
 import Full_body from "../../asset/Full_body.png"
+import { Line} from 'rc-progress';
 import progress_bar from "../../asset/progress_bar.png"
 import time from "../../asset/time.png"
 import timer_display from "../../asset/timer_display.png"
@@ -38,7 +39,7 @@ const Workout_fullbody = () => {
             src={Full_body}
             />
           <p
-            className="m-0 absolute top-[0px] left-[0px] leading-[160%] font-semibold inline-block w-72 h-[52px]"
+            className="m-0 absolute top-[0px] left-[0px] leading-[160%] font-semibold font-sans text-black inline-block w-72 h-[52px]"
             id="full_body_workout"
           >
             Full Body workout
@@ -77,11 +78,12 @@ const Workout_fullbody = () => {
           >
             Progress
           </p>
-          <img
+          {/* <img
             className="absolute top-[8px] left-[93px] w-[157px] h-4 object-cover"
             alt="progress_bar"
             src={progress_bar}
-          />
+          /> */}
+            <Line percent={10} strokeWidth={7} strokeColor="#F9AEAE" trailColor="#FFEBEB" trailWidth={8} className="absolute top-[8px] left-[93px]" />
         </div>
       </div>
       <h1

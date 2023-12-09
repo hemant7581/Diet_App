@@ -5,7 +5,7 @@
 //   return (
 //     <>
 //      <div className="relative w-[1407px] h-[728px] text-2xs font-montserrat">
-//           <div className="absolute top-[348px] left-[0px] rounded-21xl bg-whitesmoke-100 shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[345px] overflow-hidden border-r-[4px] border-solid border-gainsboro-100 border-b-[4px]">
+//           <div className="absolute top-[348px] left-[0px] rounded-21xl bg-whitesmoke-100 shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[345px] overflow-hidden border-r-4 border-solid border-grey border-b-4 rounded-[40px]">
 //             <div className="absolute top-[161px] left-[calc(50%_-_169px)] w-[332px] h-[162px]">
 //               <div className="absolute top-[0px] left-[calc(50%_-_166px)] rounded-2xl w-[140px] h-[162px]" />
 //               <div className="absolute top-[0px] left-[calc(50%_+_26px)] rounded-2xl w-[140px] h-[162px]" />
@@ -115,7 +115,7 @@
 //           </div>
 //           <div className="absolute top-[115px] left-[756px] text-17xl leading-[156.23%] font-semibold font-open-sans text-right inline-block w-[618px]">{`Meal plans, Recipes & Grocery Lists`}</div>
 //           <div className="absolute top-[422px] left-[calc(50%_-_274.5px)] w-[332px] h-[306px] text-inherit font-inherit">
-//             <div className="absolute top-[0px] left-[calc(50%_-_166px)] rounded-21xl bg-whitesmoke-100 shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[336px] h-[310px] border-r-[4px] border-solid border-gainsboro-100 border-b-[4px]" />
+//             <div className="absolute top-[0px] left-[calc(50%_-_166px)] rounded-21xl bg-whitesmoke-100 shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[336px] h-[310px] border-r-4 border-solid border-grey border-b-4 rounded-[40px]" />
 //             <div className="absolute top-[25.4px] left-[calc(50%_-_152.04px)] text-base leading-[156.23%] font-semibold font-montserrat text-dark-green-color inline-block w-[102.69px] h-[21.68px]">
 //               Ingredients
 //             </div>
@@ -199,7 +199,7 @@
 //               </div>
 //             </div>
 //           </div>
-//           <div className="absolute top-[0px] left-[113px] rounded-21xl bg-whitesmoke-100 shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[295px] overflow-hidden text-xl border-r-[4px] border-solid border-gainsboro-100 border-b-[4px]">
+//           <div className="absolute top-[0px] left-[113px] rounded-21xl bg-whitesmoke-100 shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[295px] overflow-hidden text-xl border-r-4 border-solid border-grey border-b-4 rounded-[40px]">
 //             <div className="absolute top-[153px] left-[calc(50%_-_171px)] rounded-2xl bg-gainsboro-200 w-[337px] h-[115px]" />
 //             <div className="absolute top-[292px] left-[calc(50%_-_171px)] rounded-2xl [background:linear-gradient(97.1deg,_#def2fa,_#cae5f1)] w-[337px] h-[115px]" />
 //             <div className="absolute top-[431px] left-[calc(50%_-_171px)] rounded-2xl [background:linear-gradient(96.18deg,_#defed9,_#c5f3a9)] w-[337px] h-[115px]" />
@@ -352,20 +352,21 @@ import Lentil_curry from "../../asset/Lentil_curry.png"
 import white from "../../asset/white.png"
 const Group = () => {
   return (
-    <div className="relative w-full h-[9258px] text-left text-[24px] text-black font-sans outline-none border-none">
-      <div className="absolute top-[0px] left-[0px] bg-beige-100 w-[1512px] h-[9258px] overflow-hidden">
-        <div className="absolute top-[128px] left-[756px] bg-whitesmoke w-[756px] h-[9130px]" />
+    <div className="absolute w-full h-[9258px]  text-left text-[24px] text-black font-sans outline-none border-none xl:w-full">
+      <div className="absolute -top-[2690px] left-[0px] bg-beige-100 w-[1512px] h-[9258px] overflow-hidden">
+        <div className="absolute top-[128px] left-[756px]  w-[756px] h-[9130px]" />
         <div className="absolute top-[2925px] left-[69px] w-[1407px] h-[728px]">
           <div className="absolute top-[0px] left-[0px] w-[1407px] h-[728px]">
             <section
-              className="absolute top-[348px] left-[0px] rounded-21xl bg-whitesmoke shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[345px] overflow-hidden text-left text-2xs text-gray-200 font-montserrat border-r-[4px] border-solid border-gainsboro-100 border-b-[4px]"
+              className="absolute top-[348px] left-[0px] rounded-21xl bg-whitesmoke shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[345px] overflow-hidden text-left text-2xs text-gray-200 font-montserrat border-r-4 border-solid border-grey border-b-4 rounded-[40px] "
               id="Recipes"
             >
               <div className="absolute top-[161px] left-[calc(50%_-_169px)] w-[332px] h-[162px]">
                 <div className="absolute top-[0px] left-[calc(50%_-_166px)] rounded-2xl w-[140px] h-[162px]" />
                 <div className="absolute top-[0px] left-[calc(50%_+_26px)] rounded-2xl w-[140px] h-[162px]" />
               </div>
-              <div className="absolute top-[142px] left-[30px] w-[140px] h-[181px]">
+              {/* baked salmon */}
+              <div className="absolute top-[142px] left-[30px] w-[140px] h-[181px] ">
                 <section
                   className="absolute top-[-1px] left-[-1px] rounded-2xl bg-whitesmoke shadow-[0px_2px_20px_rgba(0,_0,_0,_0.15)] box-border w-[142px] h-[183px] border-[1px] border-solid border-lightgoldenrodyellow"
                   id="Baked_salmon_with_vegetable_section"
@@ -379,11 +380,11 @@ const Group = () => {
                   className="m-0 absolute top-[117px] left-[4px] leading-[156.23%] font-semibold"
                   id="Baked_salmon"
                 >
-                  <span className="block">Baked Salmon</span>
-                  <span className="block">{`with Vegetables `}</span>
+                  <span className="font-sans block">Baked Salmon</span>
+                  <span className="block font-sans">with Vegetables</span>
                 </p>
                 <img
-                  className="absolute top-[12px] left-[27px] rounded-[50%] w-[85px] h-[81px] object-cover"
+                  className="absolute top-[12px] left-[27px] rounded-[50%] w-[85px] h-[81px] "
                   alt="Mixed_veges"
                   src={full_vege}
                 />
@@ -393,19 +394,23 @@ const Group = () => {
                   src={saved}
                 />
               </div>
+
+              {/* 2nd card input */}
               <div className="absolute top-[75px] left-[30px] w-[345px] h-[50px]">
                 <div className="absolute top-[-1px] left-[-1px] rounded-lg box-border w-[347px] h-[52px] border-[1px] border-solid border-palegoldenrod" />
                 <input
-                  className="bg-beige-300 absolute top-[4px] left-[48.79px] rounded-lg box-border w-[291.57px] h-[42px] border-[1px] border-solid border-beige-200"
+                  className="bg-beige-300 absolute pl-3 placeholder:italic font-roboto top-[4px] left-[48.79px] rounded-lg border-none w-[291.57px] h-[42px] outline-none text-lg"
                   placeholder="Search food"
                   type="text"
                 />
                 <img
-                  className="absolute h-[47.6%] w-[7.47%] top-[12.59%] right-[89.56%] bottom-[39.81%] left-[2.97%] max-w-full overflow-hidden max-h-full"
+                  className="absolute  top-[25.59%] right-[89.56%] bottom-[39.81%] left-[2.97%] h-[21.8px] w-[34.7px] max-w-full overflow-hidden max-h-full border-r-2 pr-3"
                   alt="Search"
                   src={Search}
                 />
               </div>
+       
+              {/* 2nd card input */}
               <div className="absolute top-[150px] left-[152px] w-2.5 h-[19px] text-7xs">
                 <img
                   className="absolute top-[-1.62px] left-[-1.29px] w-[12.59px] h-[11.97px]"
@@ -441,23 +446,23 @@ const Group = () => {
                   src={Lentil_curry}
                 />
                 <img
-                  className="absolute h-[6.6%] w-[3.45%] top-[65.41%] right-[2.89%] bottom-[28%] left-[93.66%] max-w-full overflow-hidden max-h-full object-cover"
+                  className="absolute h-[6.6%] w-[3.45%] top-[65.41%]  bottom-[28%] left-[92.20%] max-w-full overflow-hidden max-h-full object-cover"
                   alt="unsaved"
                   src={unsaved}
                 />
                 <div className="absolute top-[156px] left-[193px] w-[54px] h-[17px] text-indianred">
-                  <div className="absolute top-[0px] left-[0px] rounded-8xs bg-lavenderblush box-border w-[53px] h-[17px] border-[1px] border-solid border-rosybrown" />
+                  <div className="absolute top-[0px] left-[0px] rounded-[5px] bg-lavenderblush box-border w-[53px] h-[17px] border-[1px] border-solid border-[#C36767]" />
                   <p
-                    className="m-0 absolute top-[0px] left-[3px] leading-[156.23%] font-semibold inline-block w-[51px]"
+                    className="m-0 absolute top-[0px] left-[3px] leading-[156.23%] text-[#C36767] font-semibold inline-block w-[51px]"
                     id="Lentil_curry_calorie"
                   >
                     432 kcal
                   </p>
                 </div>
                 <div className="absolute top-[157px] left-[0px] w-[54px] h-[17px] text-indianred">
-                  <div className="absolute top-[0px] left-[0px] rounded-8xs bg-lavenderblush box-border w-[53px] h-[17px] border-[1px] border-solid border-rosybrown" />
+                  <div className="absolute rounded-[5px] top-[0px] left-[0px] rounded-8xs bg-lavenderblush  w-[53px] h-[17px] border-[1px] border-solid border-[#C36767]" />
                   <p
-                    className="m-0 absolute top-[0px] left-[3px] leading-[156.23%] font-semibold inline-block w-[51px]"
+                    className="m-0 absolute top-[0px] left-[3px] leading-[156.23%]  text-[#C36767] font-semibold inline-block w-[51px]"
                     id="salmon_calorie"
                   >
                     432 kcal
@@ -494,7 +499,7 @@ const Group = () => {
             >{`Meal plans, Recipes & Grocery Lists`}</h1>
             <div className="absolute top-[422px] left-[calc(50%_-_274.5px)] w-[332px] h-[306px] text-inherit font-inherit">
               <section
-                className="absolute top-[0px] left-[calc(50%_-_166px)] rounded-21xl bg-whitesmoke shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[336px] h-[310px] border-r-[4px] border-solid border-gainsboro-100 border-b-[4px]"
+                className="absolute top-[0px] left-[calc(50%_-_166px)] rounded-21xl bg-whitesmoke shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[336px] h-[310px] border-r-4 border-solid border-grey border-b-4 rounded-[40px]"
                 id="ingrediants_quantity"
               />
               <p
@@ -514,7 +519,7 @@ const Group = () => {
                   className="m-0 absolute top-[1px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[77.74px] h-[19px]"
                   id="Carrots"
                 >
-                  <ul className="m-0 pl-[17px]">Carrots</ul>
+                  <ol className="m-0 pl-[17px] text-[13px] font-normal  leading-[156.227%]">Carrots</ol>
                 </p>
                 <p
                   className="m-0 absolute top-[3px] left-[calc(50%_+_27.41px)] text-smi leading-[109.23%] font-medium font-montserrat flex items-end w-[13.95px] h-4"
@@ -530,12 +535,12 @@ const Group = () => {
                 />
               </div>
               <div className="absolute top-[106px] left-[calc(50%_-_156px)] w-[302px] h-[21px]">
-                <p
-                  className="m-0 absolute top-[1px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[89.63px] h-[19px] [transform:_rotate(-0.25deg)] [transform-origin:0_0]"
+                <ul
+                  className="m-o absolute top-[1px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[89.63px] h-[19px] [transform:_rotate(-0.25deg)] [transform-origin:0_0]"
                   id="radishes"
                 >
-                  <ul className="m-0 pl-[17px]">Radishes</ul>
-                </p>
+                  <ol className="m-0 pl-[17px] text-[13px] font-normal  leading-[156.227%]">Radishes</ol>
+                </ul>
                 <p
                   className="m-0 absolute top-[3px] left-[calc(50%_+_19.45px)] text-smi leading-[109.23%] font-medium font-montserrat flex items-end w-[30.89px] h-[15px]"
                   id="radish_quant"
@@ -551,12 +556,12 @@ const Group = () => {
                 />
               </div>
               <div className="absolute top-[143px] left-[calc(50%_-_156px)] w-[302px] h-[23px]">
-                <p
+                <ul
                   className="m-0 absolute top-[0.45px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[100.88px] h-[22.55px] [transform:_rotate(-0.26deg)] [transform-origin:0_0]"
                   id="courgettes"
                 >
-                  <ul className="m-0 pl-[17px]">Courgettes</ul>
-                </p>
+                  <ol className="m-0 pl-[17px] text-[13px] font-normal  leading-[156.227%]">Courgettes</ol>
+                </ul>
                 <p
                   className="m-0 absolute top-[4.55px] left-[calc(50%_+_30.37px)] text-smi leading-[109.23%] font-medium font-montserrat flex items-end w-[8.97px] h-[15.37px]"
                   id="courgettes_quant"
@@ -570,12 +575,12 @@ const Group = () => {
                 />
               </div>
               <div className="absolute top-[179.99px] left-[calc(50%_-_156px)] w-[302px] h-[23.01px]">
-                <p
+                <ul
                   className="m-0 absolute top-[0.48px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[106.7px] h-[22.54px] [transform:_rotate(-0.26deg)] [transform-origin:0_0]"
                   id="red_onion"
                 >
-                  <ul className="m-0 pl-[17px]">Red Onions</ul>
-                </p>
+                  <ol className="m-0 pl-[17px] text-[13px] font-normal  leading-[156.227%]">Red Onions</ol>
+                </ul>
                 <p
                   className="m-0 absolute top-[4.57px] left-[calc(50%_+_31.36px)] text-smi leading-[109.23%] font-medium font-montserrat flex items-end w-[5.98px] h-[15.37px]"
                   id="red_onion_quantity"
@@ -589,12 +594,12 @@ const Group = () => {
                 />
               </div>
               <div className="absolute top-[218px] left-[calc(50%_-_156px)] w-[302px] h-[23px]">
-                <p
+                <ul
                   className="m-0 absolute top-[0.49px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[109.62px] h-[22.51px] [transform:_rotate(-0.26deg)] [transform-origin:0_0]"
                   id="Mint_leaves"
                 >
-                  <ul className="m-0 pl-[17px]"> Mint Leaves</ul>
-                </p>
+                  <ol className="m-0 pl-[17px] text-[13px] font-normal  leading-[156.227%]">Mint Leaves</ol>
+                </ul>
                 <p
                   className="m-0 absolute top-[4.58px] left-[calc(50%_+_19.41px)] text-smi leading-[109.23%] font-medium font-montserrat flex items-end w-[30.89px] h-[15.35px]"
                   id="Mint_leaves_quantity"
@@ -608,12 +613,12 @@ const Group = () => {
                 />
               </div>
               <div className="absolute top-[255px] left-[calc(50%_-_156px)] w-[302px] h-[23px]">
-                <p
+                <ul
                   className="m-0 absolute top-[0.74px] left-[calc(50%_-_151px)] leading-[156.23%] font-medium flex items-end w-[171.45px] h-[22.26px] [transform:_rotate(-0.25deg)] [transform-origin:0_0]"
                   id="White_wine_vinegar"
                 >
-                  <ul className="m-0 pl-[17px]">White wine Vinegar</ul>
-                </p>
+                  <ol className="m-0 pl-[17px] text-[13px] font-medium  leading-[156.227%]">White wine Vinegar</ol>
+                </ul>
                 <p
                   className="m-0 absolute top-[3.71px] left-[calc(50%_+_31.36px)] text-smi leading-[109.23%] font-medium font-montserrat flex items-end w-[5.98px] h-[14.84px]"
                   id="white_wine_quantity"
@@ -628,7 +633,7 @@ const Group = () => {
               </div>
             </div>
             <section
-              className="absolute top-[0px] left-[113px] rounded-21xl bg-whitesmoke shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[295px] overflow-hidden text-left text-xl text-gray-200 font-montserrat border-r-[4px] border-solid border-gainsboro-100 border-b-[4px]"
+              className="absolute top-[0px] left-[113px] rounded-21xl bg-whitesmoke shadow-[19px_23px_7px_rgba(0,_0,_0,_0.25)] box-border w-[396px] h-[295px] overflow-hidden text-left text-xl text-gray-200 font-montserrat border-r-4 border-solid border-grey border-b-4 rounded-[40px]"
               id="meal_plans"
             >
               <div className="absolute top-[153px] left-[calc(50%_-_171px)] rounded-2xl bg-gainsboro-200 w-[337px] h-[115px]" />
@@ -654,7 +659,7 @@ const Group = () => {
               <div className="absolute top-[739px] left-[calc(50%_-_153px)] leading-[156.23%] font-semibold inline-block w-[225px] h-[25px]">
                 Low Fat Meal Plan
               </div>
-              <img
+              {/* <img
                 className="absolute top-[313px] left-[280px] rounded-[50%] w-[73px] h-[73px] object-cover"
                 alt=""
                 src="/ellipse-46@2x.png"
@@ -673,7 +678,7 @@ const Group = () => {
                 className="absolute top-[748px] left-[280px] rounded-[50%] w-[73px] h-[73px] object-cover"
                 alt=""
                 src="/ellipse-49@2x.png"
-              />
+              /> */}
               <div className="absolute top-[341px] left-[46px] text-2xs leading-[156.23%] font-semibold inline-block w-[188px]">
                 Low-carb, high-fat diet to promote ketosis and fat burning.
               </div>
@@ -688,21 +693,23 @@ const Group = () => {
                 Emphasis on low-fat foods for heart health and weight
                 management.
               </div>
+{/*  input div*/}
               <div className="absolute top-[79px] left-[30px] w-[345px] h-[50px]">
                 <div className="absolute top-[0px] left-[0px] w-[345px] h-[50px]">
                   <div className="absolute top-[-1px] left-[-1px] rounded-lg box-border w-[347px] h-[52px] border-[1px] border-solid border-palegoldenrod" />
                   <input
-                    className="bg-beige-300 absolute top-[4px] left-[48px] rounded-lg box-border w-[291px] h-[42px] border-[1px] border-solid border-beige-200"
+                    className="bg-beige-300 absolute top-[4px] left-[48px] rounded-lg box-border w-[291px] h-[42px] outline-none border-none pl-3 font-roboto placeholder:italic"
                     placeholder="Search Recipe"
                     type="text"
                   />
                   <img
-                    className="absolute h-[52%] w-[7.54%] top-[24%] right-[89.28%] bottom-[24%] left-[3.19%] max-w-full overflow-hidden max-h-full object-cover"
+                    className="absolute top-[24%] right-[89.28%] bottom-[24%] left-[3.19%] h-[21.8px] w-[34.7px] max-w-full overflow-hidden max-h-full border-r-2 pr-3"
                     alt="Search"
                     src={Search}
                   />
                 </div>
               </div>
+        {/*  input div*/}
               <div className="absolute top-[153px] left-[calc(50%_-_171px)] w-[337px] h-[115px]">
                 <div className="absolute top-[0px] left-[calc(50%_-_168.5px)] rounded-2xl [background:linear-gradient(97.73deg,_#fee5d3,_#f9d7ae)] w-[337px] h-[115px]" />
                 <p

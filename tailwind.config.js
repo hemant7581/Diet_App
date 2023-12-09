@@ -86,6 +86,7 @@ export default {
         "purple":"#5D5DF9",
         "black":"#1D1D1F",
         "gray":"#7F7E7E",
+        "grey":"#DED8D8",
         "grayColor":"#E1E1E1",
         "grey-color": "#898989",
         "text-black-color": "#000",

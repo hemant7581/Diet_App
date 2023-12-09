@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // import Recipes from "./Components/Recipe/Recipes";
 // import Signup from "./Components/Account/Signup";
-import PersonalDetails from "./Components/Pesonal_details/PersonalDetails";
+import PersonalDetails from  "./Components/Pesonal_details/PersonalDetails"
 // import Store from "./Components/Store/Store";
 // import Workoutss from "./Components/Workouts/Workoutss";
 // import Workout_Done from "./Components/Workouts/Workout_done";
@@ -34,7 +34,7 @@ import MedcineTracker from "./Components/MedcineTracker/MedcineTracker";
 // import Analyzing_loader from "./Components/Loaders/Analyzing_loader";
 import Appointment_overview2 from "./Components/Appointment/Appointment_overview2";
 import Appointment_track from "./Components/Appointment/Appointment_track";
-import Home_woekout from "./Components/Workouts/Home_workout";
+
 // import Nav from "./Components/Top_Nav/Nav";
 
 // import Terms_of_service from "./Screens/Terms_of_service";
@@ -47,9 +47,9 @@ import MyOrder from "./Components/MyOrder/MyOrder";
 import OrderOverview from "./Components/MyOrder/OrderOverview";
 import OrderOverview2 from "./Components/MyOrder/OrderOverview2";
 // import OrderTracker from "./Components/MyOrder/OrderTracker";
-import PersonalDetails2 from "./Components/Pesonal_details/PersonalDetails2";
-import ActivateMealPlan from "./Components/MyMealPlan/ActivateMealPlan";
-import Password from "./Components/Password/Password";
+import PersonalDetails2 from "./Components/Pesonal_details/PersonalDetails2"
+import ActivateMealPlan from "./Components/MyMealPlan/ActivateMealPlan"
+import Password from "./Components/Password/Password"
 import ChangePassword from "./Components/Password/ChangePassword";
 import SentCode from "./Components/Password/SentCode";
 import ProfilePicture from "./Components/ProPic/ProfilePicture";
@@ -61,7 +61,7 @@ import StepsTracker from "./Components/Trackers/main/StepsTracker";
 import MedicineTracker from "./Components/Trackers/main/MedicineTracker";
 import medicine from "./Components/Trackers/main/medicine";
 import stepsTracker2 from "./Components/Trackers/main/stepsTracker2";
-// import MyMealPlan from "./Components/MyMealPlan/MyMealPlan";
+import MyMealPlan from "./Components/MyMealPlan/MyMealPlan";
 import UnitMeasurement from "./Components/UnitMeasurement/UnitMeasurement";
 import ProfileOverview from "./Components/ProPic/ProfileOverview";
 import MyMealPlan2 from "./Components/MyMealPlan/Meal";
@@ -69,24 +69,20 @@ import Foodlog from "./Components/Foodlog/Foodlog";
 import Snacks from "./Components/Snacks/Snacks";
 import calorieProg from "./Components/Foodlog/calorieProg";
 import Dates from "./Components/MyMealPlan/Dates/Dates";
-import Meal from "./Components/MyMealPlan/Meal";
-import Ques from "./Components/Question/Ques";
+import Meal from "./Components/MyMealPlan/Meal"
+import Ques from "./Components/Question/Ques"
 import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
 import Terms_of_service from "./Screens/Terms_of_service";
 // import WhoWeAre from "./Screens/WhoWeAre";
-import FAQ from "./Components/FAQ/FAQs";
-import ContactUs from "./Components/ContactUs/ContactUs";
-import ProdctOverView from "./Components/Store/ProdctOverView";
-import Recipes from "./Components/Recipe/Recipes";
-import MealPlans from "./Components/MealPlans/MealPlans";
-import Courses from "./Components/Course_overview/Courses";
-import Home_workout from "./Components/Workouts/Home_workout";
-import Consulatation from "./Components/Consultation/Consulatation"
-import ConsultationForm from "./Components/Consultation/ConsultationForm";
-import Result from "./Components/Result/Result";
-import MyMealPlan from "./Components/MyMealPlan/MyMealPlan";
-import Login from "./Components/Account/Login";
-import Signup from "./Components/Account/Signup";
+import FAQ from "./Components/FAQ/FAQs"
+import MealPlans from "./Components/MealPlans/MealPlans"
+import Workout from "./Components/Workouts/Workout";
+import Workoutss from "./Components/Workouts/Workoutss";
+import Workout_fullbody from "./Components/Workouts/Workout_fullbody";
+
+
+
+
 
 const App = () => {
   return (
@@ -94,7 +90,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" Component={LandingPage} />
-          <Route path="/MyAccount" Component={Login} />
+          <Route path="/MyAccount" Component={PersonalDetails2} />
           <Route path="/Store" Component={Store} />
           <Route path="/OurService" Component={WaterTracker} />
           <Route path="/StartYourJourney" Component={Videocall} />
@@ -108,20 +104,10 @@ const App = () => {
           <Route path="/Store" Component={Store} />
           <Route path="/TermsOfUse" Component={Terms_of_service} />
           <Route path="/FAQ" Component={FAQ} />
-          <Route path="/ContactUs" Component={ContactUs} />
           <Route path="/MealPlans" Component={Ques} />
-          <Route path="/ProdctOverView" Component={ProdctOverView} />
-          <Route path="/Courses" Component={Courses} />
-          <Route path="/Workouts" Component={Home_workout} />
-          <Route path="/Consultation" Component={Consulatation} />
-          <Route path="/ConsultationForm" Component={Consulatation} />
-          <Route path="/Book_Appointment" Component={ConsultationForm} />
-          <Route path="/Result" Component={Result} />
-          <Route path="/MyMealPlan" Component={MyMealPlan} />
-          <Route path="/Signup" Component={Signup} />
-          <Route path="/Login" Component={Login} />
-
-          <Route path="/Recipes" Component={Recipes} />
+          <Route path="/Workouts" Component={Workoutss} />
+          <Route path="/fullbody" Component={Workout_fullbody} />
+          <Route path="/ProPic" Component={ProPic} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

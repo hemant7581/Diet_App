@@ -10,10 +10,10 @@ import yoga_2 from "../../asset/yoga_2.png"
 import yoga_3 from "../../asset/yoga_3.png"
 import yoga_b from "../../asset/yoga_b.png"
 import legs_workout from "../../asset/legs_workout.png"
-
 import time from "../../asset/time.png"
 import Nav from "../Top_Nav/Nav";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 const Workoutss = () => {
   const onFullBodyWrkoutClick = useCallback(() => {
     // Please sync "WORKOut full body overview" to the project
@@ -28,7 +28,7 @@ const Workoutss = () => {
       <Nav />
       {/* nav */}
       <div className="absolute top-[208px] left-[calc(50%_-_756px)] w-[1512px] h-[796px] text-[22px] text-white">
-        <div className="absolute top-[114px] left-[calc(50%_-_656px)] w-[1332px] h-[546px] font-open-sans-hebrew">
+        <div className="absolute top-[114px] left-[calc(50%_-_656px)] w-[1332px] h-[546px] font-sans">
           <img
             className="absolute top-[-44px] left-[calc(50%_-_718px)] rounded-3xs w-[1144px] h-[626px] object-cover"
             alt="Mountain_climber"
@@ -109,6 +109,12 @@ const Workoutss = () => {
         />
       </div>
       <div className="absolute top-[1347px] left-[64px] w-[1384px] h-[982px] text-white">
+        <h1
+          className="m-0 absolute text-black top-[0px] left-[calc(50%_-_182px)] text-[46px] leading-[156.23%] font-semibold font-inherit "
+          id="Home_workout"
+        >
+          Home-Workouts
+        </h1>
         <div className="absolute top-[172px] left-[0px] w-[642px] h-[370px]">
           <img
             className="absolute top-[-3.27px] left-[-3.27px] rounded-11xl w-[648.53px] h-[376.53px] object-cover"
@@ -175,6 +181,7 @@ const Workoutss = () => {
           className="absolute top-[612px] left-[742px] w-[642px] h-[370px] cursor-pointer"
           onClick={onFullBodyWrkoutClick}
         >
+        <Link to="/FullBody">
           <img
             className="absolute top-[-3.27px] left-[-3.27px] rounded-11xl w-[648.53px] h-[376.53px] object-cover"
             alt="Full_body_workout"
@@ -191,6 +198,7 @@ const Workoutss = () => {
               <span>workout</span>
             </span>
           </p>
+          </Link>
           <div className="absolute top-[319px] left-[18px] w-[132.51px] h-[32.84px] text-[20.97px] font-montserrat">
             <p
               className="m-0 absolute top-[0px] left-[44.23px] leading-[156.23%] font-medium inline-block w-[88.28px] h-[32.84px]"
@@ -236,19 +244,14 @@ const Workoutss = () => {
             />
           </div>
         </div>
-        <h1
-          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] text-27xl leading-[156.23%] font-semibold font-inherit text-gray"
-          id="Home_workout"
-        >
-          Home-Workouts
-        </h1>
+        
       </div>
-      <h1
-        className="m-0 absolute top-[2551px] left-[calc(50%_-_146px)] text-27xl leading-[156.23%] font-semibold font-inherit text-gray"
+      <p
+        className="m-0 absolute top-[2551px] left-[calc(50%_-_146px)] text-black text-[46px] leading-[156.23%] font-semibold font-inherit "
         id="MINDFUL_YOGA"
       >
         Mindful Yoga
-      </h1>
+      </p>
       <div
         className="absolute top-[2723px] left-[60px] shadow-[4px_4px_15px_rgba(0,_0,_0,_0.1)] w-[444px] h-[718px]"
         id="card_1"
