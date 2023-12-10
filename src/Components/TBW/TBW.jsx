@@ -7,38 +7,34 @@ import blue_female from "../../asset/blue_female.png";
 import blue_slider_dial from "../../asset/blue_slider_dial.png";
 
 const TBW = () => {
-  // const [GenderSelect, setGenderSelect] = useState(0);
-  // const [sliderDialStyle, setSliderDialStyle] = useState({ center:"0px"});
   const [Age, setAge] = useState("");
   const [Weight, setWeight] = useState("");
-  const [Height ,setHeight] = useState("");
+  const [Height, setHeight] = useState("");
   const [Gender, setGender] = useState("");
   const [TBW, setTBW] = useState("");
+  const [SliderPosition, setSliderPosition] = useState("girl");
 
-  // const calculateTBW = () => {
-    // if (Age && Weight) {
-    //   // TBW calculation formula
-    //   let tbw;
-    //   if (Gender === "Male") {
-    //     tbw = 2.447 - (0.09156 * Age) + (0.1074 * Height)+(0.3362 * Weight);
-    //   } else if (Gender === "Female") {
-    //     tbw = 2.337 - 0.1116 * Age + 0.203 * Weight;
-    //   }
-    //   setTBW(tbw.toFixed(2));
-    // }
-  // };
+  const CalculateTBW = () => {
+    if (Age && Height && Weight) {
+      let tbw;
+      if (SliderPosition === "boy") {
+        // Male TBW calculation formula
+        tbw = 2.447 - (0.09156 * Age) + (0.1074 * Height)+(0.3362 * Weight);
+      } else {
+        // Female TBW calculation formula
+        tbw = 2.337 - 0.1116 * Age + 0.203 * Weight;
+      }
 
-  const CalculateTBW=()=>{
-    if(Age && Height && Weight){
-    // bmi calculation formula
-// const HeightinMeters = Height/100; 
-const TBWValue = Weight*0.6;
+      setTBW(tbw.toFixed(2));
+    }
+  };
+  const handleSliderClick = () => {
+    // Toggle between 'boy' and 'girl' when the slider is clicked
+    setSliderPosition((prevPosition) => (prevPosition === "girl" ? "boy" : "girl"));
+    // Also update Gender based on the new SliderPosition
+    setGender((prevGender) => (prevGender === "Female" ? "Male" : "Female"));
+  };
 
-
-// update the state with the calculated BmiValue
-setTBW(TBWValue.toFixed(2))
-  }
-  }
   return (
     <div
       className="relative bg-whitesmoke w-full h-[982px] overflow-hidden text-center text-13xl text-gray-300 font-sans"
@@ -111,6 +107,7 @@ setTBW(TBWValue.toFixed(2))
               id="slider_dial"
               src={blue_slider_dial}
               // style={sliderDialStyle}
+              onClick={handleSliderClick}
               // onClick={handleSliderClick}
             />
             <img

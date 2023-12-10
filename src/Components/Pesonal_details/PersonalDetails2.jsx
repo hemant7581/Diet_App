@@ -1,10 +1,10 @@
  import React, { useState , useRef} from 'react'
- import Profile_picture from "../../asset/Profile_picture.png"
+//  import Profile_picture from "../../asset/Profile_picture.png"
  import Above from "../../asset/Above.png"
  import Edit from "../../asset/Edit.png"
  import Editable from "./Editable"
-import Nav from '../Top_Nav/Nav'
-import Sidebar from '../ProPic/Sidebar'
+// import Nav from '../Top_Nav/Nav'
+// import Sidebar from '../ProPic/Sidebar'
 
  const PersonalDetails2 = () => {
 const [rotation,setRotation]= useState(0)
@@ -44,22 +44,10 @@ const [editedName, setEditedName] = useState('');
        };
 
    return (
-     <div className='relative w-full overflow-hidden h-[1286px] font-sans'>
-{/* navbar */}
-<Nav/>
-{/* navbar */}
+     <div className='absolute w-[852px] overflow-hidden h-[203px] font-sans xl:w-full'>
 
-{/* sidebar */}
-<Sidebar/>
-{/* sidebar */}
 
-         <h1 className='absolute left-[458px] top-[170px] font-sans text-dark-green-color text-17xl font-semibold'>User Account</h1>
-         <p className='absolute left-[458px] top-[224px] font-normal text-5xl text-grey-color leading-[28.8px] '>Tuesday, July 25, 2023</p>
- {/* add border-2 to image    */}
-         <img src={Profile_picture} className='absolute w-[200px] h-[200px] left-[853px] top-[317px] rounded-3xl border-green  outline-none ' alt="" />
- {/* add border-2 to image    */}
- <p className='absolute text-5xl font-inherit font-semibold left-[892px] top-[546px] text-black leading-[29px]'>Yor Forger</p>
- <p className='absolute left-[860px] top-[581px] text-[18px] font-inherit font-normal leading-[28px] text-grey-color '>Joined on Jun 30, 2023</p>
+
 
  {/* Personal details section */}
  <section className='absolute w-[852px] leading-[48px] h-[72px] left-[515px] top-[689px] border border-strokegreen-color rounded-xl'>
@@ -141,55 +129,3 @@ const [editedName, setEditedName] = useState('');
 export default PersonalDetails2;
 
 
-// import React, { useState } from 'react';
-// import Edit from '../../asset/Edit.png';
-
-// const YourComponent = () => {
-//   const [isEditing, setIsEditing] = useState(false);
-//   const [weight, setWeight] = useState('55 kg');
-//   const [editedWeight, setEditedWeight] = useState('');
-
-//   const handleEditClick = () => {
-//     setIsEditing(true);
-//     setEditedWeight(weight);
-//   };
-
-//   const handleDoneClick = () => {
-//     setIsEditing(false);
-//     setWeight(editedWeight);
-//   };
-
-//   return (
-//     <section>
-//       <h1 className='absolute left-[18px] top-[316px] text-[26px] font-inherit font-semibold leading-[40px]'>Weight</h1>
-//       {isEditing ? (
-//         <div className="flex items-center">
-//           <input
-//             type="text"
-//             value={editedWeight}
-//             onChange={(e) => setEditedWeight(e.target.value)}
-//             className="mr-2 px-2 py-1 border rounded"
-//           />
-//           <button
-//             onClick={handleDoneClick}
-//             className="bg-blue-500 text-black px-2 py-1 rounded"
-//           >
-//             Done
-//           </button>
-//         </div>
-//       ) : (
-//         <div className="flex items-center">
-//           <p className='absolute left-[177px] leading-[37px] top-[318px] text-5xl text-black font-normal font-inherit'>{weight}</p>
-//           <img
-//             src={Edit}
-//             alt=""
-//             className='absolute left-[811px] w-[23px] h-[18px] top-[329px]'
-//             onClick={handleEditClick}
-//           />
-//         </div>
-//       )}
-//     </section>
-//   );
-// };
-
-// export default YourComponent;

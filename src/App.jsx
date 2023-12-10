@@ -9,7 +9,7 @@ import PersonalDetails from  "./Components/Pesonal_details/PersonalDetails"
 // import Workoutss from "./Components/Workouts/Workoutss";
 // import Home_workout from "./Components/Workouts/Home_workout";
 // import payment_gateway from "./Components/Payment_gateway/payment_gateway";
-// import Bmi from "./Components/BMI/Bmi";
+import Bmi from "./Components/BMI/Bmi";
 // import TBW from "./Components/TBW/TBW";
 // import BmiResult from "./Components/BMI/BmiResult";
 // import Course_overview from "./Screens/Course_overview";
@@ -79,6 +79,10 @@ import MealPlans from "./Components/MealPlans/MealPlans"
 import Workout from "./Components/Workouts/Workout";
 import Workoutss from "./Components/Workouts/Workoutss";
 import Workout_fullbody from "./Components/Workouts/Workout_fullbody";
+import Personal_Info from "./Components/Personal_Info/Personal_Info";
+import Courses from "./Components/Courses/Courses";
+import TBW from "./Components/TBW/TBW";
+import Accordion from "./Components/ProPic/Accordion";
 
 
 
@@ -108,6 +112,9 @@ const App = () => {
           <Route path="/Workouts" Component={Workoutss} />
           <Route path="/fullbody" Component={Workout_fullbody} />
           <Route path="/ProPic" Component={ProPic} />
+          <Route path="/ProfilePic_edit" Component={Courses} />
+          <Route path="/changePass" Component={SentCode} />
+          <Route path="/changePassword" Component={ChangePassword} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

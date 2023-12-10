@@ -131,7 +131,7 @@ setTBW(TBWValue.toFixed(2))
         {Bmi ? `Your BMI is: ${Bmi}` : ''}
       </p> */}
       <p className="absolute top-[900px] left-[50%] transform [-translate-x-1/2] text-3xl font-semibold">
-        {TBW ? `Your TBW is: ${TBW}` : ''}
+        {TBW ? `Your BMI is: ${Bmi}` : ''}
       </p>
       {/* result */}
     

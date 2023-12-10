@@ -1,5 +1,7 @@
  import React,{useRef} from 'react'
  import Logo from "../../asset/Logo.png"
+import { Link } from 'react-router-dom';
+ 
 
  const SentCode = () => {
  const inputRefs = Array.from({ length: 6 }, () => useRef(null));
@@ -37,7 +39,7 @@ const handleSubmit=()=>{
          <p className='absolute  left-[279px] top-[314px] text-center leading-14 text-black font-semibold font-inherit text-17xl'>Enter the Code sent to your registered mobile number: <br/ >******900</p>
          <p className='absolute text-grey-color left-[511px] top-[466px] leading-14 font-semibold text-17xl font-inherit '>Enter the 6-Digit code below</p>
           {/* done button */}
-<button className='absolute py-7 px-[72px] text-dark-green-color font-inherit text-5xl font-semibold leading-7 border border-solid border-Lightgreen bg-gradient-to-r bg-gradient-[93deg] from-[#AFE47E] to [#D8FAB9] rounded-2xl left-[652px] top-[864px]' onClick={handleSubmit}>Done</button>
+<Link to="/changePassword"><button className='absolute py-7 px-[72px] text-dark-green-color font-inherit text-5xl font-semibold leading-7 border border-solid border-Lightgreen bg-gradient-to-r bg-gradient-[93deg] from-[#AFE47E] to [#D8FAB9] rounded-2xl left-[652px] top-[864px]' onClick={handleSubmit}>Done</button></Link>
 
 {/* done button */}
        </section>
