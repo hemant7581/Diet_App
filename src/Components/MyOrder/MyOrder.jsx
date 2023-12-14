@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from ".././ProPic/Sidebar"
 import Nav from ".././Top_Nav/Nav"
-import OrderOverview from "./OrderOverview"
+import Order from "./Order"
 
 const MyOrder = () => {
   return (
@@ -14,7 +14,7 @@ const MyOrder = () => {
       {/* sidebar */}
 
       {/* Order */}
-      <OrderOverview className="z-10"/>
+      <Order/>
       {/* Order */}
     </div>
   )

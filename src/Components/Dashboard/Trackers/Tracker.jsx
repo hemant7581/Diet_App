@@ -6,13 +6,16 @@ import Medicine_Tracker from './Sub_tracker/Medicine_Tracker'
 import Nav from "../../Top_Nav/Nav"
 import Sidebar from "../../ProPic/Sidebar"
 import Sleep_Tracker from './Sub_tracker/Sleep_Tracker'
+import { Link } from 'react-router-dom'
+
 
 const Tracker = () => {
   return (
-    <div className='relative w-full h-[1286px] overflow-hidden font-sans bg-whitesmoke ' >
+    <div className='relative w-[1512px] h-[1286px] overflow-hidden font-sans bg-whitesmoke xl:w-full' >
       {/* nav */}
       <Nav/>
       {/* nav */}
+
       {/* sidebar */}
       <Sidebar/>
       {/* sidebar */}
@@ -25,10 +28,10 @@ const Tracker = () => {
         {/* trackers cards   */}
         <section className=''>
 
-<Water_Tracker/>
-<Steps_Tracker/>
-<Medicine_Tracker/>
-<Sleep_Tracker/>
+<Link to="/WaterTracker"><Water_Tracker/></Link>
+<Link to="/StepsTracker"><Steps_Tracker/></Link>
+<Link to="/MedicineTracker"><Medicine_Tracker/></Link>
+<Link to="/SleepTracker"><Sleep_Tracker/></Link>
         </section>
 
         {/* trackers cards   */}

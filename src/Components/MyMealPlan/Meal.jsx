@@ -7,6 +7,10 @@ import Dates from "./Dates/Dates";
 import macros2 from "../../asset/macros2.png"
 import Breakfast from "../../asset/Breakfast.png"
 import lunch from "../../asset/lunch.png"
+import MyMealPlan from "./MyMealPlan";
+import { Link } from "react-router-dom";
+import Meal from "./MyMealPlan"
+
 
 const MyMealPlan2 = () => {
   return (
@@ -21,12 +25,12 @@ const MyMealPlan2 = () => {
 
 {/* upper section */}
       <section>
-
+<Link to={MyMealPlan}>
         <img
           src={previous}
           alt=""
           className="absolute top-[178px] left-[436px]"
-        />
+        /></Link>
         <h1 className="absolute left-[512px] top-[170px] font-sans text-dark-green-color text-17xl font-semibold">
         Classic Meal Plan
         </h1>

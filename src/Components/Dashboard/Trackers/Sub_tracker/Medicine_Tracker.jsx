@@ -11,11 +11,11 @@ const Water_Tracker = () => {
 <section >
   {/* 1 */}
   <p className='absolute left-9 top-[111px] text-5xl font-inherit leading-7 font-normal text-dark-green-color'>Morning</p>
-  <input type="checkbox" name="med_check" className=' absolute  left-[370px] top-[115px] rounded accent-dark-green-color w-[24px] h-[21px]' />
+  <input type="checkbox" name="med_check" className=' absolute  left-[370px] top-[115px] rounded accent-dark-green-color w-[24px] h-[21px]' checked/>
 
   {/* 2 */}
   <p className='absolute left-9 top-[171px] text-5xl font-inherit leading-7 font-normal text-dark-green-color'>Afternoon</p>
-  <input type="checkbox" name="med_check" className=' absolute  left-[370px] top-[175px] rounded accent-dark-green-color w-[24px] h-[21px]' />
+  <input type="checkbox" name="med_check" className=' absolute  left-[370px] top-[175px] rounded accent-dark-green-color w-[24px] h-[21px]' checked />
 
   {/* 3 */}
   <p className='absolute left-9 top-[225px] text-5xl font-inherit leading-7 font-normal text-dark-green-color'>Evening</p>

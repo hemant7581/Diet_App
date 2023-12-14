@@ -8,6 +8,8 @@ import call from "../../asset/call.png";
 import videocall from "../../asset/videocall.png";
 import chat from "../../asset/chat.png";
 import previous from "../../asset/previous.png";
+import Nav from "../Top_Nav/Nav";
+import Sidebar from "../ProPic/Sidebar";
 
 const Appinment_overview = () => {
   const [isChecked, setIsChecked] = useState(true);
@@ -22,6 +24,8 @@ const Appinment_overview = () => {
 
   return (
     <div>
+      <Nav/>
+      <Sidebar/>
       <img
         className="absolute h-[3.11%] w-[2.65%] top-[13.3%] right-[2.65%] bottom-[83.59%] left-[94.71%] max-w-full overflow-hidden max-h-full object-cover"
         alt="date_img"
@@ -139,7 +143,7 @@ const Appinment_overview = () => {
         </div>
       </section>
       <p
-        className="m-0 absolute top-[170px] left-[512px] leading-[120%] font-semibold"
+        className="m-0 absolute top-[170px] left-[512px] leading-[120%] font-semibold text-17xl text-dark-green-color"
         id="doctor_name"
       >
         Dr. Tony Chopper

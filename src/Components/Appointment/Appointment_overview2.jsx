@@ -8,15 +8,14 @@ import call from "../../asset/call.png";
 import videocall from "../../asset/videocall.png";
 import chat from "../../asset/chat.png";
 import previous from "../../asset/previous.png";
+import Nav from "../../Components/Top_Nav/Nav";
+import Sidebar from "../../Components/ProPic/Sidebar";
+import { Link } from "react-router-dom";
 
 const Appinment_overview2 = () => {
   const [isChecked, setIsChecked] = useState(true);
   const [rotation, setRotation] = useState(0);
   const [showDetails, setShowDetails] = useState(false);
-
-  const onVectorIcon3Click = useCallback(() => {
-    // Please sync "Appointment" to the project
-  }, []);
 
   const onGroupIcon3Click = useCallback(() => {
     // Toggle between original position (0 degrees) and top position (180 degrees)
@@ -31,16 +30,24 @@ const Appinment_overview2 = () => {
     <div>
       {/* ... your other components ... */}
 
+      {/* NAV */}
+      <Nav />
+      {/* NAV */}
+
+      {/* sidebar */}
+      <Sidebar />
+      {/* sidebar */}
+
       <img
         className="absolute h-[3.11%] w-[2.65%] top-[13.3%] right-[2.65%] bottom-[83.59%] left-[94.71%] max-w-full overflow-hidden max-h-full object-cover"
         alt="date_img"
         src={date}
       />
-      <section
+      <div
         className="absolute top-[317px] left-[486px] w-[948px] h-[532px] text-left text-5xl text-gray font-sans"
         id="doctor_info"
       >
-        <div className="absolute top-[28px] left-[188px] rounded-xl bg-whitesmoke box-border w-[395px] h-[103px] border-[1px] border-solid border-indianred" />
+        <div className="absolute top-[28px] left-[188px] rounded-xl bg-whitesmoke  w-[395px] h-[103px] border border-solid border-red-color" />
         <img
           className="absolute h-[36.09%] w-[20.25%] top-[-2.07%] right-[81.96%] bottom-[65.98%] left-[-2.22%] rounded-[60px] max-w-full overflow-hidden max-h-full object-cover"
           alt="doctor_img"
@@ -99,57 +106,65 @@ const Appinment_overview2 = () => {
             id="contact"
           >{`You can contact your nutritionist `}</p>
           <p
-            className="m-0 absolute top-[0px] left-[calc(50%_-_199.5px)] text-5xl leading-[156.23%] font-semibold"
+            className="m-0 absolute top-[0px] left-[calc(50%_-_199.5px)] text-5xl text-black leading-[156.23%] font-semibold"
             id="doctor_name"
           >
             Dr Tony Chopper
           </p>
-          <div className="absolute top-[406px] left-[0px] w-[34px] h-[65px]">
-            <p
-              className="m-0 absolute top-[38px] left-[0px] leading-[156.23%] font-sans font-semibold text-black inline-block w-[34px] h-[27px]"
-              id="call"
-            >
-              Call
-            </p>
-            <img
-              className="absolute h-[18.46%] w-[88.24%] top-[0%] right-[5.88%] bottom-[81.54%] left-[5.88%] max-w-full overflow-hidden max-h-full object-cover"
-              alt="call_img"
-              src={call}
-            />
-          </div>
-          <div className="absolute top-[400px] left-[358px] w-[89px] h-[71px]">
-            <div className="absolute top-[44px] left-[0px] w-[89px] h-[27px]">
+          <Link to="/call///">
+            <div className="absolute top-[406px] left-[0px] w-[34px] h-[65px]">
               <p
-                className="m-0 absolute top-[0px] left-[0px] leading-[156.23%] font-sans font-semibold text-black inline-block w-[89px] h-[27px]"
-                id="video_call"
+                className="m-0 absolute top-[38px] left-[0px] leading-[156.23%] font-sans font-semibold text-black inline-block w-[34px] h-[27px]"
+                id="call"
               >
-                Video call
+                Call
               </p>
+              <img
+                className="absolute h-[18.46%] w-[88.24%] top-[0%] right-[5.88%] bottom-[81.54%] left-[5.88%] max-w-full overflow-hidden max-h-full object-cover"
+                alt="call_img"
+                src={call}
+              />
             </div>
-            <img
-              className="absolute h-[34.65%] w-[34.38%] top-[-0.42%] right-[32.25%] bottom-[65.77%] left-[33.37%] max-w-full overflow-hidden max-h-full object-cover"
-              alt="video_img"
-              src={videocall}
-            />
-          </div>
-          <div className="absolute top-[399px] left-[174px] w-11 h-[72px]">
-            <p
-              className="m-0 absolute top-[45px] left-[0px] leading-[156.23%] font-sans text-black font-semibold inline-block w-11 h-[27px]"
-              id="chat"
-            >
-              Chat
-            </p>
-            <img
-              className="absolute h-[36.11%] w-[68.18%] top-[0%] right-[15.91%] bottom-[63.89%] left-[15.91%] max-w-full overflow-hidden max-h-full object-cover"
-              alt="chat_img"
-              src={chat}
-            />
-          </div>
+          </Link>
+
+          <Link to ="/videocall">
+            <div className="absolute top-[400px] left-[358px] w-[89px] h-[71px]">
+              <div className="absolute top-[44px] left-[0px] w-[89px] h-[27px]">
+                <p
+                  className="m-0 absolute top-[0px] left-[0px] leading-[156.23%] font-sans font-semibold text-black inline-block w-[89px] h-[27px]"
+                  id="video_call"
+                >
+                  Video call
+                </p>
+              </div>
+              <img
+                className="absolute h-[34.65%] w-[34.38%] top-[-0.42%] right-[32.25%] bottom-[65.77%] left-[33.37%] max-w-full overflow-hidden max-h-full object-cover"
+                alt="video_img"
+                src={videocall}
+              />
+            </div>
+          </Link>
+
+          <Link to="/chat">
+            <div className="absolute top-[399px] left-[174px] w-11 h-[72px]">
+              <p
+                className="m-0 absolute top-[45px] left-[0px] leading-[156.23%] font-sans text-black font-semibold inline-block w-11 h-[27px]"
+                id="chat"
+              >
+                Chat
+              </p>
+              <img
+                className="absolute h-[36.11%] w-[68.18%] top-[0%] right-[15.91%] bottom-[63.89%] left-[15.91%] max-w-full overflow-hidden max-h-full object-cover"
+                alt="chat_img"
+                src={chat}
+              />
+            </div>
+          </Link>
         </div>
-      </section>
+      </div>
 
       <p
-        className="m-0 absolute top-[170px] left-[512px] leading-[120%] font-semibold"
+        className="m-0 absolute top-[170px] left-[512px] leading-[120%] text-17xl text-dark-green-color font-semibold"
         id="doctor_name"
       >
         Dr. Tony Chopper
@@ -158,7 +173,7 @@ const Appinment_overview2 = () => {
         className="absolute top-[176.5px] left-[433.88px] w-[15.62px] h-[27px] object-cover cursor-pointer"
         alt="previous"
         src={previous}
-        onClick={onVectorIcon3Click}
+        // onClick={onVectorIcon3Click}
       />
       <p
         className="m-0 absolute top-[224px] left-[512px] text-5xl leading-[120%] text-grey-color"
@@ -179,8 +194,8 @@ const Appinment_overview2 = () => {
       {showDetails && (
         <div className="absolute top-[459px]  left-[675px] w-[672px] h-[414px] ">
           {/* Your existing details content */}
-          <section
-            className="absolute top-[-1px] left-[-1px] rounded-xl bg-snow box-border  w-[674px] h-[416px] border-[1px] border-solid border-b "
+          <div
+            className="absolute top-[-1px] left-[-1px] rounded-xl bg-snow  w-[674px] h-[416px] border border-solid border-red-color "
             id="about_doctor"
           />
           <p

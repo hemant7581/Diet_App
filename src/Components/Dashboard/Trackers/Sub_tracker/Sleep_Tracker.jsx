@@ -6,7 +6,7 @@ const Water_Tracker = () => {
     <>
     {/* main */}
     <section className="absolute shadow-DashShadow bg-Lightpurple left-[1004px] top-[773px] font-sans h-[356px] w-[428px] rounded-[18px] overflow-hidden">
-    <h2 className='absolute  text-purple left-[103px] top-[18px] font-sans text-13xl leading-7 font-semibold'>Sleep_Tracker</h2>
+    <h2 className='absolute  text-purple left-[103px] top-[18px] font-sans text-13xl leading-7 font-semibold'>Sleep Tracker</h2>
     <p className='absolute left-[137px] text-purple top-[89px] text-5xl font-sans font-normal leading-7 '>Slept : 5h22m</p>
 
 {/* svg chart sleep */}

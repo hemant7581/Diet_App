@@ -41,9 +41,9 @@ import Appointment_track from "./Components/Appointment/Appointment_track";
 import LandingPage from "./Screens/LandingPage";
 // import Recipe_list from "./Components/Recipe/Recipe_list";
 import Recipe_step from "./Components/Recipe/Recipe_step";
-import Order from "./Components/MyOrder/Order";
+
 import ProPic from "./Components/ProPic/ProPic";
-import MyOrder from "./Components/MyOrder/MyOrder";
+import Recipes from "./Components/Recipe/Recipes"
 import OrderOverview from "./Components/MyOrder/OrderOverview";
 import OrderOverview2 from "./Components/MyOrder/OrderOverview2";
 // import OrderTracker from "./Components/MyOrder/OrderTracker";
@@ -75,14 +75,28 @@ import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
 import Terms_of_service from "./Screens/Terms_of_service";
 // import WhoWeAre from "./Screens/WhoWeAre";
 import FAQ from "./Components/FAQ/FAQs"
+import Signup from "./Components/Account/Signup"
 import MealPlans from "./Components/MealPlans/MealPlans"
-import Workout from "./Components/Workouts/Workout";
+import Home_Workout from "./Components/Workouts/Home_workout";
 import Workoutss from "./Components/Workouts/Workoutss";
 import Workout_fullbody from "./Components/Workouts/Workout_fullbody";
 import Personal_Info from "./Components/Personal_Info/Personal_Info";
 import Courses from "./Components/Courses/Courses";
 import TBW from "./Components/TBW/TBW";
 import Accordion from "./Components/ProPic/Accordion";
+import VideoCall from "./Components/Appointment/VideoCall";
+import MyOrder from "./Components/MyOrder/MyOrder";
+import Login from "./Components/Account/Login";
+
+import ConsultationForm from "./Components/Consultation/ConsultationForm";
+import Consultation from "./Components/Consultation/Consulatation";
+import Workout_fullbody_Pause from "./Components/Workouts/Workout_fullbody_Pause"
+import Workout from "./Components/Workouts/Workout";
+import Workout_Done from "./Components/Workouts/Workout_Done";
+import FullBodyWorkoutStart from "./Components/Workouts/FullBodyWorkoutStart";
+import Recipe_list from "./Components/Recipe/Recipe_list";
+import Grocery_list from "./Components/Recipe/Grocery_list";
+import MajorRecipe from "./Components/Recipe/MajorRecipe";
 
 
 
@@ -94,9 +108,14 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" Component={LandingPage} />
-          <Route path="/MyAccount" Component={PersonalDetails2} />
+          <Route path="/MyAccount" Component={Login} />
+          <Route path="/SignUp" Component={Signup} />
+          <Route path="/Login" Component={Login} />
+          <Route path="/Recipes" Component={Recipes}/>
+          <Route path="/Recipes2" Component={MajorRecipe}/>
+          <Route path="/Grocerylist" Component={Grocery_list}/>
           <Route path="/Store" Component={Store} />
-          <Route path="/OurService" Component={WaterTracker} />
+          {/* <Route path="/OurService" Component={} /> */}
           <Route path="/StartYourJourney" Component={Videocall} />
           <Route path="/WhoWeAre" Component={WhoWeAre} />
           <Route path="/MyAppointment" Component={Appointment_track} />
@@ -104,17 +123,32 @@ const App = () => {
           <Route path="/stepTracker2" Component={stepsTracker2} />
           <Route path="/overview" Component={ProfileOverview} />
           <Route path="/Foodlog" Component={Foodlog} />
-          <Route path="/MealPlan" Component={Meal} />
+          <Route path="/MealPlan" Component={MyMealPlan} />
+          <Route path="/MealPlan2" Component={Meal} />
           <Route path="/Store" Component={Store} />
           <Route path="/TermsOfUse" Component={Terms_of_service} />
           <Route path="/FAQ" Component={FAQ} />
           <Route path="/MealPlans" Component={Ques} />
           <Route path="/Workouts" Component={Workoutss} />
-          <Route path="/fullbody" Component={Workout_fullbody} />
+          <Route path="/fullbody" Component={Home_Workout} />
           <Route path="/ProPic" Component={ProPic} />
-          <Route path="/ProfilePic_edit" Component={Courses} />
+          <Route path="/ProfilePic_edit" Component={ProfilePicture} />
+          <Route path="/MyApppointment" Component={Appointment_overview2} />
+          <Route path="/videoCall" Component={VideoCall} />
+         <Route path="/Order" Component={MyOrder}/>
+          <Route path="/OrderOverview" Component={OrderOverview2} />
+          <Route path="/Trackers" Component={Tracker}/>
           <Route path="/changePass" Component={SentCode} />
-          <Route path="/changePassword" Component={ChangePassword} />
+          <Route path="/WaterTracker" Component={WaterTracker} />
+          <Route path="/StepsTracker" Component={StepsTracker} />
+          <Route path="/MedicineTracker" Component={MedicineTracker} />
+          <Route path="/SleepTracker" Component={SleepTracker} />
+          <Route path="/Consultation" Component={Consultation}/>
+          <Route path="/ConsultationForm" Component={ConsultationForm}/>
+          <Route path="/WorkoutFullbody" Component={FullBodyWorkoutStart}/>
+          <Route path="/Workout_Fullbody2" Component={Workout_Done}/>
+          {/* <Route path="/changePassword" Component={ChangePassword} /> */}
+          <Route path="/changePassword" Component={PersonalDetails2} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

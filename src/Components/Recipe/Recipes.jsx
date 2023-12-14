@@ -11,8 +11,8 @@ import Avacado_toast from "../../asset/Avacado_toast.png";
 import saved from "../../asset/saved.png";
 import grocery_icon from "../../asset/grocery_icon.png";
 import Footer from "../Footer/Footer";
-
 import Nav from "../Top_Nav/Nav";
+import { Link } from "react-router-dom";
 const Recipes = () => {
   return (
     <div className="relative bg-whitesmoke w-[1512px] h-[3228px] overflow-hidden text-left text-5xl text-green-700 leading-[37.49px] font-semibold  font-sans xl:w-full">
@@ -70,18 +70,20 @@ const Recipes = () => {
           id="Saved_vector"
           src={unsaved}
         />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="chicken tikka masala"
-          id="chiken_tikka"
-          src={Chicken_tikka}
-        />
-        <p
-          className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
-          id="Recipe_Name"
-        >
-          Chicken tikka masala
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="chicken tikka masala"
+            id="chiken_tikka"
+            src={Chicken_tikka}
+          />
+          <p
+            className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
+            id="Recipe_Name"
+          >
+            Chicken tikka masala
+          </p>
+        </Link>
         <div className="absolute top-[295px] left-[28px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-base-red-color" />
         <p
           className="m-0 absolute top-[307px] left-[55px] tracking-[0.03em] leading-[120.23%] font-semibold text-base-red-color"
@@ -120,11 +122,11 @@ const Recipes = () => {
         Most Loved Recipes
       </h1> */}
 
-<h1
+      <h1
         className="m-0 absolute top-[1366px] left-[calc(50%_-_218px)] text-[46px] text-black leading-[156.23%] font-semibold font-inherit"
         id="popular-recipe"
       >
-      Most Loved Recipes
+        Most Loved Recipes
       </h1>
 
       {/* img */}

@@ -6,7 +6,7 @@ import doctor from '../../asset/doctor.gif'
 import endcall from '../../asset/endcall.png'
 import chat from '../../asset/chat.png'
 import voice_1 from '../../asset/voice_1.png'
-import videoOff from '../../asset/videoOff.png'
+import videoOff from '../../asset/VideoOff.png'
 
 const Videocall = () => {
   const onGroupContainerClick = useCallback(() => {

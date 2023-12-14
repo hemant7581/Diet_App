@@ -73,13 +73,13 @@ const Appointment_track = () => {
         </div>
         <div className="absolute h-[11.64%] w-[17.05%] top-[75.79%] right-[57.59%] bottom-[12.58%] left-[27%]">
           <p
-            className="m-0 absolute w-[78.43%] top-[0%] left-[21.57%] leading-[156.23%] inline-block  text-zinc-900"
+            className="m-0 absolute w-[78.43%] top-[0%] left-[22.57%] leading-[156.23%] inline-block  text-black"
             id="date"
           >
             09/07/2023
           </p>
           <img
-            className="absolute h-[59.41%] w-[13.48%] top-[18.92%] right-[86.52%] bottom-[21.67%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+            className="absolute h-[59.41%] w-[13.48%] top-[18.92%] right-[87.52%] bottom-[21.67%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
             alt="date_img"
             src={date}
           />

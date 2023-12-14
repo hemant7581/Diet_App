@@ -3,9 +3,11 @@ import React ,{useState} from 'react'
 import Date from "../../asset/Date.png"
 import img_3 from "../../asset/img_3.png"
 import rating from "../../asset/rating.png"
+import { Link } from 'react-router-dom'
+
 
 const Order = () => {
-    const [isChecked, setIsChecked] = useState(true);
+    const [isChecked, setIsChecked] = useState(false);
 
   return (
    <>
@@ -27,6 +29,7 @@ const Order = () => {
 
        {/* input_radio btn for confirm */}
        <section>
+      <Link to="/OrderOverview">
        <input
             className="cursor-pointer absolute h-[21px] w-[21px] left-[732px] top-[248px] accent-dark-green-color"
             required={true}
@@ -34,7 +37,7 @@ const Order = () => {
             id="confirm_radio"
             type="radio"
             onClick={() => setIsChecked(!isChecked)}
-          />
+          /></Link>
           <p className='absolute text-black font-inherit left-[767px] font-5xl font-normal top-[241px] leading-[30px]'>Confirmed</p>
        {/* input_radio btn for confirm */}
        </section>

@@ -142,7 +142,7 @@ const Signup = () => {
         onClick={onAlreadyHaveAnClick}
       >
         <span className="text-gray">{`Already have an account? `}</span>
-        <span className="text-dark-green-color">Log In</span>
+    <Link to="/Login"><span className="text-dark-green-color">Log In</span></Link> 
       </a>
 {/* create acc prob */}
       <h1 className="absolute top-[50px] font-sans left-[936px] text-[40px] leading-[174.53%] font-semibold  text-gray text-center inline-block w-[396px]">

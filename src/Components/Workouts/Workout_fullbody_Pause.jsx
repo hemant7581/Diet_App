@@ -7,6 +7,7 @@ import pause from "../../asset/play.png"
 import Next_arrow from "../../asset/Next_arrow.png"
 import high_stepping from "../../asset/high_stepping.gif"
 import Nav from "../../Components/Top_Nav/Nav"
+import { Link } from "react-router-dom"
 
 const Workout_fullbody = () => {
 //   const onGroupContainer4Click = useCallback(() => {

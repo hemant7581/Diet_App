@@ -26,7 +26,7 @@ const ChangePassword = () => {
   return (
     <div className="absolute w-[1512px] overflow-hidden  h-[1286px] font-sans xl:w-full">
       <Nav/>
-      <Sidebar/>
+       <Sidebar/>
 <PersonalHeader/>
 
       {/* Personal details section */}

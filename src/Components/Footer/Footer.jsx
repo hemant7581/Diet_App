@@ -1,3 +1,4 @@
+
 // import vector-61 from "../../asset/vector-61.svg"
 import Logo from "../../asset/Logo.png";
 import Footer_img from "../../asset/Footer_img.png";
@@ -9,7 +10,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="absolute top-[4668px] left-[0px] w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main">
+      <div className="absolute top-[8858px]  w-[1512px] h-[400px] text-xl text-dark-green-color font-body-main xl:w-full">
         <div className="absolute top-[0px] left-[0px] bg-whitesmoke shadow-[0px_-3px_11px_1px_rgba(231,_231,_231,_0.59)] w-[1512px] h-[400px]" />
         <div className="absolute top-[0px] left-[756px] bg-beige w-[756px] h-[400px]" />
         <div className="absolute top-[82px] left-[82px] w-[205px] h-[184px] text-center text-[37px] text-text-black-color font-roboto-flex">

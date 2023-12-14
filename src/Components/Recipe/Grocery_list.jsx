@@ -4,7 +4,7 @@ import rating from "../../asset/rating.png";
 import saved from "../../asset/saved.png";
 import unsaved from "../../asset/unsaved.png";
 import previous_page from "../../asset/previous_page.png";
-import Nav from "../../Components/Top_Nav/Nav";
+import Nav from "../Top_Nav/Nav";
 
 const Grocery_list = () => {
   //   const onGroupContainerClick = useCallback(() => {
@@ -20,9 +20,9 @@ const Grocery_list = () => {
   //   }, []);
 
   return (
-    <div className="relative bg-whitesmoke w-full h-[2687px] overflow-hidden text-left text-5xl text-text-dark-grey-color font-sans">
+    <div className="relative bg-whitesmoke w-[1512px] h-[2687px] overflow-hidden text-left text-5xl text-text-dark-grey-color font-sans xl:w-full">
       <section
-        className="absolute top-[392px] left-[100px] w-[1352px] h-[360px] text-left text-[40px] text-gray font-open-sans"
+        className="absolute top-[392px] left-[100px] w-[1352px] h-[360px] text-left text-[40px] text-gray font-sans"
         id="food_Nutritional_information"
       >
         <img
@@ -55,7 +55,7 @@ const Grocery_list = () => {
         Grocery list
       </h1>
       <header
-        className="absolute top-[0px] left-[0px] shadow-[0px_2px_8px_rgba(0,_0,_0,_0.07)] w-[1512px] h-32 text-left text-5xl text-dark-green-color font-open-sans"
+        className="absolute top-[0px] left-[0px] shadow-[0px_2px_8px_rgba(0,_0,_0,_0.07)] w-[1512px] h-32 text-left text-5xl text-dark-green-color font-sans"
         id="top_nav"
       >
         <Nav />
@@ -67,7 +67,7 @@ const Grocery_list = () => {
       />
       <div className="absolute top-[872px] left-[calc(50%_-_489px)] w-[978px] h-[1453px] text-center text-13xl text-black font-sans">
         <section
-          className="absolute top-[0px] left-[calc(50%_-_489px)] rounded-xl bg-whitesmoke shadow-[0px_0px_30px_rgba(0,_0,_0,_0.39)] box-border w-[978px] h-[1453px] border-[1px] border-solid border-base-red-color"
+          className="absolute top-[0px] left-[calc(50%_-_489px)] rounded-xl bg-whitesmoke shadow-[0px_0px_30px_rgba(0,_0,_0,_0.39)] box-border w-[978px] h-[1453px] border border-solid border-red-color"
           id="Ingredients_list"
         />
         <h3
@@ -98,7 +98,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             // checked={true}
             id="chicken_check"
@@ -121,7 +121,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px]  border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             // checked={true}
             id="ginger_check"
@@ -144,7 +144,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px]  border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             // checked={true}
             id="garlic_check"
@@ -167,7 +167,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px]  border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             // checked={true}
             id="onion_check"
@@ -190,7 +190,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]  border-dark-green-color border-2 accent-dark-green-color"
             required={true}
             id="yogurt_check"
             type="checkbox"
@@ -212,7 +212,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]  border-dark-green-color border-2 accent-dark-green-color"
             required={true}
             id="coriander_check"
             type="checkbox"
@@ -234,7 +234,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]  border-dark-green-color border-2 accent-dark-green-color"
             required={true}
             id="Lime_check"
             type="checkbox"
@@ -256,7 +256,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]  border-dark-green-color border-2 accent-dark-green-color"
             required={true}
             id="Turmeric_check"
             type="checkbox"
@@ -278,7 +278,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="garam_check"
             type="checkbox"
@@ -300,7 +300,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="Red_chilli_check"
             type="checkbox"
@@ -322,7 +322,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="fenugreek_check"
             type="checkbox"
@@ -344,7 +344,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="coriander_check"
             type="checkbox"
@@ -366,7 +366,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="cumin_check"
             type="checkbox"
@@ -388,7 +388,7 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px] border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="Rapeseed_oil"
             type="checkbox"
@@ -410,17 +410,17 @@ const Grocery_list = () => {
             </p>
           </div>
           <input
-            className="absolute top-[4px] left-[819px] w-[30px] h-[30px]"
+            className="absolute top-[4px]  border-dark-green-color border-2 accent-dark-green-color left-[819px] w-[30px] h-[30px]"
             required={true}
             id="Tomatoes_check"
             type="checkbox"
           />
         </div>
       </div>
-      <div className="absolute top-[2465px] left-[calc(50%_-_104px)] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center py-7 px-[73px] border-[1px] border-solid border-palegoldenrod">
+      <div className="absolute top-[2465px] left-[calc(50%_-_104px)] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center py-7 px-[73px] border border-solid border-stroke-green-color">
         <button
-          className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-5xl leading-[120%] font-semibold font-open-sans text-dark-green-color text-left inline-block"
-          autoFocus={true}
+          className="cursor-pointer  outline-none p-0 bg-transparent  text-5xl leading-[120%] font-semibold font-sans text-dark-green-color text-left inline-block"
+          // autoFocus={true}
           id="Done"
         >
           Done
@@ -433,18 +433,14 @@ const Grocery_list = () => {
         src={previous_page}
         // onClick={onGroupIconClick}
       />
-      <div className="absolute top-[561px] left-[812px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-base-red-color" />
-      <div className="absolute top-[635px] left-[812px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-darkorange" />
-      <div className="absolute top-[635px] left-[984px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-cornflowerblue" />
-      <div className="absolute top-[635px] left-[1156px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-orchid" />
       <p
-        className="m-0 absolute top-[573px] left-[839px] tracking-[0.03em] leading-[120.23%] font-semibold text-base-red-color"
+        className="m-0 absolute top-[573px] left-[812px] tracking-[0.03em] border-2 rounded border-solid border-red-color px-[25px] py-[10px] leading-[120.23%] font-semibold text-red-color"
         id="total_food_calorie"
       >
         396 kcal
       </p>
       <p
-        className="m-0 absolute top-[647px] left-[864px] tracking-[0.03em] leading-[120.23%] font-semibold text-darkorange"
+        className="m-0 absolute top-[647px] left-[812px] tracking-[0.03em] leading-[120.23%] border-2 rounded border-solid border-amber-600 px-[50px] py-[10px] font-semibold text-amber-600"
         id="Total_Fats"
       >
         10 g
@@ -462,19 +458,19 @@ const Grocery_list = () => {
         Carbs
       </p>
       <p
-        className="m-0 absolute top-[700px] left-[1182px] tracking-[0.03em] leading-[120.23%] font-semibold"
+        className="m-0 absolute top-[700px] left-[1190px] tracking-[0.03em] leading-[120.23%] font-semibold"
         id="Proteins"
       >
         Proteins
       </p>
       <p
-        className="m-0 absolute top-[647px] left-[1036px] tracking-[0.03em] leading-[120.23%] font-semibold text-cornflowerblue"
+        className="m-0 absolute top-[647px] left-[984px] border-2 border-solid border-blue px-[50px] py-[10px] rounded tracking-[0.03em] leading-[120.23%] font-semibold text-blue"
         id="Total_Carbs"
       >
         33 g
       </p>
       <p
-        className="m-0 absolute top-[647px] left-[1208px] tracking-[0.03em] leading-[120.23%] font-semibold text-orchid"
+        className="m-0 absolute top-[647px] left-[1160px] border-2 border-solid border-[#D170CD] px-[49px] py-[10px] text-[#D170CD] rounded tracking-[0.03em] leading-[120.23%] font-semibold text-orchid"
         id="Total_Protein"
       >
         45 g
@@ -484,3 +480,35 @@ const Grocery_list = () => {
 };
 
 export default Grocery_list;
+
+// import React, { useState } from 'react';
+
+// const RadioColumn = () => {
+//   const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5', 'Option 6', 'Option 7', 'option 8' ,'Option 9', 'Option 10', 'Option 11', 'Option 12, option 13','Option 12, option 13'];
+//   const [selectedOption, setSelectedOption] = useState('');
+
+//   const handleRadioChange = (value) => {
+//     setSelectedOption(value);
+//   };
+
+//   return (
+//     <div className="flex flex-col">
+//       {options.map((option, index) => (
+//         <label key={index} className="flex items-center space-x-2">
+//           <input
+//             type="radio"
+//             value={option}
+//             checked={selectedOption === option}
+//             onChange={() => handleRadioChange(option)}
+//             className="form-radio text-blue-500"
+//           />
+//           <span>{option}</span>
+//         </label>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default RadioColumn;
+
+

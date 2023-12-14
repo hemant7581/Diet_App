@@ -75,7 +75,7 @@ const OrderOverview = () => {
         </section>
         <section className="absolute border border-red-color rounded-xl w-[852px] h-[72px] left-[458px] top-[675px] bg-whitesmoke" >
           {/* track order */}
-          <p className="absolute text-black font-inherit text-13xl font-semibold leading-[49px]  left-3 top-[11px]">
+          <p className="absolute text-black font-inherit [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))]  text-13xl font-semibold leading-[49px]  left-3 top-[11px]">
             Track Order
           </p>
           <img

@@ -3,6 +3,8 @@ import Logo from "../../asset/Logo.png"
 import Lines from "../../asset/Lines.png"
 import Google_logo from "../../asset/Google_logo.png"
 import Subtract from "../../asset/Subtract.png"
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
   const onGroupContainer3Click = useCallback(() => {
@@ -81,12 +83,13 @@ const Login = () => {
         >
           Password
         </p>
-        <a
+        <Link to="/ChangePassword">
+        <p
           className="[text-decoration:none] absolute top-[110px] left-[0px] text-base leading-[174.53%] font-sans font-semibold text-dark-green-color text-left"
           id="forgotpass"
         >
           Forgot password?
-        </a>
+        </p></Link>
         <input
           className="bg-whitesmoke absolute placeholder:pl-3  pl-3 font-sans top-[41px] left-[-1px] rounded-lg box-border w-[488px] h-[62px] border-[1px] border-solid border-grey-color"
           name="password"
@@ -122,7 +125,7 @@ const Login = () => {
         onClick={onDontHaveAnClick}
       >
         <span className="text-gray font-sans">{`Don’t have an account? `}</span>
-        <span className="text-dark-green-color font-sans">Sign Up</span>
+   <Link to="/SignUp"><span className="text-dark-green-color font-sans">Sign Up</span></Link> 
       </a>
     </form>
   );

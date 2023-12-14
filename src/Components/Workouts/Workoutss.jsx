@@ -352,7 +352,7 @@ const Workoutss = () => {
             alt=""
             src={time}
           />
-      <Footer/>
+        <Footer/>
         </div>
       </div>
     </div>

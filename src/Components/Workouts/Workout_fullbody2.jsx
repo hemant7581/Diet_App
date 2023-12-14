@@ -6,7 +6,7 @@ import time from "../../asset/time.png"
 import timer_display from "../../asset/timer_display.png"
 import pause from "../../asset/pause.png"
 import Next_arrow from "../../asset/Next_arrow.png"
-import high_stepping from "../../asset/high_stepping.gif"
+import jumping_jacks from "../../asset/jumping_jacks.gif";
 import Nav from "../../Components/Top_Nav/Nav"
 import { Link } from "react-router-dom";
 
@@ -115,7 +115,7 @@ const Workout_fullbody = () => {
       <img
         className="absolute top-[1075px] left-[calc(50%_-_230px)] w-[460px] h-[415px] object-cover"
         alt="exercise_high_stepping"
-        src={high_stepping}
+        src={jumping_jacks}
       />
       <p
         className="m-0 absolute top-[1794px] left-[calc(50%_-_73px)] leading-[156.23%] text-darkslategray"
@@ -134,11 +134,12 @@ const Workout_fullbody = () => {
         >
           Next
         </p>
+        <Link to="/Workout_Fullbody2">
         <img
           className="absolute top-[12.5px] left-[116.5px] w-[27px] h-[31px] object-cover"
           alt="next_exercise_arrow"
           src={Next_arrow}
-        />
+        /></Link>
       </section>
       <img
         className="absolute top-[1629.5px] left-[737.5px] w-[37px] h-[49px] object-cover cursor-pointer"

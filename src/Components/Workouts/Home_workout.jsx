@@ -1,9 +1,11 @@
 import Full_body from "../../asset/Full_body.png";
 import Search from "../../asset/Search.png";
+import { Line} from 'rc-progress';
 import time from "../../asset/time.png";
 import high_stepping from "../../asset/high_stepping.gif";
 import jumping_jacks from "../../asset/jumping_jacks.gif";
 import jump_squats from "../../asset/jump_squats.gif";
+import { Link } from "react-router-dom"
 import progress_bar from "../../asset/progress_bar.png";
 // import Nav from "../Top_Nav/Nav";
 
@@ -128,11 +130,13 @@ const Home_workout = () => {
         >
           Progress
         </p>
-        <img
+        {/* <img
           className="absolute top-[8px] left-[93px] w-[157px] h-4 object-cover"
           alt="progress_bar"
           src={progress_bar}
-        />
+        /> */}
+
+<Line percent={10} strokeWidth={7} strokeColor="#F9AEAE" trailColor="#FFEBEB" trailWidth={8} className="absolute top-[10px] w-[157px] h-[16px] left-[93px]" />
       </div>
       <img
         className="absolute top-[1291px] left-[calc(50%_-_229px)] w-[460px] h-[304px] object-cover"
@@ -159,14 +163,14 @@ const Home_workout = () => {
         alt=""
         src="/vector-190.svg"
       /> */}
-      <button
-        className="cursor-pointer py-7 px-[73px] bg-[transparent] absolute top-[917px] left-[156px] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center border-[1px] border-solid border-palegoldenrod"
+      <div
+        className="cursor-pointer   bg-[transparent] absolute top-[917px] left-[156px] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center "
         id="start"
       >
-        <div className="relative text-5xl leading-[120%] font-semibold font-open-sans text-dark-green-color text-left">
+       <Link to="/WorkoutFullbody"> <button className="py-7 px-[73px] text-5xl leading-[120%] font-semibold font-sans text-dark-green-color text-left">
           Start
-        </div>
-      </button>
+        </button></Link>
+      </div>
     </div>
   );
 };

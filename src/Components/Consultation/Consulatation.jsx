@@ -1,6 +1,7 @@
 import { useCallback } from "react";
+import { Link } from "react-router-dom";
 
-const CONSULTATION = () => {
+const Consultation = () => {
   const onGroupContainer3Click = useCallback(() => {
     // Please sync "LANDING" to the project
   }, []);
@@ -43,9 +44,9 @@ const CONSULTATION = () => {
             <b className="absolute top-[0px] left-[0px] text-13xl leading-[156.23%] inline-block w-[727px]">{`Book a consultation to get expert advice tailored to your unique needs. `}</b>
           </div>
           <div className="absolute top-[252px] left-[0px] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] box-border w-[282px] h-[98px] overflow-hidden flex flex-row items-center justify-center py-7 px-[73px] text-5xl text-dark-green-color border-[1px] border-solid border-palegoldenrod">
-            <div className="relative leading-[120%] font-semibold">
+    <Link to="/ConsulationForm"><p className=" leading-[120%] font-semibold">
               Book Appointment
-            </div>
+            </p></Link> 
           </div>
         </div>
       </div>
@@ -392,4 +393,4 @@ const CONSULTATION = () => {
   );
 };
 
-export default CONSULTATION;
+export default Consultation;
