@@ -97,6 +97,9 @@ import FullBodyWorkoutStart from "./Components/Workouts/FullBodyWorkoutStart";
 import Recipe_list from "./Components/Recipe/Recipe_list";
 import Grocery_list from "./Components/Recipe/Grocery_list";
 import MajorRecipe from "./Components/Recipe/MajorRecipe";
+import Product_Overview from "./Components/Store/Product_Overview";  
+import Payment_gateway from "./Components/Store/Payment_gateway/payment_gateway";  
+import Payment_done from "./Components/Store/Payment_gateway/Payment_done";
 
 
 
@@ -115,10 +118,14 @@ const App = () => {
           <Route path="/Recipes2" Component={MajorRecipe}/>
           <Route path="/Grocerylist" Component={Grocery_list}/>
           <Route path="/Store" Component={Store} />
+          <Route path="/ProductOverView" Component={Product_Overview} />
+          <Route path="/Payment" Component={Payment_gateway} />
+          <Route path="/Payment_Done" Component={Payment_done} />
           {/* <Route path="/OurService" Component={} /> */}
           <Route path="/StartYourJourney" Component={Videocall} />
           <Route path="/WhoWeAre" Component={WhoWeAre} />
           <Route path="/MyAppointment" Component={Appointment_track} />
+          <Route path="/Snacks" Component={Snacks} />
           <Route path="/ChangePassword" Component={ChangePassword} />
           <Route path="/stepTracker2" Component={stepsTracker2} />
           <Route path="/overview" Component={ProfileOverview} />

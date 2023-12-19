@@ -8,6 +8,7 @@ import Order from "../MyOrder/Order"
 import PersonalDetails2 from '../Pesonal_details/PersonalDetails2'
 import ChangePassword from '../Password/ChangePassword'
 import Accordion from './Accordion'
+import UnitMeasurement from '../UnitMeasurement/UnitMeasurement'
 
 const ProPic = () => {
   return (
@@ -16,7 +17,9 @@ const ProPic = () => {
    <Nav/>
    <Sidebar  />
    <PersonalHeader/>
-   <Accordion/>
+   <ChangePassword/>
+   {/* <UnitMeasurement/> */}
+
 
 </div>
 
@@ -25,6 +28,7 @@ const ProPic = () => {
 }
 
 export default ProPic;
+
 
 
 

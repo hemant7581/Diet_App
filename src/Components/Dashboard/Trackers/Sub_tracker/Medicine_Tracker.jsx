@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Water_Tracker = () => {
+const Medicine_Tracker = () => {
   return (
     <>
     {/* med main */}
@@ -33,4 +33,4 @@ const Water_Tracker = () => {
   )
 }
 
-export default Water_Tracker
+export default Medicine_Tracker

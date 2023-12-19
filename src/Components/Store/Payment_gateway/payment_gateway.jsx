@@ -1,14 +1,15 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
-import Logo from "../../asset/Logo.png";
-import Line from "../../asset/Line.png";
-import White_diamond from "../../asset/White_diamond.png";
-import Outlined_diamond from "../../asset/Outlined_diamond.png";
-import circle from "../../asset/circle.png";
-import upi from "../../asset/upi.png";
-import apple_pay from "../../asset/apple_pay.png";
-import paypal from "../../asset/paypal.png";
-import Debit_cards from "../../asset/Debit_cards.png";
+import Logo from "../../../asset/Logo.png";
+import Line from "../../../asset/Line.png";
+import White_diamond from "../../../asset/White_diamond.png";
+import Outlined_diamond from "../../../asset/Outlined_diamond.png";
+import circle from "../../../asset/circle.png";
+import upi from "../../../asset/upi.png";
+import apple_pay from "../../../asset/apple_pay.png";
+import paypal from "../../../asset/paypal.png";
+import Debit_cards from "../../../asset/Debit_cards.png";
+import { Link } from "react-router-dom";
+
 
 const payment_gateway = () => {
   //   const [paymentMethod, setPaymentMethod] = useState("card");
@@ -257,7 +258,7 @@ const payment_gateway = () => {
         <input
           className="[border:none] bg-[transparent] absolute top-[457px] left-[0px] w-[94px] h-[54px] placeholder:pl-3 rounded-md pl-3"
           placeholder="03 / 23"
-          type="number"
+          type="text"
           value={ExpiryDate}
           onChange={(e) => setExpiryDate(e.target.value)}
           required
@@ -267,7 +268,7 @@ const payment_gateway = () => {
         <input
           className="pl-3 bg-[transparent] absolute top-[457px] left-[228px]  box-border w-[91px] h-[54px] border-[1px] border-solid border-slateblue placeholder:pl-3 rounded-md"
           placeholder="CVV"
-          type="text"
+          type="password"
           value={Cvv}
           onChange={(e) => setCVV(e.target.value)}
           required
@@ -321,13 +322,13 @@ const payment_gateway = () => {
           className="  cursor-pointer bg-[transparent] absolute top-[596px] left-[120px] rounded-[10px] [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] box-border w-44 h-14 overflow-hidden flex flex-row items-center justify-center border-[1px] border-solid border-palegoldenrod"
           // autoFocus={true}
         >
-          <button
+     <Link to="/Payment_Done">     <button
             className="font-sans cursor-pointer [border:none] p-0 bg-[transparent] relative text-5xl leading-[120%] font-semibold  text-dark-green-color text-left inline-block"
             //   autoFocus={true}
             id="Pay_Now"
           >
             Pay Now
-          </button>
+          </button></Link>
         </div>
       </form>
       {/* payment section */}

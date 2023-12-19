@@ -101,7 +101,7 @@ const Accordion = () => {
 
         {/* personal details */}
         {showDetails && (
-          <section className="absolute w-[852px] leading-[48px] h-[454px] left-[515px] top-[773px] border border-strokegreen-color rounded-xl">
+          <section className="absolute w-[852px] leading-[48px] h-auto left-[515px] top-[773px] border border-strokegreen-color rounded-xl">
             {/* 1st */}
             <section>
               <h1 className="absolute left-[18px] top-6 text-[26px] font-inherit font-semibold leading-[40px]">

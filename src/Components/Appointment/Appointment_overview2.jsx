@@ -15,11 +15,14 @@ import { Link } from "react-router-dom";
 const Appinment_overview2 = () => {
   const [isChecked, setIsChecked] = useState(true);
   const [rotation, setRotation] = useState(0);
+  const [accordionHeight, setAccordionHeight] = useState(0);
   const [showDetails, setShowDetails] = useState(false);
 
   const onGroupIcon3Click = useCallback(() => {
     // Toggle between original position (0 degrees) and top position (180 degrees)
     const newRotation = rotation === 0 ? -90 : 0;
+    const newHeight = showDetails ? 0 : 414; // Set the height of your accordion content
+    setAccordionHeight(newHeight);
     setRotation(newRotation);
 
     // Show/hide details based on the rotation
@@ -61,7 +64,7 @@ const Appinment_overview2 = () => {
             Confirmed
           </p>
           <input
-            className="cursor-pointer absolute h-[59.41%] w-[14.27%] top-[18.92%] right-[85.73%] bottom-[21.67%] left-[0%]"
+            className="cursor-pointer absolute h-[59.41%] accent-dark-green-color w-[14.27%] top-[18.92%] right-[85.73%] bottom-[21.67%] left-[0%]"
             required={true}
             checked={isChecked}
             id="confirm_radio"
@@ -111,7 +114,7 @@ const Appinment_overview2 = () => {
           >
             Dr Tony Chopper
           </p>
-          <Link to="/call///">
+          <Link to="/call">
             <div className="absolute top-[406px] left-[0px] w-[34px] h-[65px]">
               <p
                 className="m-0 absolute top-[38px] left-[0px] leading-[156.23%] font-sans font-semibold text-black inline-block w-[34px] h-[27px]"
@@ -187,12 +190,18 @@ const Appinment_overview2 = () => {
         className="absolute top-[382px] left-[1028px] w-[22px] h-[29px] object-cover cursor-pointer"
         alt="next"
         src={Next}
-        style={{ transform: `rotate(${rotation}deg)` }}
+        // style={{ transform: `rotate(${rotation}deg)` }}
+        style={{
+          transform: `rotate(${rotation}deg)`,
+          transition: "transform 0.3s ease-in-out",
+        }}
+
         onClick={onGroupIcon3Click}
       />
 
       {showDetails && (
-        <div className="absolute top-[459px]  left-[675px] w-[672px] h-[414px] ">
+        <div className="absolute top-[459px]  left-[675px] w-[672px] h-[414px] " style={{ height: accordionHeight }}>
+
           {/* Your existing details content */}
           <div
             className="absolute top-[-1px] left-[-1px] rounded-xl bg-snow  w-[674px] h-[416px] border border-solid border-red-color "

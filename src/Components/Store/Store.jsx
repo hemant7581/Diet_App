@@ -1,17 +1,16 @@
 import { useState } from "react";
 import Nav from "../Top_Nav/Nav";
+import Unliked from "../../asset/Unliked.png";
 import Search from "../../asset/search.png";
 import Bag from "../../asset/Bag.png";
 import Liked from "../../asset/Liked.png";
-import Unliked from "../../asset/Unliked.png";
+import star from "../../asset/star.png";
+import img_3 from "../../asset/img_3.png";
 import img_1 from "../../asset/img_1.png";
 import img_2 from "../../asset/img_2.png";
-import img_3 from "../../asset/img_3.png";
-import star from "../../asset/star.png";
 import categoriesData from "./Categories.json";
 import sortData from "./Sort.json";
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 const Store = () => {
   const [isCategoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
@@ -54,7 +53,9 @@ const Store = () => {
       {/* <h1 className="m-0 absolute top-[208px] left-[50%] transform -translate-x-1/2 text-3xl md:text-5xl tracking-wider font-semibold font-inherit text-stroke-green-color">
         Store
       </h1> */}
-      <h1 className="text-center mt-[208px] text-29xl leading-[133%] font-sans text-strokegreen-color tracking-[25.44px]">Store</h1>
+      <h1 className="text-center mt-[208px] text-29xl leading-[133%] font-sans text-strokegreen-color tracking-[25.44px]">
+        Store
+      </h1>
       <div className="absolute top-[356px] left-[calc(50%_-_488px)] w-[976px] h-[78px]">
         <input
           className="placeholder:italic text-black outline-none pl-[100px] placeholder:text-lg bg-whitesmoke absolute top-[-1px] left-[calc(50%_-_489px)] rounded-3xs box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color"
@@ -109,9 +110,7 @@ const Store = () => {
         >
           {sortData.sort.map((sort) => (
             <li key={sort.id} className="text-black">
-             {sort.filter}
-              
-             
+              {sort.filter}
             </li>
           ))}
         </ul>
@@ -132,27 +131,30 @@ const Store = () => {
         >
           {categoriesData.categories.map((category) => (
             <li key={category.id}>
-              <img src={category.Img} className="relative left-[44px] top-[26px]" />  <span className=" relative text-black text-center top-[1px] gap-y-24 left-[100px]">{category.name}</span> 
-              
-             
+              <img
+                src={category.Img}
+                className="relative left-[44px] top-[26px] w-6 h-6 object-fit"
+              />{" "}
+              <span className=" relative text-black text-center top-[1px] gap-y-24 left-[100px]">
+                {category.name}
+              </span>
             </li>
           ))}
         </ul>
       )}
 
-
-
-
       <div className="absolute top-[623px] left-[556px] w-[400px] h-[545px]">
         <section
           className="absolute top-[0px] left-[0px] rounded-md bg-whitesmoke shadow-[0px_0px_10px_rgba(0,0,0,0.1)] w-[400px] h-[545px]"
           id="card2"
-        /><Link to="/ProdctOverView">
-        <img
-          className="absolute top-[0px] left-[0px] rounded-md w-[400px] h-[382px] object-cover"
-          alt="img_1"
-          src={img_1}
-        /></Link>
+        />
+        <Link to="/ProdctOverView">
+          <img
+            className="absolute top-[0px] left-[0px] rounded-md w-[400px] h-[382px] object-cover"
+            alt="img_1"
+            src={img_1}
+          />
+        </Link>
       </div>
       <div className="absolute top-[623px] left-[1012px] w-[400px] h-[545px]">
         <section
@@ -181,15 +183,16 @@ const Store = () => {
           />
         </div>
         <div className="absolute top-[406px] left-[calc(50%_-_182px)] w-[364px] h-[88px]">
-        <Link to="/ProdctOverView">
+          <Link to="/ProductOverView">
+            <p
+              className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] text-black leading-[156.23%] cursor-pointer"
+              id="product_name"
+            >
+              Muscle Blaze - Snack Bars
+            </p>
+          </Link>
           <p
-            className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%] cursor-pointer"
-            id="product_name"
-          >
-            Muscle Blaze - Snack Bars
-          </p></Link>
-          <p
-            className="m-0 absolute top-[51px] left-[calc(50%_-_182px)] leading-[156.23%] font-semibold"
+            className="m-0 absolute text-black top-[51px] left-[calc(50%_-_182px)] leading-[156.23%] font-semibold"
             id="price"
           >
             Rs. 399.00
@@ -198,19 +201,19 @@ const Store = () => {
             className="absolute h-[33.52%] w-[8.65%] top-[4.83%] right-[-0.21%] bottom-[61.65%] left-[91.55%] max-w-full overflow-hidden max-h-full object-cover"
             alt="Liked"
             src={likedProducts.product1 ? Liked : Unliked}
-          onClick={() => handleLikeToggle("product1")}
+            onClick={() => handleLikeToggle("product1")}
           />
         </div>
       </div>
       <div className="absolute top-[1029px] left-[calc(50%_-_182px)] w-[364px] h-[88px]">
         <p
-          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%] cursor-pointer"
+          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] text-black leading-[156.23%] cursor-pointer"
           id="product_titlt2"
         >
           Yogabar- Energy Bars
         </p>
         <p
-          className="m-0 absolute top-[51px] left-[calc(50%_-_182px)] leading-[156.23%] font-semibold"
+          className="m-0 absolute text-black top-[51px] left-[calc(50%_-_182px)] leading-[156.23%] font-semibold"
           id="price"
         >
           Rs. 220.00
@@ -224,13 +227,13 @@ const Store = () => {
       </div>
       <div className="absolute top-[1029px] left-[calc(50%_+_274px)] w-[364px] h-[88px]">
         <p
-          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] leading-[156.23%] cursor-pointer"
+          className="m-0 absolute top-[0px] left-[calc(50%_-_182px)] text-black leading-[156.23%] cursor-pointer"
           id="product3"
         >
           Stay fit - Yoga Mat
         </p>
         <p
-          className="m-0 absolute top-[51px] left-[calc(50%_-_182px)] leading-[156.23%] font-semibold"
+          className="m-0 absolute top-[51px]  left-[calc(50%_-_182px)] text-black leading-[156.23%] font-semibold"
           id="price"
         >
           Rs. 1.099.00

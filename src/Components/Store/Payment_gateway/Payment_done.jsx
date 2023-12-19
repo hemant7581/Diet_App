@@ -1,7 +1,7 @@
 import { useCallback } from "react";
-import Logo from "../../asset/Logo.png"
-import done from "../../asset/done.png"
-import outer_star from "../../asset/outer_star.png"
+import Logo from "../../../asset/Logo.png"
+import done from "../../../asset/done.png"
+import outer_star from "../../../asset/outer_star.png"
 
 const Payment_done = () => {
   const onGroupContainerClick = useCallback(() => {

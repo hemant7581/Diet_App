@@ -69,60 +69,63 @@ const MedicineCard = ({ data, onEdit, onDelete }) => {
 
   return (
     <div className="relative w-[344px] h-[240px] right-[50px]">
-    <div className="bg-white p-4 rounded-lg shadow-md ">
-      <h2 className="font-sans text-13xl text-black leading-7 font-semibold "><span><img src={data.day} alt="" /></span>
-        {data.label}
-      </h2>
+      <div className="bg-white p-4 rounded-lg shadow-md ">
+        <h2 className="font-sans text-13xl text-black leading-7 font-semibold ">
+          <span>
+            <img src={data.day} alt="" />
+          </span>
+          {data.label}
+        </h2>
 
-      {/* Display the day image */}
-      {/* <img src={morning} alt={data.label} className="mb-2" /> */}
+        {/* Display the day image */}
+        {/* <img src={morning} alt={data.label} className="mb-2" /> */}
 
-      <ul>
-        {medicine.data.map((medicine, index) => (
-          <li key={index} className="flex items-center justify-between mb-2">
-            <span>{medicine}</span>
-            <span>{}</span>
-            <button
-              onClick={() => handleDeleteMedicine(index)}
-              className="text-red-500 hover:text-red-700"
-            >
-              <img src={Delete} className="w-[25px] h-[30px]" alt="" />
-            </button>
-          </li>
-        ))}
-      </ul>
-
+        <ul>
+        {data.medicines.map((medicine, index) => (
+    <li key={index} className="flex items-center justify-between mb-2">
+      <span>{medicine}</span>
+      <span>{}</span>
       <button
-        onClick={handleEdit}
-        className="mt-4 bg-blue-500 text-black rounded-full"
+        onClick={() => handleDeleteMedicine(index)}
+        className="text-red-500 hover:text-red-700"
       >
-        Add Medicine
+        <img src={Delete} className="w-[25px] h-[30px]" alt="" />
       </button>
-      {/* medicine return */}
+    </li>
+  ))}
+        </ul>
 
-      {/* modal */}
-      {/* modal */}
-      {modalOpen && (
-        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-lg font-semibold mb-4">Add Medicine</h2>
-            <input
-              type="text"
-              value={medicineName}
-              onChange={(e) => setMedicineName(e.target.value)}
-              placeholder="Medicine name"
-              className="border border-gray-300 p-2 mb-4 w-full"
-            />
-            <button
-              onClick={handleAddMedicine}
-              className="bg-blue-500 text-black px-3 py-1 rounded-full"
-            >
-              Add
-            </button>
+        <button
+          onClick={handleEdit}
+          className="mt-4 bg-blue-500 text-black rounded-full"
+        >
+          Add Medicine
+        </button>
+        {/* medicine return */}
+
+        {/* modal */}
+        {/* modal */}
+        {modalOpen && (
+          <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h2 className="text-lg font-semibold mb-4">Add Medicine</h2>
+              <input
+                type="text"
+                value={medicineName}
+                onChange={(e) => setMedicineName(e.target.value)}
+                placeholder="Medicine name"
+                className="border border-gray-300 p-2 mb-4 w-full"
+              />
+              <button
+                onClick={handleAddMedicine}
+                className="bg-blue-500 text-black px-3 py-1 rounded-full"
+              >
+                Add
+              </button>
+            </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
     </div>
   );
 };

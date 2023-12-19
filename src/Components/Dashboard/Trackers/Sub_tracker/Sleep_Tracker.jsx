@@ -1,7 +1,7 @@
 import React from 'react'
 import sleep_chart from "../../../../asset/sleep_chart.png"
 
-const Water_Tracker = () => {
+const Sleep_Tracker = () => {
   return (
     <>
     {/* main */}
@@ -38,4 +38,4 @@ const Water_Tracker = () => {
   )
 }
 
-export default Water_Tracker
+export default Sleep_Tracker

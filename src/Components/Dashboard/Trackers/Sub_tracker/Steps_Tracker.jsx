@@ -3,7 +3,7 @@ import React from "react"
 import steps_chart from "../../../../asset/steps_chart.png"
 // import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts';
 
-const Water_Tracker = () => {
+const Steps_Tracker = () => {
   // const data = [
 
   //   {
@@ -75,4 +75,4 @@ const Water_Tracker = () => {
   )
 }
 
-export default Water_Tracker
+export default Steps_Tracker
