@@ -89,7 +89,7 @@ const OrderOverview2 = () => {
               checked={isChecked}
               id="confirm_radio"
               type="radio"
-              onClick={() => setIsChecked(!isChecked)}
+              onChange={() => setIsChecked(!isChecked)}
             />
             <p className="absolute text-black font-inherit left-[1183px] top-[558px] font-5xl font-normal  leading-[30px]">
               Confirmed

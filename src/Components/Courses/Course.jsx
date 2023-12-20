@@ -1,6 +1,6 @@
-import { useCallback } from "react";
-import Nav from "../../Components/Top_Nav/Nav";
-import { Navigate } from "react-router-dom";
+import { useCallback  } from "react";
+import Nav from "../Top_Nav/Nav";
+import { Link, Navigate } from "react-router-dom";
 
 import full_screen from "../../asset/full_screen.png";
 import yt_setting from "../../asset/yt_setting.png";
@@ -11,14 +11,16 @@ import yt_course from "../../asset/yt_course.png";
 import yt_play from "../../asset/yt_play.png";
 import yt_bg from "../../asset/yt_bg.png";
 
-const Courses = () => {
+
+
+const Course = () => {
   const onVectorIcon2Click = useCallback(() => {
     // Please sync "Courses" to the project
   }, []);
 
   const onRightIconClick = useCallback(() => {
     // Please sync "Courses" to the project
-    Navigate("../../Screens/Course_overview.jsx");
+    // Navigate("../../Screens/Course_overview.jsx");
   }, []);
 
   return (
@@ -84,12 +86,12 @@ const Courses = () => {
               src={yt_caption}
             />
           </div>
-          <img
+          <Link to="/fullscreens">     <img
             className="absolute h-[43.75%] w-[2.7%] top-[29.38%] right-[1.12%] bottom-[26.88%] left-[96.17%] max-w-full overflow-hidden max-h-full object-cover cursor-pointer"
             alt="full_screen"
             src={full_screen}
-            onClick={onVectorIcon2Click}
-          />
+            // onClick={onVectorIcon2Click}
+          /></Link> 
           <p
             className="m-0 absolute top-[54.81px] left-[139.07px] leading-[156.23%] font-semibold inline-block w-[42.38px] h-[21.21px]"
             id="start_timestamp"
@@ -113,15 +115,15 @@ const Courses = () => {
         className="m-0 absolute top-[1268px] left-[1308px] text-5xl leading-[156.23%] font-semibold text-blue"
         id="next_lecture"
       >{`Next    >`}</p>
-      <img
+   <img
         className="absolute top-[564px] left-[30px] w-[42px] h-[42px] object-cover cursor-pointer"
         alt="right_side_hide"
         src={right_hide}
-        onClick={onRightIconClick}
+        // onClick={onRightIconClick}
       />
       {/* main */}
     </div>
   );
 };
 
-export default Courses;
+export default Course;

@@ -54,7 +54,7 @@ const Appinment_overview = () => {
             checked={isChecked}
             id="confirm_radio"
             type="radio"
-            onClick={() => setIsChecked(!isChecked)}
+            onChange={() => setIsChecked(!isChecked)}
           />
         </div>
         <div className="absolute h-[6.95%] w-[18.57%] top-[48.12%] right-[61.5%] bottom-[44.92%] left-[19.94%]">

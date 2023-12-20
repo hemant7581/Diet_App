@@ -81,7 +81,7 @@ import Home_Workout from "./Components/Workouts/Home_workout";
 import Workoutss from "./Components/Workouts/Workoutss";
 import Workout_fullbody from "./Components/Workouts/Workout_fullbody";
 import Personal_Info from "./Components/Personal_Info/Personal_Info";
-import Courses from "./Components/Courses/Courses";
+import Courses from "./Components/Courses/Cours";
 import TBW from "./Components/TBW/TBW";
 import Accordion from "./Components/ProPic/Accordion";
 import VideoCall from "./Components/Appointment/VideoCall";
@@ -100,7 +100,9 @@ import MajorRecipe from "./Components/Recipe/MajorRecipe";
 import Product_Overview from "./Components/Store/Product_Overview";  
 import Payment_gateway from "./Components/Store/Payment_gateway/payment_gateway";  
 import Payment_done from "./Components/Store/Payment_gateway/Payment_done";
-
+import course from "./Components/Courses/Course";
+import Course_fullscreen from "./Components/Course_overview/Course_fullscreen"
+import Course2 from "./Components/Courses/Course2";
 
 
 
@@ -121,6 +123,7 @@ const App = () => {
           <Route path="/ProductOverView" Component={Product_Overview} />
           <Route path="/Payment" Component={Payment_gateway} />
           <Route path="/Payment_Done" Component={Payment_done} />
+          <Route path="/Courses" Component={Course2} />
           {/* <Route path="/OurService" Component={} /> */}
           <Route path="/StartYourJourney" Component={Videocall} />
           <Route path="/WhoWeAre" Component={WhoWeAre} />
@@ -156,6 +159,8 @@ const App = () => {
           <Route path="/Workout_Fullbody2" Component={Workout_Done}/>
           {/* <Route path="/changePassword" Component={ChangePassword} /> */}
           <Route path="/changePassword" Component={PersonalDetails2} />
+          <Route path="/fullscreen" Component={course} />
+          <Route path="/fullscreens" Component={Course_fullscreen} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

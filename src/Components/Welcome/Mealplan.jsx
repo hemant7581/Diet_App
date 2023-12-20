@@ -529,7 +529,7 @@ const Group = () => {
                 </p>
                 <input
                   className="absolute top-[0px] left-[278.08px] w-[23.92px] h-[21px]"
-                  checked={true}
+                  defaultChecked
                   id="checked"
                   type="checkbox"
                 />
@@ -549,10 +549,10 @@ const Group = () => {
                 </p>
                 <input
                   className="absolute top-[0px] left-[278.08px] w-[23.92px] h-[21px]"
-                  checked={true}
+                 defaultChecked
                   id="checked_radish"
                   type="checkbox"
-                  autoComplete
+                  autoComplete="true"
                 />
               </div>
               <div className="absolute top-[143px] left-[calc(50%_-_156px)] w-[302px] h-[23px]">

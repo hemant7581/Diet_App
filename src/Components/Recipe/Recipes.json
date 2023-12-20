@@ -41,6 +41,27 @@
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
-        }
+        },
+        {
+            "id": 7,
+            "img": "../../asset/Chicken_tikka.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id": 8,
+            "img": "../../asset/Avacado_toast.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         },
+        {
+            "id": 9,
+            "img": "../../asset/omlette_roll.png",
+            "unsaved": "../../asset/unsaved.png",
+            "rating": "../../asset/rating.png",
+            "calorie":"501 kcal"
+         }
     ]
 }

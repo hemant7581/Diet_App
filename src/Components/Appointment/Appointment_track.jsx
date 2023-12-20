@@ -68,7 +68,7 @@ const Appointment_track = () => {
             checked={isChecked}
             id="confirm_radio"
             type="radio"
-            onClick={() => setIsChecked(!isChecked)}
+            onChange={() => setIsChecked(!isChecked)}
           />
         </div>
         <div className="absolute h-[11.64%] w-[17.05%] top-[75.79%] right-[57.59%] bottom-[12.58%] left-[27%]">

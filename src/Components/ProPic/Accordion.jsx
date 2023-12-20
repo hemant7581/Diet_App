@@ -455,7 +455,7 @@ const Accordion = () => {
             className="absolute top-[29px] left-[804px]  accent-dark-green-color w-[30px] h-[30px]"
             checked={isChecked}
             required={true}
-            onClick={() => setIsChecked(!isChecked)}
+            onChange={() => setIsChecked(!isChecked)}
           />
         </section>
       )}

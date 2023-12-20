@@ -36,7 +36,7 @@ const Order = () => {
             checked={isChecked}
             id="confirm_radio"
             type="radio"
-            onClick={() => setIsChecked(!isChecked)}
+            onChange={() => setIsChecked(!isChecked)}
           /></Link>
           <p className='absolute text-black font-inherit left-[767px] font-5xl font-normal top-[241px] leading-[30px]'>Confirmed</p>
        {/* input_radio btn for confirm */}

@@ -1,0 +1,106 @@
+{
+    "course": [
+        {
+            "id": 1,
+            "img": "",
+            "Course_Name": "Healthy Meal Planning",
+            "Instructor": "Tony Chopper",
+            "Time_img": "../../asset/time.png",
+            "star": "../../asset/star.png",
+            "rating": 5.0,
+            "Duration": "4 weeks"
+        },
+        {
+            "id": 2,
+            "img": "",
+            "Course_Name": "Weigh loss Strategies",
+            "Instructor": "Robin Nico",
+            "Time_img": "../../asset/time.png",
+            "star": "../../asset/star.png",
+            "rating": 5.0,
+            "Duration": "4 weeks"
+        },
+        {
+            "id": 3,
+            "img": "",
+            "Course_Name": "Mindful Eating",
+            "Instructor": "Sanji Vismoke",
+            "Time_img": "../../asset/time.png",
+            "star": "../../asset/star.png",
+            "rating": 5.0,
+            "Duration": "4 weeks"
+        },
+        {
+            "id": 4,
+            "img": "",
+            "Course_Name": "Sports Nutrition",
+            "Instructor": "Zoro Roronoa",
+            "Time_img": "../../asset/time.png",
+            "star": "../../asset/star.png",
+            "rating": 5.0,
+            "Duration": "3 weeks"
+        }
+    ],
+    "Explore": [
+        {
+            "id": 1,
+            "img": "../../asset/Digestive_Health.png",
+            "star":"../../asset/star.png",
+            "rating":"5.0",
+            "Course_Name": "Digestive Health",
+            "Info": "Enhance your gut health, manage digestive issues, and promote overall well-being through proper nutrition and lifestyle choices.",
+            "Time_img": "../../asset/time.png",
+            "Duration": "3 weeks",
+            "Cost": "Rs 899.00",
+            "Actual_Cost": "Rs 1,299.00"
+        },
+        {
+            "id": 2,
+            "img": "../../asset/Meal_Planning.png",
+            "star":"../../asset/star.png",
+            "rating":"5.0",
+            "Course_Name": "Meal Planning",
+            "Info": "Enhance your gut health, manage digestive issues, and promote overall well-being through proper nutrition and lifestyle choices.",
+            "Time_img": "../../asset/time.png",
+            "Duration": "3 weeks",
+            "Cost": "Rs 899.00",
+            "Actual_Cost": "Rs 1,299.00"
+        },
+        {
+            "id": 3,
+            "img": "../../asset/Nutritional_Fundamentals.png",
+            "star":"../../asset/star.png",
+            "rating":"5.0",
+            "Course_Name": "Nutrition Fundamentals",
+            "Info": "Enhance your gut health, manage digestive issues, and promote overall well-being through proper nutrition and lifestyle choices.",
+            "Time_img": "../../asset/time.png",
+            "Duration": "3 weeks",
+            "Cost": "Rs 899.00",
+            "Actual_Cost": "Rs 1,299.00"
+        },
+        {
+            "id": 4,
+            "img": "../../asset/Mindful_Eating.png",
+            "star":"../../asset/star.png",
+            "rating":"5.0",
+            "Course_Name": "Mindful ",
+            "Info": "Enhance your gut health, manage digestive issues, and promote overall well-being through proper nutrition and lifestyle choices.",
+            "Time_img": "../../asset/time.png",
+            "Duration": "3 weeks",
+            "Cost": "Rs 899.00",
+            "Actual_Cost": "Rs 1,299.00"
+        },
+        {
+            "id": 5,
+            "img": "../../asset/Sports_Nutrition.png",
+            "star":"../../asset/star.png",
+            "rating":"5.0",
+            "Course_Name": "Sports Nutrition",
+            "Info": "Enhance your gut health, manage digestive issues, and promote overall well-being through proper nutrition and lifestyle choices.",
+            "Time_img": "../../asset/time.png",
+            "Duration": "3 weeks",
+            "Cost": "Rs 899.00",
+            "Actual_Cost": "Rs 1,299.00"
+        }
+    ]
+}

@@ -18,7 +18,7 @@ const Sidebar = () => {
        <Link to="/Trackers" className="text-inherit"><li className="absolute top-[309px] hover:text-green-700 font-semibold hover:bg-white list-none py-4 hover:rounded-[60px] w-[345px] hover:border-8 hover:border-white  h-[74px]">Trackers</li></Link>
        <Link to="/MyApppointment" className="text-inherit"><li className="absolute top-[381px] hover:text-green-700 font-semibold hover:bg-white list-none py-4 hover:rounded-[60px] w-[345px] hover:border-8 hover:border-white  h-[74px]">My Appointments</li></Link>
        <Link to="/Order" className="text-inherit"><li className="absolute top-[453px] hover:text-green-700 font-semibold hover:bg-white list-none py-4 hover:rounded-[60px] w-[345px] hover:border-8 hover:border-white  h-[74px]">My Order</li></Link>
-       <Link to="/UserAccount" className="text-inherit"><li className="absolute top-[525px] hover:text-green-700 font-semibold hover:bg-white list-none py-4 hover:rounded-[60px] w-[345px] hover:border-8 hover:border-white  h-[74px]">User Account</li></Link>
+       <Link to="/MyAccount" className="text-inherit"><li className="absolute top-[525px] hover:text-green-700 font-semibold hover:bg-white list-none py-4 hover:rounded-[60px] w-[345px] hover:border-8 hover:border-white  h-[74px]">User Account</li></Link>
 
       </div>
       </div>
