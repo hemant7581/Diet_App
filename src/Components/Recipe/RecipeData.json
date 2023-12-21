@@ -1,64 +1,67 @@
 {
-    "Recipe_data": [
+    "Popular": [
         {
             "id": 1,
-            "img": "../../asset/Chicken_tikka.png",
+            "Img": "../../asset/Chicken_tikka.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
          },
         {
             "id": 2,
-            "img": "../../asset/Avacado_toast.png",
+            "Img": "../../asset/Avacado_toast.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
          },
         {
             "id": 3,
-            "img": "../../asset/omlette_roll.png",
+            "Img": "../../asset/omlette_roll.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
-         },
+         }
+        ],
+    
+         "Loved":[
         {
             "id": 4,
-            "img": "../../asset/Nutty.png",
+            "Img": "../../asset/Nutty.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
          },
         {
             "id":5,
-            "img": "../../asset/oats.png",
+            "Img": "../../asset/oats.png",
             "unsaved": "../../asset/unsaved.png",
             "star": "../../asset/rating.png",
             "calorie":"501 kcal"
          },
         {
             "id": 6,
-            "img": "../../asset/Pesto_pasta.png",
+            "Img": "../../asset/Pesto_pasta.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
         },
         {
             "id": 7,
-            "img": "../../asset/Chicken_tikka.png",
+            "Img": "../../asset/Chicken_tikka.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
          },
         {
             "id": 8,
-            "img": "../../asset/Avacado_toast.png",
+            "Img": "../../asset/Avacado_toast.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"
          },
         {
             "id": 9,
-            "img": "../../asset/omlette_roll.png",
+            "Img": "../../asset/omlette_roll.png",
             "unsaved": "../../asset/unsaved.png",
             "rating": "../../asset/rating.png",
             "calorie":"501 kcal"

@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import Logo from "../../../asset/Logo.png"
 import done from "../../../asset/done.png"
 import outer_star from "../../../asset/outer_star.png"
+import { Link } from "react-router-dom";
 
 const Payment_done = () => {
   const onGroupContainerClick = useCallback(() => {
@@ -10,7 +11,7 @@ const Payment_done = () => {
 
   return (
     <div
-      className="relative bg-whitesmoke w-full h-[982px] overflow-hidden text-center text-[35.22px] text-black font-sans"
+      className="relative bg-whitesmoke w-[1512px] h-[982px] overflow-hidden text-center text-[35.22px] text-black font-sans xl:w-full"
       id="payment_done"
     >
       <div
@@ -23,13 +24,13 @@ const Payment_done = () => {
       
       </div>
       <p
-        className="m-0 absolute top-[355px] left-[calc(50%_-_50px)] text-[36px] leading-[120.03%] font-semibold text-gray"
+        className="m-0 absolute top-[355px] left-[calc(50%_-_50px)] text-[36px] leading-[120.03%] font-semibold text-black"
         id="Done!"
       >
         Done!
       </p>
       <p
-        className="m-0 absolute top-[calc(50%_-_10px)] left-[calc(50%_-_79px)] text-5xl leading-[120.03%] font-semibold text-grey-color"
+        className="m-0 absolute top-[calc(50%_-_10px)] left-[calc(50%_-_79px)] text-5xl leading-[120.03%] font-semibold text-black"
         id="order_placed"
       >
         Order Placed!
@@ -44,17 +45,19 @@ const Payment_done = () => {
         alt="done"
         src={done}
       />
-      <button
+      {/* button */}
+  <Link to="/Course_main">   <div
         className="cursor-pointer py-7 px-[73px] bg-[transparent] absolute top-[580px] left-[calc(50%_-_126px)] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center border-[1px] border-solid border-palegoldenrod"
         id="continue"
       >
         <button
-          className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-5xl leading-[120%] font-semibold font-open-sans text-dark-green-color text-left inline-block"
+          className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-5xl leading-[120%] font-semibold font-sans text-dark-green-color text-left inline-block"
           id="Continue"
         >
           Continue
         </button>
-      </button>
+      </div></Link> 
+            {/* button */}
     </div>
   );
 };

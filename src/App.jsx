@@ -103,6 +103,9 @@ import Payment_done from "./Components/Store/Payment_gateway/Payment_done";
 import course from "./Components/Courses/Course";
 import Course_fullscreen from "./Components/Course_overview/Course_fullscreen"
 import Course2 from "./Components/Courses/Course2";
+import COURCES from "./Components/Course_overview/COURCES";
+import Courses3 from "./Components/Course_overview/Courses3"; 
+import Courses_main from "./Components/Course_overview/Courses_main"; 
 
 
 
@@ -123,7 +126,7 @@ const App = () => {
           <Route path="/ProductOverView" Component={Product_Overview} />
           <Route path="/Payment" Component={Payment_gateway} />
           <Route path="/Payment_Done" Component={Payment_done} />
-          <Route path="/Courses" Component={Course2} />
+          <Route path="/Courses" Component={Courses3} />
           {/* <Route path="/OurService" Component={} /> */}
           <Route path="/StartYourJourney" Component={Videocall} />
           <Route path="/WhoWeAre" Component={WhoWeAre} />
@@ -161,6 +164,8 @@ const App = () => {
           <Route path="/changePassword" Component={PersonalDetails2} />
           <Route path="/fullscreen" Component={course} />
           <Route path="/fullscreens" Component={Course_fullscreen} />
+          <Route path="/EnrollNow" Component={Payment_gateway} />
+          <Route path="/Course_main" Component={Courses_main} />
         </Routes>
       </Router>
       {/* <Recipes/> */}

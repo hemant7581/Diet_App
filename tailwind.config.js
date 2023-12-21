@@ -28,6 +28,7 @@ export default {
        "xl2": "0px 0px 10px 0px rgba(0, 0, 0, 0.15)", 
        "xl3": "0px 0px 5px 0px rgba(0, 0, 0, 0.10)", 
        "xl4" :"0px 0px 18px 0px rgba(0, 0, 0, 0.05)",
+       "xl5": "0px 0px 13px 0px rgba(231, 216, 216, 0.15",
        
        
       },

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import search from "../../asset/search.png";
 import unsaved from "../../asset/unsaved.png";
 import Chicken_tikka from "../../asset/Chicken_tikka.png";
@@ -13,13 +14,22 @@ import grocery_icon from "../../asset/grocery_icon.png";
 import Footer from "../Footer/Footer";
 import Nav from "../Top_Nav/Nav";
 import { Link } from "react-router-dom";
+
 const Recipes = () => {
+  // const [filter, setFilter] = useState('');
+
+  // const handleFilterChange = (event) => {
+  //   setFilter(event.target.value);
+  // };
+
+  //   const filteredRecipes = yourRecipesArray.filter((recipe) =>
+  //   recipe.Course_Name.toLowerCase().includes(filter.toLowerCase())
+  // );
   return (
     <div className="relative bg-whitesmoke w-[1512px] h-[3228px] overflow-hidden text-left text-5xl text-green-700 leading-[37.49px] font-semibold  font-sans xl:w-full">
       {/* navbar   */}
       <Nav />
       {/* navbar   */}
-
       {/* main concent */}
       <h1
         className="m-0 absolute top-[208px] left-[calc(50%_-_165px)] text-[48px] tracking-[0.53em] leading-[133%] font-semibold  text-stroke-green-color font-sans border-green"
@@ -27,14 +37,15 @@ const Recipes = () => {
       >
         Recipes
       </h1>
-
-      {/* input */}
+      {/* input */}*{" "}
       <div className="absolute top-[356px] left-[calc(50%_-_488px)] w-[976px] h-[78px]">
         <input
           className="bg-whitesmoke outline-none pl-28 font-medium text-2xl rounded-[10px] absolute top-[-1px] left-[calc(50%_-_489px)] rounded-3xs box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color placeholder:text-gray-500 placeholder:text-[18px] placeholder:h-6 placeholder:w-[127px] placeholder:italic  "
           name="text"
           placeholder="Select Recipes"
           type="text"
+          // value={filter}
+          // onChange={handleFilterChange}
         />
         <div className="absolute top-[-1px] left-[-1px] rounded-3xs bg-whitesmoke box-border w-[88px] h-20 border-[1px] border-solid border-stroke-green-color" />
         <img
@@ -44,20 +55,15 @@ const Recipes = () => {
           src={search}
         />
       </div>
-
       {/* img */}
-
       {/* popular */}
-
       <h1
         className="m-0 absolute top-[554px] left-[calc(50%_-_177px)] text-[46px] text-black leading-[156.23%] font-semibold font-inherit"
         id="popular-recipe"
       >
         Popular Recipes
       </h1>
-
       {/* images */}
-
       <div
         className="absolute top-[726px] left-[93px] w-[400px] h-[440px] cursor-pointer"
         id="recipe_card"
@@ -103,32 +109,22 @@ const Recipes = () => {
           className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px_6px_21px_rgba(0,_0,_0,_0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink"
           id="Most_loved_card"
         />
-        {/* <img
+        <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px] object-cover"
           alt="savedd"
           id="savedd"
           src={unsaved}
-        /> */}
+        />
       </div>
       {/* images */}
-
       {/* popular */}
-
       {/* most loved */}
-      {/* <h1
-        className="m-0 text-center absolute top-[1366px] left-[calc(50%_-_218px)] text-27xl leading-[156.23%] font-semibold text-black"
-        id="Most_loved"
-      >
-        Most Loved Recipes
-      </h1> */}
-
       <h1
         className="m-0 absolute top-[1366px] left-[calc(50%_-_218px)] text-[46px] text-black leading-[156.23%] font-semibold font-inherit"
         id="popular-recipe"
       >
         Most Loved Recipes
       </h1>
-
       {/* img */}
       <div className="absolute top-[1538px] left-[93px] w-[400px] h-[440px]">
         <div
@@ -141,18 +137,20 @@ const Recipes = () => {
           id="savedd"
           src={unsaved}
         />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="Nutty pastry"
-          id="Nuttypastry"
-          src={nutty}
-        />
-        <p
-          className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
-          id="NuttyPastry"
-        >
-          Nutty pastry
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="Nutty pastry"
+            id="Nuttypastry"
+            src={nutty}
+          />
+          <p
+            className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
+            id="NuttyPastry"
+          >
+            Nutty pastry
+          </p>
+        </Link>
         <div className="absolute top-[295px] left-[28px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-base-red-color" />
         <p
           className="m-0 absolute top-[307px] left-[55px] tracking-[0.03em] leading-[120.23%] font-semibold text-base-red-color"
@@ -168,9 +166,7 @@ const Recipes = () => {
         />
       </div>
       {/* img */}
-
       {/* editable */}
-
       <div className="absolute top-[2128px] left-[93px] w-[400px] h-[440px]">
         <div
           className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px 6px 21px rgba(0,0,0,0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink"
@@ -181,17 +177,19 @@ const Recipes = () => {
           alt=""
           src={unsaved}
         />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="chicken_tikka"
-          src={Chicken_tikka}
-        />
-        <p
-          className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
-          id="name"
-        >
-          Chicken tikka masala
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="chicken_tikka"
+            src={Chicken_tikka}
+          />
+          <p
+            className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
+            id="name"
+          >
+            Chicken tikka masala
+          </p>
+        </Link>
         <div className="absolute top-[295px] left-[28px] rounded box-border w-[152px] h-[54px] border-[2px] border-solid border-base-red-color" />
         <p
           className="m-0 absolute top-[307px] left-[55px] tracking-[0.03em] leading-[120.23%] font-semibold text-base-red-color"
@@ -210,17 +208,19 @@ const Recipes = () => {
           className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px_6px_21px_rgba(0,_0,_0,_0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink"
           id="cards"
         />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="avacado"
-          src={Avacado_toast}
-        />
-        <p
-          className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
-          id="name"
-        >
-          Avocado toast
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="avacado"
+            src={Avacado_toast}
+          />
+          <p
+            className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold"
+            id="name"
+          >
+            Avocado toast
+          </p>
+        </Link>
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
@@ -241,14 +241,16 @@ const Recipes = () => {
       </div>
       <div className="absolute top-[1538px] left-[556px] w-[400px] h-[440px]">
         <div className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px_6px_21px_rgba(0,_0,_0,_0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink" />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="oats"
-          src={oats}
-        />
-        <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
-          Oats with sliced fruits
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="oats"
+            src={oats}
+          />
+          <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
+            Oats with sliced fruits
+          </p>
+        </Link>
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
@@ -269,14 +271,16 @@ const Recipes = () => {
           className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px 6px 21px rgba(0,0,0,0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink"
           id="most_loved"
         />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="nutty"
-          src={Avacado_toast}
-        />
-        <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
-          Avocado toast
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="nutty"
+            src={Avacado_toast}
+          />
+          <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
+            Avocado toast
+          </p>
+        </Link>
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
@@ -294,14 +298,16 @@ const Recipes = () => {
       </div>
       <div className="absolute top-[726px] left-[1019px] w-[400px] h-[440px]">
         <div className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px 6px 21px rgba(0,0,0,0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink" />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="omlette_rolls"
-          src={omlette_roll}
-        />
-        <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
-          Omelette roll up
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="omlette_rolls"
+            src={omlette_roll}
+          />
+          <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
+            Omelette roll up
+          </p>
+        </Link>
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
@@ -319,14 +325,16 @@ const Recipes = () => {
       </div>
       <div className="absolute top-[1538px] left-[1019px] w-[400px] h-[440px]">
         <div className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px 6px 21px rgba(0,0,0,0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink" />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt=""
-          src={Pesto_Pasta}
-        />
-        <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
-          Pesto pasta
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt=""
+            src={Pesto_Pasta}
+          />
+          <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
+            Pesto pasta
+          </p>
+        </Link>
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
@@ -344,14 +352,16 @@ const Recipes = () => {
       </div>
       <div className="absolute top-[2128px] left-[1019px] w-[400px] h-[440px]">
         <div className="absolute top-[-1px] left-[-1px] rounded-xl bg-whitesmoke shadow-[6px 6px 21px rgba(0,0,0,0.15)] box-border w-[402px] h-[442px] border-[1px] border-solid border-lightpink" />
-        <img
-          className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
-          alt="omlette_rolls"
-          src={omlette_roll}
-        />
-        <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
-          Omelette roll up
-        </p>
+        <Link to="/Recipes2">
+          <img
+            className="absolute top-[-9px] left-[0px] rounded-t-xl rounded-b-21xl w-[422px] h-[242px] object-cover"
+            alt="omlette_rolls"
+            src={omlette_roll}
+          />
+          <p className="m-0 absolute top-[244px] left-[30px] tracking-[0.03em] leading-[120.23%] font-semibold">
+            Omelette roll up
+          </p>
+        </Link>
         <img
           className="absolute top-[241px] left-[349px] w-[30px] h-[30px]"
           alt=""
@@ -379,11 +389,8 @@ const Recipes = () => {
       />
       {/* editable */}
       {/* most loved */}
-
       {/* main */}
-
       {/* footer */}
-
       {/* footer */}
       <Footer />
     </div>
