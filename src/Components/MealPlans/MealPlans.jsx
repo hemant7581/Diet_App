@@ -37,9 +37,9 @@ const MEALPLANS = () => {
   return (
     <div className="relative bg-whitesmoke w-[1512px] h-[5619px] overflow-hidden text-left text-9xl text-gray-200 font-sans xl:w-full">
       <div className="absolute top-[208px] left-[calc(50%_-_240px)] w-[480px] h-16 text-[48px] text-stroke-green-color">
-        <div className="absolute top-[0px] left-[calc(50%_-_240px)] tracking-[0.53em] leading-[133%] font-semibold">
+        <h1 className="absolute top-[0px] left-[calc(50%_-_240px)] tracking-[0.53em] leading-[133%] font-semibold">
           Meal Plans
-        </div>
+        </h1>
       </div>
       <div className="absolute top-[355px] left-[calc(50%_-_489px)] rounded-3xs bg-whitesmoke box-border w-[978px] h-20 border-[1px] border-solid border-stroke-green-color" />
       <i className="absolute top-[384px] left-[378px] text-lg tracking-[0.03em] leading-[120.23%] font-medium font-body-main text-gray-100">{`Search Plan (low-carb, gluten-free, etc.) `}</i>
