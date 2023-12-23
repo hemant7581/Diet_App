@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <form
-      className="relative bg-beige font-sans w-full h-[982px] overflow-hidden"
+      className="relative bg-beige font-sans w-[1512px] h-[982px] overflow-hidden text-5xl fons-sans xl:w-full"
       id="form"
     >
       <div className="absolute top-[0px] left-[756px] bg-whitesmoke w-[756px] h-[982px]" />
