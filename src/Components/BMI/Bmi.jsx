@@ -24,31 +24,31 @@ const Bmi = () => {
   //   const newLeftStyle = newGender === 'Male' ? '-30px' : '60px';
   //   setSliderDialStyle({ left: newLeftStyle });
   // };
-//   const CalculateBmi=()=>{
-//     if(Age && Height && Weight){
-//     // bmi calculation formula
-// const HeightinMeters = Height/100; 
-// const BmiValue = Weight/(HeightinMeters * HeightinMeters);
-
-
-// // update the state with the calculated BmiValue
-// setBmi(BmiValue.toFixed(2))
-//   }
-//   }
-
-const CalculateTBW=()=>{
-  if(Age && Height && Weight){
-  // bmi calculation formula
-// const HeightinMeters = Height/100; 
-const TBWValue = 2.447-(0.09145*Age)+(0.1074*Height)+(0.3362*Weight)
+  const CalculateBmi=()=>{
+    if(Age && Height && Weight){
+    // bmi calculation formula
+const HeightinMeters = Height/100; 
+const BmiValue = Weight/(HeightinMeters * HeightinMeters);
 
 
 // update the state with the calculated BmiValue
-setTBW(TBWValue.toFixed(2))
-}
-}
+setBmi(BmiValue.toFixed(2))
+  }
+  }
+
+// const CalculateTBW=()=>{
+//   if(Age && Height && Weight){
+//   // bmi calculation formula
+// // const HeightinMeters = Height/100; 
+// const TBWValue = 2.447-(0.09145*Age)+(0.1074*Height)+(0.3362*Weight)
+
+
+// update the state with the calculated BmiValue
+// setTBW(TBWValue.toFixed(2))
+// }
+// }
   return (
-    <div className="relative bg-whitesmoke w-full h-[982px] overflow-hidden text-center text-13xl text-gray-300 font-sans" id="BMI">
+    <div className="relative bg-whitesmoke w-[1512px] h-[982px] overflow-hidden text-center text-13xl text-gray-300 font-sans xl:w-full" id="BMI">
       {/* header section */}
       <header className="absolute top-[2px] left-[0px] shadow-[0px_2px_8px_rgba(0,_0,_0,_0.07)] w-full h-32 text-left text-5xl text-dark-green-color font-sans" id="navigation">
         <Nav />
