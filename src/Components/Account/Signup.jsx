@@ -16,7 +16,7 @@ const Signup = () => {
 
   return (
     <form
-      className="relative bg-beige w-full h-[982px] overflow-hidden font-sans"
+      className="relative bg-beige w-[1512px] h-[982px] overflow-hidden font-sans text-5xl font-sans xl:w-full"
       id="SIGNUP"
     >
       <div className="absolute top-[0px] left-[756px] bg-whitesmoke w-[756px] h-[982px]" />
@@ -45,12 +45,12 @@ const Signup = () => {
         className="absolute top-[198px] left-[891px] w-[486px] h-[68px] cursor-pointer"
         onClick={onGroupContainer3Click}
       >
-        <Link
+{/*         <Link
           to={"https://accounts.google.com/signin"}
           className="[text-decoration:none] absolute top-[-1px] left-[-1px] rounded-lg bg-whitesmoke box-border w-[488px] h-[70px] border-[1px] border-solid border-grey-color"
           id="signin"
           target="_blank"
-        />
+        /> */}
         <div className="absolute top-[18px] left-[100px] w-[286px] h-8">
           
           <p
