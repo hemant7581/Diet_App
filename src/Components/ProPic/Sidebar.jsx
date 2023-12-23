@@ -7,7 +7,7 @@ const Sidebar = () => {
  
 
   return (
-    <div className="absolute bg-base-green-lightcolors  w-[394px] h-[1158px] " >
+    <div className="absolute bg-base-green-lightcolors  w-[394px] h-[1280px] " >
       <div className="absolute left-[124px] top-[170px] ">
         <img src ={Profile_picture} className=" w-[146px] h-[146px]  " alt=""/>
         <p className=" text-[24px] font-sans text-stroke-greencolor pt-6 px-3">Your forger</p>
