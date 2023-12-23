@@ -17,7 +17,7 @@ const BmiResult = () => {
   // }, []);
 
   return (
-    <div className="relative bg-whitesmoke w-full h-[982px] overflow-hidden text-center text-21xl text-text-black-color font-roboto-flex">
+    <div className="relative bg-whitesmoke w-[1512px] h-[982px] overflow-hidden text-center text-13xl text-black font-body-main xl;W-full">
       <div className="absolute top-[326px] left-[634px] rounded-xl bg-whitesmoke box-border w-[243px] h-[74px] border-[1px] border-solid border-base-red-color" />
       <p
         className="m-0 absolute top-[172px] left-[calc(50%_-_60px)] leading-[174.53%] font-semibold fontsans"
