@@ -26,7 +26,7 @@ import Bmi from "./Components/BMI/Bmi";
 import Videocall from "./Components/Appointment/VideoCall";
 import Store from "./Components/Store/Store";
 // import MyFavourite from "./Components/MyFavourite/MyFavourite";
-import MedcineTracker from "./Components/MedcineTracker/MedcineTracker";
+import MedcineTracker from "./Components/Chats/chat";
 // import ProPic from "./Components/ProPic/ProPic";
 // import Sleep_tracker from "./Components/Trackers/Sleep_trackers";
 // import TBWresult from "./Components/TBW/TBWresult";
@@ -106,6 +106,12 @@ import Course2 from "./Components/Courses/Course2";
 import COURCES from "./Components/Course_overview/COURCES";
 import Courses3 from "./Components/Course_overview/Courses3"; 
 import Courses_main from "./Components/Course_overview/Courses_main"; 
+import Appointment_overview from "./Components/Appointment/Appointment_overview";
+import chat from "./Components/Chats/chat"
+import MealPlans2 from "./Components/MealPlans/MealPlans2";
+import TBWresult from "./Components/TBW/TBWresult";
+import Apppointment3 from "./Components/Appointment/Apppointment3";
+import Result from "./Components/Result/Result";
 
 
 
@@ -116,7 +122,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" Component={LandingPage} />
-          <Route path="/MyAccount" Component={Login} />
+          <Route path="/MyAccount" Component={Apppointment3} />
           <Route path="/SignUp" Component={Signup} />
           <Route path="/Login" Component={Login} />
           <Route path="/Recipes" Component={Recipes}/>
@@ -126,11 +132,12 @@ const App = () => {
           <Route path="/ProductOverView" Component={Product_Overview} />
           <Route path="/Payment" Component={Payment_gateway} />
           <Route path="/Payment_Done" Component={Payment_done} />
-          <Route path="/Courses" Component={Courses3} />
+          <Route path="/Courses" Component={COURCES} />
           {/* <Route path="/OurService" Component={} /> */}
           <Route path="/StartYourJourney" Component={Videocall} />
           <Route path="/WhoWeAre" Component={WhoWeAre} />
-          <Route path="/MyAppointment" Component={Appointment_track} />
+          <Route path="/MyAppointment" Component={Appointment_overview} />
+          <Route path="/chat" Component={chat} />
           <Route path="/Snacks" Component={Snacks} />
           <Route path="/ChangePassword" Component={ChangePassword} />
           <Route path="/stepTracker2" Component={stepsTracker2} />
@@ -138,10 +145,12 @@ const App = () => {
           <Route path="/Foodlog" Component={Foodlog} />
           <Route path="/MealPlan" Component={MyMealPlan} />
           <Route path="/MealPlan2" Component={Meal} />
+          <Route path="/ExploreMealPlan" Component={MealPlans2} />
           <Route path="/Store" Component={Store} />
           <Route path="/TermsOfUse" Component={Terms_of_service} />
           <Route path="/FAQ" Component={FAQ} />
           <Route path="/MealPlans" Component={Ques} />
+          <Route path="/Result" Component={Result} />
           <Route path="/Workouts" Component={Workoutss} />
           <Route path="/fullbody" Component={Home_Workout} />
           <Route path="/ProPic" Component={ProPic} />
@@ -164,8 +173,15 @@ const App = () => {
           <Route path="/changePassword" Component={PersonalDetails2} />
           <Route path="/fullscreen" Component={course} />
           <Route path="/fullscreens" Component={Course_fullscreen} />
-          <Route path="/EnrollNow" Component={Payment_gateway} />
           <Route path="/Course_main" Component={Courses_main} />
+          <Route path="/UnitMeasurement" Component={UnitMeasurement} />
+          <Route path="/EnrollNow" Component={Payment_gateway} />
+          <Route path="/chats" Component={chat} />
+          <Route path="/Bmi" Component={Bmi} />
+          <Route path="/TBW" Component={TBW} />
+          <Route path="/TBWresult" Component={TBWresult} />
+
+
         </Routes>
       </Router>
       {/* <Recipes/> */}
