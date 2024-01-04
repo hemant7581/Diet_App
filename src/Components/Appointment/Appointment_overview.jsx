@@ -23,7 +23,7 @@ const Appinment_overview = () => {
   }, []);
 
   return (
-    <div>
+    <div className="relative bg-whitesmoke w-[1512px] h-[77.38rem] overflow-hidden text-left text-[1.5rem] text-black font-sans xl:w-full">
       <Nav/>
       <Sidebar/>
       <img
@@ -35,7 +35,7 @@ const Appinment_overview = () => {
         className="absolute top-[317px] left-[486px] w-[948px] h-[532px] text-left text-5xl text-gray font-sans"
         id="doctor_info"
       >
-        <div className="absolute top-[28px] left-[188px] rounded-xl bg-whitesmoke box-border w-[395px] h-[103px] border-[1px] border-solid border-indianred" />
+        <div className="absolute top-[28px] left-[188px] rounded-xl  box-border w-[395px] h-[103px] border-[1px] border-solid border-indianred" />
         <img
           className="absolute h-[36.09%] w-[20.25%] top-[-2.07%] right-[81.96%] bottom-[65.98%] left-[-2.22%] rounded-[60px] max-w-full overflow-hidden max-h-full object-cover"
           alt="doctor_img"

@@ -143,7 +143,10 @@ const BmiResult = () => {
         <p
           className="m-0 absolute top-[0px] left-[calc(50%_-_74px)] leading-[174.53%] font-semibold font-open-sans text-text-black-color"
           id="bmi_value"
-        >{`18.6 `}</p>
+        >
+          {`18.6 `}
+          {/* {bmi ? bmi : 'N/A'} */}
+        </p>
         <p
           className="m-0 absolute top-[31px] left-[98px] text-lg leading-[150.19%] font-bold"
           id="bmi_unit"

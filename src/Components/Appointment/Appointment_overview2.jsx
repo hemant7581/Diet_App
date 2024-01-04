@@ -30,7 +30,7 @@ const Appinment_overview2 = () => {
   }, [rotation, showDetails]);
 
   return (
-    <div>
+    <div className="w-[1512px] h-[1268px] overflow-hidden bg-whitesmoke xl:w-full"> 
       {/* ... your other components ... */}
 
       {/* NAV */}
@@ -200,7 +200,7 @@ const Appinment_overview2 = () => {
       />
 
       {showDetails && (
-        <div className="absolute top-[459px]  left-[675px] w-[672px] h-[414px] " style={{ height: accordionHeight }}>
+        <div className="absolute mt-[459px]  left-[675px] w-[672px] h-[414px] " style={{ height: accordionHeight }}>
 
           {/* Your existing details content */}
           <div

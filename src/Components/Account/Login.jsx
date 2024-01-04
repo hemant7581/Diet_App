@@ -17,15 +17,16 @@ const Login = () => {
 
   return (
     <form
-      className="relative bg-beige font-sans w-[1512px] h-[982px] overflow-hidden text-5xl fons-sans xl:w-full"
+      className="relative bg-wh[tesmoke] font-sans w-[1512px] h-[982px] overflow-hidden text-5xl fons-sans xl:w-full"
       id="form"
     >
       <div className="absolute top-[0px] left-[756px] bg-whitesmoke w-[756px] h-[982px]" />
-      <div className="absolute top-[80px] font-sans left-[915px] text-[40px] leading-[174.53%] font-semibold  text-gray text-center inline-block w-[438px]">
+      <div className="absolute top-[80px] font-sans left-[915px] text-[40px] leading-[174.53%] font-semibold  text-black text-center inline-block w-[438px]">
         Log in to your Account
       </div>
       <div className="absolute top-[40px] left-[299px] w-[158px] h-[114px]">
-      <img src={Logo} alt="" />
+        <Link to="/ProPic">
+      <img src={Logo} alt="" /></Link>
      
       </div>
       <div className="absolute top-[294px] left-[897px] w-[474px] h-7">
@@ -50,7 +51,7 @@ const Login = () => {
         >
           <div className="absolute top-[-1px] left-[-1px] rounded-lg bg-whitesmoke box-border w-[488px] h-[70px] border-[1px] border-solid border-grey-color" />
           <div className="absolute top-[18px] left-[100px] w-[286px] h-8">
-            <div className="absolute top-[0px] left-[62px] text-5xl font-sans leading-[120.03%] font-semibold  text-gray text-left inline-block w-56 h-7">
+            <div className="absolute top-[0px] left-[62px] text-5xl font-sans leading-[120.03%] font-semibold  text-black text-left inline-block w-56 h-7">
               Sign in with Google
             </div>
             <img
@@ -63,7 +64,7 @@ const Login = () => {
       </div>
       <div className="absolute top-[350px] left-[891px] w-[486px] h-[102px]">
         <p
-          className="m-0 absolute top-[0px] left-[6px] text-5xl leading-[174.53%] font-sans font-semibold  text-gray text-left inline-block w-[97px] h-[34px]"
+          className="m-0 absolute top-[0px] left-[6px] text-5xl leading-[174.53%] font-sans font-semibold  text-black text-left inline-block w-[97px] h-[34px]"
           id="Email-ID"
         >
           Email-ID
@@ -78,7 +79,7 @@ const Login = () => {
       </div>
       <div className="absolute top-[476px] left-[891px] w-[486px] h-[138px]">
         <p
-          className="m-0 absolute top-[0px]  font-sans left-[6px] text-5xl leading-[174.53%] font-semibold  text-gray text-left inline-block w-28 h-[34px]"
+          className="m-0 absolute top-[0px]  font-sans left-[6px] text-5xl leading-[174.53%] font-semibold  text-black text-left inline-block w-28 h-[34px]"
           id="Password"
         >
           Password
@@ -124,7 +125,7 @@ const Login = () => {
         className="[text-decoration:none] absolute top-[889px] left-[1013px] text-base leading-[174.53%] font-semibold font-sans text-left cursor-pointer"
         onClick={onDontHaveAnClick}
       >
-        <span className="text-gray font-sans">{`Don’t have an account? `}</span>
+        <span className="text-black font-sans">{`Don’t have an account? `}</span>
    <Link to="/SignUp"><span className="text-dark-green-color font-sans">Sign Up</span></Link> 
       </a>
     </form>
