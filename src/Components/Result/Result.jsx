@@ -3,6 +3,7 @@ import Done_img from "../../asset/Done_img.png"
 import Black_right from "../../asset/Black_right.png"
 import Keto_meal from "../../asset/Keto_meal.png"
 import logo from "../../asset/logo.png"
+import { Link } from "react-router-dom";
 
 
 const Result = () => {
@@ -15,25 +16,66 @@ const Result = () => {
   }, []);
 
   return (
-    <div className="relative bg-whitesmoke-200 w-full h-[982px] overflow-hidden text-center text-5xl text-gray font-montserrat">
-      <div className="absolute top-[0px] left-[0px] bg-whitesmoke-100 w-[1512px] h-[982px]" />
-    <img src={logo} alt="" />
-      <p
-        className="m-0 absolute top-[505px] left-[calc(50%_-_292px)] font-medium"
-        id="plan"
-      >{`As per your response this is your ideal meal plan `}</p>
+    <div className="bg-whitesmoke-200 w-[1512px] h-[982px] overflow-hidden text-center text-5xl text-black font-sans xl:w-full  ">
+      {/* <div className="absolute top-[0px] left-[0px] bg-whitesmoke-100 w-[1512px] h-[982px]" /> */}
+    <img src={logo} alt="logo"  className="mt-[17px] ml-[56px] w-[132px] h-[94px] "/>
+    <div >
+    <img
+      className=" mx-auto w-[381px] h-[254px] object-cover "
+      alt="Done_img"
+      src={Done_img}
+    />
       <h3
-        className="m-0 absolute top-[392px] left-[calc(50%_-_64px)] text-[40px] font-semibold font-inherit inline-block w-[129px]"
+        className=" mt-[10px] text-center text-[40px] font-semibold font-inherit inline-block w-[129px]"
         id="done"
       >
         Done
       </h3>
-      <img
-        className="absolute top-[116px] left-[calc(50%_-_190px)] w-[381px] h-[254px] object-cover"
-        alt="Done_img"
-        src={Done_img}
-      />
-      <div className="absolute top-[556px] left-[calc(50%_-_332px)] w-[665px] h-[236px] text-left text-[32px]">
+      <p
+        className=" mt-16 left-[calc(50%_-_292px)] font-medium"
+        id="plan"
+      >{`As per your response this is your ideal meal plan `}</p>
+      <section className="mt-[22px] w-[665px] h-[236px] rounded-2xl [background:linear-gradient(97.1deg,_#def2fa,_#cae5f1)] mx-auto">
+<h3 className="text-start p-1  text-13xl text-black font-sans font-semibold ml-6"> Keto Meal Plan</h3>
+<section className="flex gap-3 ">
+<p
+          className="mt-[18px] text-start ml-6 font-sans text-[28px] font-normal leading-[156.227%] w-[461px] h-[81px] "
+          id="low_carb"
+        >
+          Low-carb, high-fat diet to promote ketosis and fat burning.
+        </p>
+        <img
+          className="-mt-[33px] mr-16  w-[144px] h-[144px] rounded-full  object-cover border-3 border-solid border-[#F9F9F9]"
+          alt="ketomeal"
+          src={Keto_meal}
+        />
+</section>
+          <p
+            className="text-start ml-6 text-base text-[#467D93] lesding-[156.227%] mt-[23px]"
+            id="starts@599"
+          >
+            Starts @ 599/-
+          </p>
+      </section>
+
+      <Link to="/ExploreMealPlan">
+      <section 
+        className="flex items-center justify-center mt-[64px] gap-[19px] cursor-pointer "
+        onClick={onGroupContainer3Click}
+      >
+        <p
+          className="text-5xl font-inherit font-medium text-black"
+          id="explore_meal"
+        >
+          Explore more meal plans
+        </p>
+        <img
+          className="mt-[2px]"
+          alt="right"
+          src={Black_right}
+        />
+      </section></Link>
+      {/* <div className="absolute top-[556px] left-[calc(50%_-_332px)] w-[665px] h-[236px] text-left text-[32px]">
         <section
           className="absolute top-[0px] left-[calc(50%_-_332.5px)] rounded-2xl [background:linear-gradient(97.1deg,_#def2fa,_#cae5f1)] w-[665px] h-[236px]"
           id="meal_section"
@@ -63,22 +105,7 @@ const Result = () => {
             Starts @ 599/-
           </p>
         </div>
-      </div>
-      <div
-        className="absolute top-[856px] left-[calc(50%_-_166px)] w-[332px] h-[29px] cursor-pointer text-left"
-        onClick={onGroupContainer3Click}
-      >
-        <p
-          className="m-0 absolute top-[0px] left-[calc(50%_-_166px)] font-medium"
-          id="explore_meal"
-        >
-          Explore more meal plans
-        </p>
-        <img
-          className="absolute top-[2.5px] left-[320.5px] w-[13.62px] h-[23px] object-cover"
-          alt="right"
-          src={Black_right}
-        />
+      </div> */}
       </div>
     </div>
   );

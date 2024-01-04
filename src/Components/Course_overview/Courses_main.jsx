@@ -136,11 +136,11 @@ return (
       </section>
     ))}
 
-    <Link to="/EnrollNow">
+    {/* <Link to="/EnrollNow">
       <button className="px-[73px] py-7 text-5xl text-dark-green-color mt-[100px] justify-center border border-solid rounded-2xl border-[#CFF7AA] [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] font-semibold mx-auto block">
         Enroll now
       </button>
-    </Link>
+    </Link> */}
   </section>
 );
         }

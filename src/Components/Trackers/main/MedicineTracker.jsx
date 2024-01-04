@@ -68,7 +68,7 @@ const MedicineCard = ({ data, onEdit, onDelete }) => {
   // medicine return
 
   return (
-    <div className="relative w-[344px] h-[240px] right-[50px]">
+    <div className=" relative w-[344px] h-[240px] right-[50px]">
       <div className="bg-white p-4 rounded-lg shadow-md ">
         <h2 className="font-sans text-13xl text-black leading-7 font-semibold ">
           <span>
@@ -153,7 +153,7 @@ const MedicineTracker = () => {
     setMedicinesData(updatedData);
   };
   return (
-    <div className="relative w-full h-[1286px] overflow-hidden font-sans bg-whitesmoke ">
+    <div className="relative w-[1512px] h-[1286px] overflow-hidden font-sans bg-whitesmoke xl:w-full">
       {/* Nav */}
       <Nav />
       {/* Nav */}

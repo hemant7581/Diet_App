@@ -1,38 +1,47 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-refresh/only-export-components */
-import { useState } from "react";
+import { React, useState } from "react";
 import Nav from "../Top_Nav/Nav";
 import blue_male from "../../asset/blue_male.png";
 import blue_female from "../../asset/blue_female.png";
 import blue_slider_dial from "../../asset/blue_slider_dial.png";
+import { Link } from "react-router-dom";
+import TBWresult from "./TBWresult";
 
 const TBW = () => {
   const [Age, setAge] = useState("");
   const [Weight, setWeight] = useState("");
   const [Height, setHeight] = useState("");
-  const [Gender, setGender] = useState("");
+  // const [Gender, setGender] = useState("");
   const [TBW, setTBW] = useState("");
-  const [SliderPosition, setSliderPosition] = useState("girl");
+  const [sliderPosition, setSliderPosition] = useState({
+    top: "5%",
+    left: "38.68%",
+  });
 
   const CalculateTBW = () => {
     if (Age && Height && Weight) {
       let tbw;
-      if (SliderPosition === "boy") {
+      if (sliderPosition === "male") {
         // Male TBW calculation formula
-        tbw = 2.447 - (0.09156 * Age) + (0.1074 * Height)+(0.3362 * Weight);
-      } else {
+        tbw = 2.447 - (0.09156 * Age) + (0.1074 * Height) + (0.3362 * Height)
+      } else  {
         // Female TBW calculation formula
-        tbw = 2.337 - 0.1116 * Age + 0.203 * Weight;
+        tbw = -2.097 + (0.1069 * Height) + (0.2466 * Weight);
       }
 
       setTBW(tbw.toFixed(2));
     }
   };
-  const handleSliderClick = () => {
-    // Toggle between 'boy' and 'girl' when the slider is clicked
-    setSliderPosition((prevPosition) => (prevPosition === "girl" ? "boy" : "girl"));
-    // Also update Gender based on the new SliderPosition
-    setGender((prevGender) => (prevGender === "Female" ? "Male" : "Female"));
+
+  const handleGenderClick = (gender) => {
+    if (gender === "male") {
+      console.log("Moving to male position");
+      setSliderPosition({ top: "5%", left: "75.8%" });
+    } else if (gender === "female") {
+      console.log("Moving to female position");
+      setSliderPosition({ top: "5.7%", left: "2.1%" });
+    }
   };
 
   return (
@@ -73,7 +82,7 @@ const TBW = () => {
           <p
             className="m-0 absolute top-[95px] left-[calc(50%-_432px)] text-blue leading-[174.53%] font-semibold"
             id="female"
-            onClick={() => setGender("Female")}
+            onClick={() => handleGenderClick("female")}
           >
             Female
           </p>
@@ -102,22 +111,31 @@ const TBW = () => {
               id="outer_section"
             />
             <img
+              className="absolute h-[76.67%] z-10 w-[10.7%] top-[11.67%] right-[82.3%] bottom-[11.67%] left-[7%] max-w-full overflow-hidden max-h-full object-cover"
+              alt="female"
+              src={blue_female}
+              onClick={() => handleGenderClick("female")}
+            />
+            <img
               className="absolute h-[90%] w-[22.22%] top-[5%] right-[39.09%] bottom-[5%] left-[38.68%] rounded-[50%] max-w-full overflow-hidden max-h-full object-cover"
               alt="slider_dial"
               id="slider_dial"
               src={blue_slider_dial}
               // style={sliderDialStyle}
-              onClick={handleSliderClick}
+              style={{
+                top: sliderPosition.top,
+                left: sliderPosition.left,
+                // left: sliderPosition.right,
+                // left: sliderPosition.bottom,
+                transition: "all 0.3s ease-in-out", // Add smooth transition
+              }}
+
               // onClick={handleSliderClick}
-            />
-            <img
-              className="absolute h-[76.67%] w-[10.7%] top-[11.67%] right-[82.3%] bottom-[11.67%] left-[7%] max-w-full overflow-hidden max-h-full object-cover"
-              alt="female"
-              src={blue_female}
             />
             <img
               className="absolute h-[71.67%] w-[10.7%] top-[13.33%] right-[7%] bottom-[15%] left-[82.3%] max-w-full overflow-hidden max-h-full object-cover"
               alt="male"
+              onClick={() => handleGenderClick("male")}
               src={blue_male}
             />
           </div>
@@ -155,9 +173,9 @@ const TBW = () => {
             type="number"
             autoComplete="off"
             value={Height}
-            onChange={(e)=>{
+            onChange={(e) => {
               setHeight(e.target.value);
-              Height(e.target.value)
+              Height(e.target.value);
             }}
           />
         </div>
@@ -181,15 +199,17 @@ const TBW = () => {
             }}
           />
         </div>
-        <button
-          className="cursor-pointer py-7 px-[73px] bg-[transparent] absolute top-[807px] left-[calc(50%-_126px)] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center border-[1px] border-solid border-palegoldenrod"
-          id="Calculate"
-          onClick={CalculateTBW}
-        >
-          <div className="relative text-5xl leading-[120%] font-semibold font-open-sans text-dark-green-color text-left">
-            Calculate
-          </div>
-        </button>
+        <Link to="/TBWresult">
+          <button
+            className="cursor-pointer py-7 px-[73px] bg-[transparent] absolute top-[807px] left-[calc(50%-_126px)] rounded-2xl [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))] overflow-hidden flex flex-row items-center justify-center border-[1px] border-solid border-palegoldenrod"
+            id="Calculate"
+            onClick={CalculateTBW}
+          >
+            <div className="relative text-5xl leading-[120%] font-semibold font-sans text-dark-green-color text-left">
+              Calculate
+            </div>
+          </button>
+        </Link>
       </main>
       {/* main section  */}
 

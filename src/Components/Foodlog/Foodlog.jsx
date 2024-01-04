@@ -12,7 +12,7 @@ import FoodCal from './FoodCal';
 
 const Foodlog = () => {
   return (
-    <div className="relative w-[1512px] bg-whitesmoke overflow-hidden h-[1423px] font-sans xl:w-full">
+    <div className="relative w-[1512px]  bg-whitesmoke overflow-hidden h-[1423px] font-sans xl:w-full">
       {/* navbar */}
       <Nav />
       {/* navbar */}

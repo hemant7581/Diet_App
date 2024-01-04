@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Nav from "../Top_Nav/Nav";
 import Footer from "../Footer/Footer";
 import logo from "../../asset/logo.png"
+import Faqq from "../../asset/Faqq.png"
 
 const FAQ = () => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const FAQ = () => {
   }, []);
 
   return (
-    <div className="relative bg-beige w-full h-[3078px] overflow-hidden text-left text-9xl text-text-black-color font-open-sans">
+    <div className="relative bg-beige w-[1512px] h-[3078px] overflow-hidden text-left text-9xl text-text-black-color font-sans xl:w-full">
       <div className="absolute top-[0px] left-[756px] bg-whitesmoke w-[756px] h-[3078px]" />
       {/* Nav */}
       <Nav />
@@ -49,17 +50,17 @@ const FAQ = () => {
         FAQs
       </h1>
       <div className="absolute top-[488px] left-[79px] w-[598px] h-[322px] text-5xl">
-        <div className="absolute top-[0px] left-[0px] tracking-[0.02em] leading-[156.23%] text-5xl font-sans w-[597px]">Welcome to our FAQ page! Here, we address some common queries and concerns to provide you with quick answers and helpful information. </div>
-        <div className="absolute top-[211px] left-[0px] tracking-[0.02em]  text-5xl font-sans leading-[156.23%] inline-block w-[598px]">
+        <p className="absolute top-[0px] left-[0px] tracking-[0.02em] leading-[156.23%] text-5xl font-sans w-[597px]">Welcome to our FAQ page! Here, we address some common queries and concerns to provide you with quick answers and helpful information. </p>
+        <p className="absolute top-[211px] left-[0px] tracking-[0.02em]  text-5xl font-sans leading-[156.23%] inline-block w-[598px]">
           If you don't find the answer you're looking for, please feel free to
           contact our customer support team, and they'll be happy to assist you.
-        </div>
+        </p>
       </div>
-      <img
+      {/* <img
         className="absolute top-[354px] left-[837px] w-[584px] h-[590px] object-cover"
         alt=""
         src="/fa_img.png"
-      />
+      /> */}
       <div className="absolute top-[1143px] left-[78px] rounded-7xl bg-whitesmoke box-border w-[598px] h-[99px] overflow-hidden border-[1px] border-solid border-stroke-green-color">
         <div className="absolute top-[30px] left-[30px] leading-[133%] font-semibold">
           How do i get started with StayFIT?
@@ -190,9 +191,9 @@ const FAQ = () => {
         </div>
       </div>
       <img
-        className="absolute top-[195px] left-[820px] w-[695.96px] h-[624.85px] overflow-hidden"
+        className="absolute top-[195px] left-[837px] w-[584px] h-[590px] overflow-hidden"
         alt=""
-        src="/undraw-private-data-re-4eab-1.svg"
+        src={Faqq}
       />
       {/* footer */}
     </div>

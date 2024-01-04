@@ -15,6 +15,7 @@ const Ques = () => {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0); // Track the selected option index
   const [selectedOptions, setSelectedOptions] = useState([]); // Store selected options
   const progressBarWidth = `${(currentQuestionIndex / (QuestionData.Ques.length - 1)) * 344}px`;
+  const [textareaValue, setTextareaValue] = useState(''); // Add textarea state
 
   const isLastQuestion = currentQuestionIndex === QuestionData.Ques.length-1;
 
@@ -23,7 +24,7 @@ const Ques = () => {
   //     // Save the selected option in the array
   //     const selectedOption = QuestionData.Ques[currentQuestionIndex].options[selectedOptionIndex];
   //     setSelectedOptions([...selectedOptions, selectedOption]);
-
+                                                                                                
   //     setCurrentQuestionIndex(currentQuestionIndex + 1);
   //     setSelectedOptionIndex(-1); // Reset selected option for the next question
   //   }
@@ -40,8 +41,8 @@ const Ques = () => {
       const selectedOption = QuestionData.Ques[currentQuestionIndex].options[selectedOptionIndex];
       setSelectedOptions([...selectedOptions, selectedOption]);
 
-      if (currentQuestionIndex === QuestionData.Ques.length - 2) {
-        // If on the second-to-last question, start loading and delay for 3 seconds
+      if (currentQuestionIndex === QuestionData.Ques.length - 1) {
+        // If on the last question, start loading and delay for 3 seconds
         setIsLoading(true);
         setTimeout(() => {
           setIsLoading(false);
@@ -120,13 +121,26 @@ const Ques = () => {
                 ))}
               </div>
             </div>
+ {/* Add the textarea here */}
+ {currentQuestion.textareaRows && currentQuestion.textareaCols && (
+            <input type="text"
+              value={textareaValue}
+              onChange={(e) => setTextareaValue(e.target.value)}
+              rows={currentQuestion.textareaRows}
+              cols={currentQuestion.textareaCols}
+              className="border border-solid border-[#B5B5B5] pl-[18px] rounded-[5px] w-[360px] h-[54px] mt-[290px] ml-[52px]"
+              placeholder="Specify Here..."
+            />
+          )}
+
           </div>
+          
           <div className="relative left-[423px]">
        <Link to="/Result">     <div className="absolute top-[480px] left-0 [font-family:'Montserrat',Helvetica] font-medium text-[#f8f8f8] text-[24px] text-center tracking-[0] leading-[normal]">
               {isLastQuestion ? 'Finish' : 'Next'}
             </div></Link>
             <img
-              className={`cursor-pointer absolute w-[6px] h-[12px] top-[488px] left-[60px] ${
+              className={`cursor-pointer absolute w-[6px] h-[12px] ml-2 top-[488px] left-[60px] ${
                 selectedOptionIndex > -1 ? 'cursor-pointer' : 'cursor-not-allowed'
               }`}
               alt="Vector"

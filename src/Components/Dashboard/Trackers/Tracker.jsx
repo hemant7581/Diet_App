@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 const Tracker = () => {
   return (
-    <div className='relative w-[1512px] h-[1286px] overflow-hidden font-sans bg-whitesmoke xl:w-full' >
+    <div className='relative w-[1512px] h-[1286px] overflow-hidden font-sans bg-whitesmoke xl:w-full 2xl:w-full' >
       {/* nav */}
       <Nav/>
       {/* nav */}

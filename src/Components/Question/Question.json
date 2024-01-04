@@ -8,9 +8,9 @@
                 "Weight Gain",
                 "General Health Improvement",
                 "Manage Specific Health Condition"
-            ],
-            "textarea": true,
-            "placeholder": "Enter your goals here..."
+            ]
+ 
+       
         },
         {
             "id": 2,
@@ -21,8 +21,9 @@
                 "Gluten-free",
                 "Other"
             ],
-            "textarea": true,
-            "placeholder": "Specify your preferences or restrictions..."
+            "textareaRows": 4,
+            "textareaCols": 4
+        
         },
         {
             "id": 3,
@@ -31,8 +32,9 @@
                 "Yes",
                 "No"
             ],
-            "textarea": true,
-            "placeholder": "List any dislikes or allergies..."
+            "textareaRows": 4,
+            "textareaCols": 4
+        
         },
         {
             "id": 4,
@@ -40,9 +42,9 @@
             "options": [
                 "Yes",
                 "No"
-            ],
-            "textarea": false,
-            "placeholder": "Describe any health conditions..."
+            ]
+          
+          
         },
         {
             "id": 5,
@@ -52,9 +54,8 @@
                 3,
                 4,
                 5
-            ],
-            "textarea": true,
-            "placeholder": "Enter the number of meals per day..."
+            ]
+          
         },
         {
             "id": 6,
@@ -63,9 +64,8 @@
                 "Less than 30 mins",
                 "30-60 mins",
                 "more than 60 mins"
-            ],
-            "textarea": true,
-            "placeholder": "Specify your time preference..."
+            ]
+       
         },
         {
             "id": 7,
@@ -74,18 +74,18 @@
                 "Beginner",
                 "Intermediate",
                 "Advanced"
-            ],
-            "textarea": true,
-            "placeholder": "Describe your comfort level..."
+            ]
+          
         },
         {
             "id": 8,
             "Ques": "Are there any specific cuisines or types of foods you enjoy or would like to include in your meal plan? Specify. (for eg; Indian, Continental, etc.)?",
             "options": [
-                "Enter specific cuisines or foods here..."
+            
             ],
-            "textarea": true,
-            "placeholder": "List your preferred cuisines or foods..."
+            "textareaRows": 5,
+            "textareaCols":5 
+          
         }
     ]
 }

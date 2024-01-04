@@ -44,7 +44,7 @@ const ChangePassword = () => {
 
       {/* personal details */}
       {showDetails && (
-        <section className="absolute w-[852px] leading-[48px] h-[454px] left-[515px] top-[887px] border border-strokegreen-color rounded-xl">
+        <section className="absolute w-[852px] leading-[48px] h-[335px] left-[515px] top-[887px] border border-strokegreen-color rounded-xl">
           
         
 
@@ -71,7 +71,7 @@ const ChangePassword = () => {
           </section>
 {/* make changes in bg */}
           <section>
-            <button className="absolute text-dark-green-color px-[73px] py-[28px] bg-gradient-to-r bg-gradient-[93deg] from-[#AFE47E] to [#D8FAB9] text-5xl font-semibold leading-7 left-[324px] border-solid border border-Lightgreen rounded-2xl  top-[246px]">
+            <button className="absolute text-dark-green-color px-[73px] py-[28px]  [background:linear-gradient(93.37deg,_rgba(175,_228,_126,_0.4),_rgba(216,_250,_185,_0.4))]  text-5xl font-semibold leading-7 left-[324px] border-solid border border-Lightgreen rounded-2xl  top-[218px]">
               Change Password
             </button>
           </section>

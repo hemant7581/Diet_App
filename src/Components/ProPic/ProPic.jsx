@@ -13,7 +13,7 @@ import UnitMeasurement from '../UnitMeasurement/UnitMeasurement'
 const ProPic = () => {
   return (
     <>
- <div className="   overflow-hidden w-[1512px] h-[1286px]   text-left text-5xl  font-sans xl:w-full">
+ <div className=" bg-whitesmoke  overflow-hidden w-[1512px] h-[1286px]   text-left text-5xl  font-sans xl:w-full">
    <Nav/>
    <Sidebar  />
    <PersonalHeader/>
